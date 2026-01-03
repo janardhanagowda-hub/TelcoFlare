@@ -1,0 +1,60 @@
+body {
+    background: #121212;
+    font-family: Arial, sans-serif;
+    color: white;
+}
+
+.login-box, .dashboard {
+    width: 320px;
+    margin: 120px auto;
+    padding: 25px;
+    background: #1e1e1e;
+    border-radius: 10px;
+    text-align: center;
+}
+
+input {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 5px;
+    border: none;
+}
+
+button {
+    width: 100%;
+    padding: 12px;
+    margin-top: 10px;
+    border: none;
+    border-radius: 6px;
+    background: #007bff;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #0056b3;
+}
+
+.aws {
+    background: #28a745;
+}
+
+.aws:hover {
+    background: #1e7e34;
+}
+
+.footer {
+    position: fixed;
+    bottom: 10px;
+    width: 100%;
+    text-align: center;
+    font-size: 13px;
+    color: #9e9e9e;
+}
+
+.footer {
+    left: 0;
+}
+

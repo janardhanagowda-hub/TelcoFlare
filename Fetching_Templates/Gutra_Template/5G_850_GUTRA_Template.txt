@@ -1,0 +1,3006 @@
+
+create
+FDN : SubNetwork=ONRM_ROOT_MO,MeContext={xxNodeIDxx},ManagedElement={xxNodeIDxx},ENodeBFunction=1,GUtraNetwork=1
+gUtraNetworkId : 1
+
+create
+FDN : SubNetwork=ONRM_ROOT_MO,MeContext={xxNodeIDxx},ManagedElement={xxNodeIDxx},ENodeBFunction=1,GUtraNetwork=1,ExternalGNodeBFunction={xxgNodebIDxx}
+externalGNodeBFunctionId : {xxgNodebIDxx}
+dirDataPathAvail : true
+gNodeBId : {xxgNbIDxx}
+gNodeBIdLength : 26
+gNodeBPlmnId : {mcc=310, mnc=410, mncLength=3}
+independentGapConfigSupported : false
+
+create
+FDN : SubNetwork=ONRM_ROOT_MO,MeContext={xxNodeIDxx},ManagedElement={xxNodeIDxx},ENodeBFunction=1,GUtraNetwork=1,ExternalGNodeBFunction={xxgNodebIDxx},TermPointToGNB={xxgNodebIDxx}
+termPointToGNBId : {xxgNodebIDxx}
+administrativeState : UNLOCKED
+ipAddress : 0.0.0.0
+ipv6Address : "{xxNrIPxx}"
+
+create
+FDN : SubNetwork=ONRM_ROOT_MO,MeContext={xxNodeIDxx},ManagedElement={xxNodeIDxx},ENodeBFunction=1,GUtraNetwork=1,GUtranSyncSignalFrequency={xx5G850SSBxx}-15
+gUtranSyncSignalFrequencyId : {xx5G850SSBxx}-15
+arfcn : {xx5G850SSBxx}
+band : 5
+smtcDuration : 2
+smtcOffset : 0
+smtcPeriodicity : 20
+smtcScs : 15
+
+create
+FDN : SubNetwork=ONRM_ROOT_MO,MeContext={xxNodeIDxx},ManagedElement={xxNodeIDxx},ENodeBFunction=1,GUtraNetwork=1,ExternalGNodeBFunction={xxgNodebIDxx},ExternalGUtranCell=310410-000000{xxgNbIDxx}-{xx5G850AlphaCellIDxx}
+externalGUtranCellId : 310410-000000{xxgNbIDxx}-{xx5G850AlphaCellIDxx}
+absSubFrameOffset : 0
+absTimeOffset : 0
+gUtranSyncSignalFrequencyRef : "SubNetwork=ONRM_ROOT_MO,MeContext={xxNodeIDxx},ManagedElement={xxNodeIDxx},ENodeBFunction=1,GUtraNetwork=1,GUtranSyncSignalFrequency={xx5G850SSBxx}-15"
+isRemoveAllowed : false
+localCellId : {xx5G850AlphaCellIDxx}
+physicalLayerCellIdGroup : 133
+physicalLayerSubCellId : 0
+plmnIdList : [{mcc=310, mnc=410, mncLength=3}, {mcc=313, mnc=100, mncLength=3}]
+
+
+
+create
+FDN : SubNetwork=ONRM_ROOT_MO,MeContext={xxNodeIDxx},ManagedElement={xxNodeIDxx},ENodeBFunction=1,GUtraNetwork=1,ExternalGNodeBFunction={xxgNodebIDxx},ExternalGUtranCell=310410-000000{xxgNbIDxx}-{xx5G850BetaCellIDxx}
+externalGUtranCellId : 310410-000000{xxgNbIDxx}-{xx5G850BetaCellIDxx}
+absSubFrameOffset : 0
+absTimeOffset : 0
+gUtranSyncSignalFrequencyRef : "SubNetwork=ONRM_ROOT_MO,MeContext={xxNodeIDxx},ManagedElement={xxNodeIDxx},ENodeBFunction=1,GUtraNetwork=1,GUtranSyncSignalFrequency={xx5G850SSBxx}-15"
+isRemoveAllowed : false
+localCellId : {xx5G850BetaCellIDxx}
+physicalLayerCellIdGroup : 111
+physicalLayerSubCellId : 1
+plmnIdList : [{mcc=310, mnc=410, mncLength=3}, {mcc=313, mnc=100, mncLength=3}]
+
+
+create
+FDN : SubNetwork=ONRM_ROOT_MO,MeContext={xxNodeIDxx},ManagedElement={xxNodeIDxx},ENodeBFunction=1,GUtraNetwork=1,ExternalGNodeBFunction={xxgNodebIDxx},ExternalGUtranCell=310410-000000{xxgNbIDxx}-{xx5G850GammaCellIDxx}
+externalGUtranCellId : 310410-000000{xxgNbIDxx}-{xx5G850GammaCellIDxx}
+absSubFrameOffset : 0
+absTimeOffset : 0
+gUtranSyncSignalFrequencyRef : "SubNetwork=ONRM_ROOT_MO,MeContext={xxNodeIDxx},ManagedElement={xxNodeIDxx},ENodeBFunction=1,GUtraNetwork=1,GUtranSyncSignalFrequency={xx5G850SSBxx}-15"
+isRemoveAllowed : false
+localCellId : {xx5G850GammaCellIDxx}
+physicalLayerCellIdGroup : 1
+physicalLayerSubCellId : 0
+plmnIdList : [{mcc=310, mnc=410, mncLength=3}, {mcc=313, mnc=100, mncLength=3}]
+
+
+create
+FDN : SubNetwork=ONRM_ROOT_MO,MeContext={xxNodeIDxx},ManagedElement={xxNodeIDxx},ENodeBFunction=1,EUtranCellFDD={CELLNAME1},GUtranFreqRelation={xx5G850SSBxx}-15-20-0-2
+gUtranFreqRelationId : {xx5G850SSBxx}-15-20-0-2
+allowedPlmnList : [{mcc=310, mnc=410, mncLength=3}, {mcc=313, mnc=100, mncLength=3}]
+anrMeasOn : true
+b1ThrRsrpFreqOffset : -1
+b1ThrRsrqFreqOffset : 0
+cellReselectionPriority : -1
+connectedModeMobilityPrio : 6
+deriveSsbIndexFromCell : false
+endcB1MeasPriority : 1
+gUtranSyncSignalFrequencyRef : "SubNetwork=ONRM_ROOT_MO,MeContext={xxNodeIDxx},ManagedElement={xxNodeIDxx},ENodeBFunction=1,GUtraNetwork=1,GUtranSyncSignalFrequency={xx5G850SSBxx}-15"
+pMaxNR : 23
+qOffsetFreq : 0
+qQualMin : -30
+qRxLevMin : -104
+threshXHigh : 4
+threshXHighQ : 0
+threshXLow : 0
+threshXLowQ : 0
+timeToTriggerB1Override : -1000
+timeToTriggerNrB1Override : -1000
+triggerQuantityB1Override : NO_OVERRIDE
+voicePrio : 0
+
+
+create
+FDN : SubNetwork=ONRM_ROOT_MO,MeContext={xxNodeIDxx},ManagedElement={xxNodeIDxx},ENodeBFunction=1,EUtranCellFDD={CELLNAME1},GUtranFreqRelation={xx5G850SSBxx}-15-20-0-2,GUtranCellRelation={xxgNodebIDxx}_N005A_1
+gUtranCellRelationId : {xxgNodebIDxx}_N005A_1
+essEnabled : false
+isEndcAllowed : true
+isHoAllowed : true
+isRemoveAllowed : false
+isVoiceHoAllowed : true
+neighborCellRef : "SubNetwork=ONRM_ROOT_MO,MeContext={xxNodeIDxx},ManagedElement={xxNodeIDxx},ENodeBFunction=1,GUtraNetwork=1,ExternalGNodeBFunction={xxgNodebIDxx},ExternalGUtranCell=310410-000000{xxgNbIDxx}-{xx5G850AlphaCellIDxx}"
+
+create
+FDN : SubNetwork=ONRM_ROOT_MO,MeContext={xxNodeIDxx},ManagedElement={xxNodeIDxx},ENodeBFunction=1,EUtranCellFDD={CELLNAME1},GUtranFreqRelation={xx5G850SSBxx}-15-20-0-2,GUtranCellRelation={xxgNodebIDxx}_N005B_1
+gUtranCellRelationId : {xxgNodebIDxx}_N005B_1
+essEnabled : false
+isEndcAllowed : true
+isHoAllowed : true
+isRemoveAllowed : false
+isVoiceHoAllowed : true
+neighborCellRef : "SubNetwork=ONRM_ROOT_MO,MeContext={xxNodeIDxx},ManagedElement={xxNodeIDxx},ENodeBFunction=1,GUtraNetwork=1,ExternalGNodeBFunction={xxgNodebIDxx},ExternalGUtranCell=310410-000000{xxgNbIDxx}-{xx5G850BetaCellIDxx}"
+
+
+create
+FDN : SubNetwork=ONRM_ROOT_MO,MeContext={xxNodeIDxx},ManagedElement={xxNodeIDxx},ENodeBFunction=1,EUtranCellFDD={CELLNAME1},GUtranFreqRelation={xx5G850SSBxx}-15-20-0-2,GUtranCellRelation={xxgNodebIDxx}_N005C_1
+gUtranCellRelationId : {xxgNodebIDxx}_N005C_1
+essEnabled : false
+isEndcAllowed : true
+isHoAllowed : true
+isRemoveAllowed : false
+isVoiceHoAllowed : true
+neighborCellRef : "SubNetwork=ONRM_ROOT_MO,MeContext={xxNodeIDxx},ManagedElement={xxNodeIDxx},ENodeBFunction=1,GUtraNetwork=1,ExternalGNodeBFunction={xxgNodebIDxx},ExternalGUtranCell=310410-000000{xxgNbIDxx}-{xx5G850GammaCellIDxx}"
+
+
+create
+FDN : SubNetwork=ONRM_ROOT_MO,MeContext={xxNodeIDxx},ManagedElement={xxNodeIDxx},ENodeBFunction=1,EUtranCellFDD={CELLNAME2},GUtranFreqRelation={xx5G850SSBxx}-15-20-0-2
+gUtranFreqRelationId : {xx5G850SSBxx}-15-20-0-2
+allowedPlmnList : [{mcc=310, mnc=410, mncLength=3}, {mcc=313, mnc=100, mncLength=3}]
+anrMeasOn : true
+b1ThrRsrpFreqOffset : -1
+b1ThrRsrqFreqOffset : 0
+cellReselectionPriority : -1
+connectedModeMobilityPrio : 6
+deriveSsbIndexFromCell : false
+endcB1MeasPriority : 1
+gUtranSyncSignalFrequencyRef : "SubNetwork=ONRM_ROOT_MO,MeContext={xxNodeIDxx},ManagedElement={xxNodeIDxx},ENodeBFunction=1,GUtraNetwork=1,GUtranSyncSignalFrequency={xx5G850SSBxx}-15"
+pMaxNR : 23
+qOffsetFreq : 0
+qQualMin : -30
+qRxLevMin : -104
+threshXHigh : 4
+threshXHighQ : 0
+threshXLow : 0
+threshXLowQ : 0
+timeToTriggerB1Override : -1000
+timeToTriggerNrB1Override : -1000
+triggerQuantityB1Override : NO_OVERRIDE
+voicePrio : 0
+
+
+
+create
+FDN : SubNetwork=ONRM_ROOT_MO,MeContext={xxNodeIDxx},ManagedElement={xxNodeIDxx},ENodeBFunction=1,EUtranCellFDD={CELLNAME2},GUtranFreqRelation={xx5G850SSBxx}-15-20-0-2,GUtranCellRelation={xxgNodebIDxx}_N005A_1
+gUtranCellRelationId : {xxgNodebIDxx}_N005A_1
+essEnabled : false
+isEndcAllowed : true
+isHoAllowed : true
+isRemoveAllowed : false
+isVoiceHoAllowed : true
+neighborCellRef : "SubNetwork=ONRM_ROOT_MO,MeContext={xxNodeIDxx},ManagedElement={xxNodeIDxx},ENodeBFunction=1,GUtraNetwork=1,ExternalGNodeBFunction={xxgNodebIDxx},ExternalGUtranCell=310410-000000{xxgNbIDxx}-{xx5G850AlphaCellIDxx}"
+
+create
+FDN : SubNetwork=ONRM_ROOT_MO,MeContext={xxNodeIDxx},ManagedElement={xxNodeIDxx},ENodeBFunction=1,EUtranCellFDD={CELLNAME2},GUtranFreqRelation={xx5G850SSBxx}-15-20-0-2,GUtranCellRelation={xxgNodebIDxx}_N005B_1
+gUtranCellRelationId : {xxgNodebIDxx}_N005B_1
+essEnabled : false
+isEndcAllowed : true
+isHoAllowed : true
+isRemoveAllowed : false
+isVoiceHoAllowed : true
+neighborCellRef : "SubNetwork=ONRM_ROOT_MO,MeContext={xxNodeIDxx},ManagedElement={xxNodeIDxx},ENodeBFunction=1,GUtraNetwork=1,ExternalGNodeBFunction={xxgNodebIDxx},ExternalGUtranCell=310410-000000{xxgNbIDxx}-{xx5G850BetaCellIDxx}"
+
+create
+FDN : SubNetwork=ONRM_ROOT_MO,MeContext={xxNodeIDxx},ManagedElement={xxNodeIDxx},ENodeBFunction=1,EUtranCellFDD={CELLNAME2},GUtranFreqRelation={xx5G850SSBxx}-15-20-0-2,GUtranCellRelation={xxgNodebIDxx}_N005C_1
+gUtranCellRelationId : {xxgNodebIDxx}_N005C_1
+essEnabled : false
+isEndcAllowed : true
+isHoAllowed : true
+isRemoveAllowed : false
+isVoiceHoAllowed : true
+neighborCellRef : "SubNetwork=ONRM_ROOT_MO,MeContext={xxNodeIDxx},ManagedElement={xxNodeIDxx},ENodeBFunction=1,GUtraNetwork=1,ExternalGNodeBFunction={xxgNodebIDxx},ExternalGUtranCell=310410-000000{xxgNbIDxx}-{xx5G850GammaCellIDxx}"
+
+
+create
+FDN : SubNetwork=ONRM_ROOT_MO,MeContext={xxNodeIDxx},ManagedElement={xxNodeIDxx},ENodeBFunction=1,EUtranCellFDD={CELLNAME3},GUtranFreqRelation={xx5G850SSBxx}-15-20-0-2
+gUtranFreqRelationId : {xx5G850SSBxx}-15-20-0-2
+allowedPlmnList : [{mcc=310, mnc=410, mncLength=3}, {mcc=313, mnc=100, mncLength=3}]
+anrMeasOn : true
+b1ThrRsrpFreqOffset : -1
+b1ThrRsrqFreqOffset : 0
+cellReselectionPriority : -1
+connectedModeMobilityPrio : 6
+deriveSsbIndexFromCell : false
+endcB1MeasPriority : 1
+gUtranSyncSignalFrequencyRef : "SubNetwork=ONRM_ROOT_MO,MeContext={xxNodeIDxx},ManagedElement={xxNodeIDxx},ENodeBFunction=1,GUtraNetwork=1,GUtranSyncSignalFrequency={xx5G850SSBxx}-15"
+pMaxNR : 23
+qOffsetFreq : 0
+qQualMin : -30
+qRxLevMin : -104
+threshXHigh : 4
+threshXHighQ : 0
+threshXLow : 0
+threshXLowQ : 0
+timeToTriggerB1Override : -1000
+timeToTriggerNrB1Override : -1000
+triggerQuantityB1Override : NO_OVERRIDE
+voicePrio : 0
+
+
+create
+FDN : SubNetwork=ONRM_ROOT_MO,MeContext={xxNodeIDxx},ManagedElement={xxNodeIDxx},ENodeBFunction=1,EUtranCellFDD={CELLNAME3},GUtranFreqRelation={xx5G850SSBxx}-15-20-0-2,GUtranCellRelation={xxgNodebIDxx}_N005A_1
+gUtranCellRelationId : {xxgNodebIDxx}_N005A_1
+essEnabled : false
+isEndcAllowed : true
+isHoAllowed : true
+isRemoveAllowed : false
+isVoiceHoAllowed : true
+neighborCellRef : "SubNetwork=ONRM_ROOT_MO,MeContext={xxNodeIDxx},ManagedElement={xxNodeIDxx},ENodeBFunction=1,GUtraNetwork=1,ExternalGNodeBFunction={xxgNodebIDxx},ExternalGUtranCell=310410-000000{xxgNbIDxx}-{xx5G850AlphaCellIDxx}"
+
+create
+FDN : SubNetwork=ONRM_ROOT_MO,MeContext={xxNodeIDxx},ManagedElement={xxNodeIDxx},ENodeBFunction=1,EUtranCellFDD={CELLNAME3},GUtranFreqRelation={xx5G850SSBxx}-15-20-0-2,GUtranCellRelation={xxgNodebIDxx}_N005B_1
+gUtranCellRelationId : {xxgNodebIDxx}_N005B_1
+essEnabled : false
+isEndcAllowed : true
+isHoAllowed : true
+isRemoveAllowed : false
+isVoiceHoAllowed : true
+neighborCellRef : "SubNetwork=ONRM_ROOT_MO,MeContext={xxNodeIDxx},ManagedElement={xxNodeIDxx},ENodeBFunction=1,GUtraNetwork=1,ExternalGNodeBFunction={xxgNodebIDxx},ExternalGUtranCell=310410-000000{xxgNbIDxx}-{xx5G850BetaCellIDxx}"
+
+create
+FDN : SubNetwork=ONRM_ROOT_MO,MeContext={xxNodeIDxx},ManagedElement={xxNodeIDxx},ENodeBFunction=1,EUtranCellFDD={CELLNAME3},GUtranFreqRelation={xx5G850SSBxx}-15-20-0-2,GUtranCellRelation={xxgNodebIDxx}_N005C_1
+gUtranCellRelationId : {xxgNodebIDxx}_N005C_1
+essEnabled : false
+isEndcAllowed : true
+isHoAllowed : true
+isRemoveAllowed : false
+isVoiceHoAllowed : true
+neighborCellRef : "SubNetwork=ONRM_ROOT_MO,MeContext={xxNodeIDxx},ManagedElement={xxNodeIDxx},ENodeBFunction=1,GUtraNetwork=1,ExternalGNodeBFunction={xxgNodebIDxx},ExternalGUtranCell=310410-000000{xxgNbIDxx}-{xx5G850GammaCellIDxx}"
+
+
+
+create
+FDN : SubNetwork=ONRM_ROOT_MO,MeContext={xxNodeIDxx},ManagedElement={xxNodeIDxx},ENodeBFunction=1,EUtranCellFDD={CELLNAME4},GUtranFreqRelation={xx5G850SSBxx}-15-20-0-2
+gUtranFreqRelationId : {xx5G850SSBxx}-15-20-0-2
+allowedPlmnList : [{mcc=310, mnc=410, mncLength=3}, {mcc=313, mnc=100, mncLength=3}]
+anrMeasOn : true
+b1ThrRsrpFreqOffset : -1
+b1ThrRsrqFreqOffset : 0
+cellReselectionPriority : -1
+connectedModeMobilityPrio : 6
+deriveSsbIndexFromCell : false
+endcB1MeasPriority : 1
+gUtranSyncSignalFrequencyRef : "SubNetwork=ONRM_ROOT_MO,MeContext={xxNodeIDxx},ManagedElement={xxNodeIDxx},ENodeBFunction=1,GUtraNetwork=1,GUtranSyncSignalFrequency={xx5G850SSBxx}-15"
+pMaxNR : 23
+qOffsetFreq : 0
+qQualMin : -30
+qRxLevMin : -104
+threshXHigh : 4
+threshXHighQ : 0
+threshXLow : 0
+threshXLowQ : 0
+timeToTriggerB1Override : -1000
+timeToTriggerNrB1Override : -1000
+triggerQuantityB1Override : NO_OVERRIDE
+voicePrio : 0
+
+
+
+create
+FDN : SubNetwork=ONRM_ROOT_MO,MeContext={xxNodeIDxx},ManagedElement={xxNodeIDxx},ENodeBFunction=1,EUtranCellFDD={CELLNAME4},GUtranFreqRelation={xx5G850SSBxx}-15-20-0-2,GUtranCellRelation={xxgNodebIDxx}_N005A_1
+gUtranCellRelationId : {xxgNodebIDxx}_N005A_1
+essEnabled : false
+isEndcAllowed : true
+isHoAllowed : true
+isRemoveAllowed : false
+isVoiceHoAllowed : true
+neighborCellRef : "SubNetwork=ONRM_ROOT_MO,MeContext={xxNodeIDxx},ManagedElement={xxNodeIDxx},ENodeBFunction=1,GUtraNetwork=1,ExternalGNodeBFunction={xxgNodebIDxx},ExternalGUtranCell=310410-000000{xxgNbIDxx}-{xx5G850AlphaCellIDxx}"
+
+create
+FDN : SubNetwork=ONRM_ROOT_MO,MeContext={xxNodeIDxx},ManagedElement={xxNodeIDxx},ENodeBFunction=1,EUtranCellFDD={CELLNAME4},GUtranFreqRelation={xx5G850SSBxx}-15-20-0-2,GUtranCellRelation={xxgNodebIDxx}_N005B_1
+gUtranCellRelationId : {xxgNodebIDxx}_N005B_1
+essEnabled : false
+isEndcAllowed : true
+isHoAllowed : true
+isRemoveAllowed : false
+isVoiceHoAllowed : true
+neighborCellRef : "SubNetwork=ONRM_ROOT_MO,MeContext={xxNodeIDxx},ManagedElement={xxNodeIDxx},ENodeBFunction=1,GUtraNetwork=1,ExternalGNodeBFunction={xxgNodebIDxx},ExternalGUtranCell=310410-000000{xxgNbIDxx}-{xx5G850BetaCellIDxx}"
+
+
+create
+FDN : SubNetwork=ONRM_ROOT_MO,MeContext={xxNodeIDxx},ManagedElement={xxNodeIDxx},ENodeBFunction=1,EUtranCellFDD={CELLNAME4},GUtranFreqRelation={xx5G850SSBxx}-15-20-0-2,GUtranCellRelation={xxgNodebIDxx}_N005C_1
+gUtranCellRelationId : {xxgNodebIDxx}_N005C_1
+essEnabled : false
+isEndcAllowed : true
+isHoAllowed : true
+isRemoveAllowed : false
+isVoiceHoAllowed : true
+neighborCellRef : "SubNetwork=ONRM_ROOT_MO,MeContext={xxNodeIDxx},ManagedElement={xxNodeIDxx},ENodeBFunction=1,GUtraNetwork=1,ExternalGNodeBFunction={xxgNodebIDxx},ExternalGUtranCell=310410-000000{xxgNbIDxx}-{xx5G850GammaCellIDxx}"
+
+
+
+
+create
+FDN : SubNetwork=ONRM_ROOT_MO,MeContext={xxNodeIDxx},ManagedElement={xxNodeIDxx},ENodeBFunction=1,EUtranCellFDD={CELLNAME5},GUtranFreqRelation={xx5G850SSBxx}-15-20-0-2
+gUtranFreqRelationId : {xx5G850SSBxx}-15-20-0-2
+allowedPlmnList : [{mcc=310, mnc=410, mncLength=3}, {mcc=313, mnc=100, mncLength=3}]
+anrMeasOn : true
+b1ThrRsrpFreqOffset : -1
+b1ThrRsrqFreqOffset : 0
+cellReselectionPriority : -1
+connectedModeMobilityPrio : 6
+deriveSsbIndexFromCell : false
+endcB1MeasPriority : 1
+gUtranSyncSignalFrequencyRef : "SubNetwork=ONRM_ROOT_MO,MeContext={xxNodeIDxx},ManagedElement={xxNodeIDxx},ENodeBFunction=1,GUtraNetwork=1,GUtranSyncSignalFrequency={xx5G850SSBxx}-15"
+pMaxNR : 23
+qOffsetFreq : 0
+qQualMin : -30
+qRxLevMin : -104
+threshXHigh : 4
+threshXHighQ : 0
+threshXLow : 0
+threshXLowQ : 0
+timeToTriggerB1Override : -1000
+timeToTriggerNrB1Override : -1000
+triggerQuantityB1Override : NO_OVERRIDE
+voicePrio : 0
+
+
+
+create
+FDN : SubNetwork=ONRM_ROOT_MO,MeContext={xxNodeIDxx},ManagedElement={xxNodeIDxx},ENodeBFunction=1,EUtranCellFDD={CELLNAME5},GUtranFreqRelation={xx5G850SSBxx}-15-20-0-2,GUtranCellRelation={xxgNodebIDxx}_N005A_1
+gUtranCellRelationId : {xxgNodebIDxx}_N005A_1
+essEnabled : false
+isEndcAllowed : true
+isHoAllowed : true
+isRemoveAllowed : false
+isVoiceHoAllowed : true
+neighborCellRef : "SubNetwork=ONRM_ROOT_MO,MeContext={xxNodeIDxx},ManagedElement={xxNodeIDxx},ENodeBFunction=1,GUtraNetwork=1,ExternalGNodeBFunction={xxgNodebIDxx},ExternalGUtranCell=310410-000000{xxgNbIDxx}-{xx5G850AlphaCellIDxx}"
+
+create
+FDN : SubNetwork=ONRM_ROOT_MO,MeContext={xxNodeIDxx},ManagedElement={xxNodeIDxx},ENodeBFunction=1,EUtranCellFDD={CELLNAME5},GUtranFreqRelation={xx5G850SSBxx}-15-20-0-2,GUtranCellRelation={xxgNodebIDxx}_N005B_1
+gUtranCellRelationId : {xxgNodebIDxx}_N005B_1
+essEnabled : false
+isEndcAllowed : true
+isHoAllowed : true
+isRemoveAllowed : false
+isVoiceHoAllowed : true
+neighborCellRef : "SubNetwork=ONRM_ROOT_MO,MeContext={xxNodeIDxx},ManagedElement={xxNodeIDxx},ENodeBFunction=1,GUtraNetwork=1,ExternalGNodeBFunction={xxgNodebIDxx},ExternalGUtranCell=310410-000000{xxgNbIDxx}-{xx5G850BetaCellIDxx}"
+
+create
+FDN : SubNetwork=ONRM_ROOT_MO,MeContext={xxNodeIDxx},ManagedElement={xxNodeIDxx},ENodeBFunction=1,EUtranCellFDD={CELLNAME5},GUtranFreqRelation={xx5G850SSBxx}-15-20-0-2,GUtranCellRelation={xxgNodebIDxx}_N005C_1
+gUtranCellRelationId : {xxgNodebIDxx}_N005C_1
+essEnabled : false
+isEndcAllowed : true
+isHoAllowed : true
+isRemoveAllowed : false
+isVoiceHoAllowed : true
+neighborCellRef : "SubNetwork=ONRM_ROOT_MO,MeContext={xxNodeIDxx},ManagedElement={xxNodeIDxx},ENodeBFunction=1,GUtraNetwork=1,ExternalGNodeBFunction={xxgNodebIDxx},ExternalGUtranCell=310410-000000{xxgNbIDxx}-{xx5G850GammaCellIDxx}"
+
+
+
+create
+FDN : SubNetwork=ONRM_ROOT_MO,MeContext={xxNodeIDxx},ManagedElement={xxNodeIDxx},ENodeBFunction=1,EUtranCellFDD={CELLNAME6},GUtranFreqRelation={xx5G850SSBxx}-15-20-0-2
+gUtranFreqRelationId : {xx5G850SSBxx}-15-20-0-2
+allowedPlmnList : [{mcc=310, mnc=410, mncLength=3}, {mcc=313, mnc=100, mncLength=3}]
+anrMeasOn : true
+b1ThrRsrpFreqOffset : -1
+b1ThrRsrqFreqOffset : 0
+cellReselectionPriority : -1
+connectedModeMobilityPrio : 6
+deriveSsbIndexFromCell : false
+endcB1MeasPriority : 1
+gUtranSyncSignalFrequencyRef : "SubNetwork=ONRM_ROOT_MO,MeContext={xxNodeIDxx},ManagedElement={xxNodeIDxx},ENodeBFunction=1,GUtraNetwork=1,GUtranSyncSignalFrequency={xx5G850SSBxx}-15"
+pMaxNR : 23
+qOffsetFreq : 0
+qQualMin : -30
+qRxLevMin : -104
+threshXHigh : 4
+threshXHighQ : 0
+threshXLow : 0
+threshXLowQ : 0
+timeToTriggerB1Override : -1000
+timeToTriggerNrB1Override : -1000
+triggerQuantityB1Override : NO_OVERRIDE
+voicePrio : 0
+
+
+
+create
+FDN : SubNetwork=ONRM_ROOT_MO,MeContext={xxNodeIDxx},ManagedElement={xxNodeIDxx},ENodeBFunction=1,EUtranCellFDD={CELLNAME6},GUtranFreqRelation={xx5G850SSBxx}-15-20-0-2,GUtranCellRelation={xxgNodebIDxx}_N005A_1
+gUtranCellRelationId : {xxgNodebIDxx}_N005A_1
+essEnabled : false
+isEndcAllowed : true
+isHoAllowed : true
+isRemoveAllowed : false
+isVoiceHoAllowed : true
+neighborCellRef : "SubNetwork=ONRM_ROOT_MO,MeContext={xxNodeIDxx},ManagedElement={xxNodeIDxx},ENodeBFunction=1,GUtraNetwork=1,ExternalGNodeBFunction={xxgNodebIDxx},ExternalGUtranCell=310410-000000{xxgNbIDxx}-{xx5G850AlphaCellIDxx}"
+
+create
+FDN : SubNetwork=ONRM_ROOT_MO,MeContext={xxNodeIDxx},ManagedElement={xxNodeIDxx},ENodeBFunction=1,EUtranCellFDD={CELLNAME6},GUtranFreqRelation={xx5G850SSBxx}-15-20-0-2,GUtranCellRelation={xxgNodebIDxx}_N005B_1
+gUtranCellRelationId : {xxgNodebIDxx}_N005B_1
+essEnabled : false
+isEndcAllowed : true
+isHoAllowed : true
+isRemoveAllowed : false
+isVoiceHoAllowed : true
+neighborCellRef : "SubNetwork=ONRM_ROOT_MO,MeContext={xxNodeIDxx},ManagedElement={xxNodeIDxx},ENodeBFunction=1,GUtraNetwork=1,ExternalGNodeBFunction={xxgNodebIDxx},ExternalGUtranCell=310410-000000{xxgNbIDxx}-{xx5G850BetaCellIDxx}"
+
+create
+FDN : SubNetwork=ONRM_ROOT_MO,MeContext={xxNodeIDxx},ManagedElement={xxNodeIDxx},ENodeBFunction=1,EUtranCellFDD={CELLNAME6},GUtranFreqRelation={xx5G850SSBxx}-15-20-0-2,GUtranCellRelation={xxgNodebIDxx}_N005C_1
+gUtranCellRelationId : {xxgNodebIDxx}_N005C_1
+essEnabled : false
+isEndcAllowed : true
+isHoAllowed : true
+isRemoveAllowed : false
+isVoiceHoAllowed : true
+neighborCellRef : "SubNetwork=ONRM_ROOT_MO,MeContext={xxNodeIDxx},ManagedElement={xxNodeIDxx},ENodeBFunction=1,GUtraNetwork=1,ExternalGNodeBFunction={xxgNodebIDxx},ExternalGUtranCell=310410-000000{xxgNbIDxx}-{xx5G850GammaCellIDxx}"
+
+
+create
+FDN : SubNetwork=ONRM_ROOT_MO,MeContext={xxNodeIDxx},ManagedElement={xxNodeIDxx},ENodeBFunction=1,EUtranCellFDD={CELLNAME7},GUtranFreqRelation={xx5G850SSBxx}-15-20-0-2
+gUtranFreqRelationId : {xx5G850SSBxx}-15-20-0-2
+allowedPlmnList : [{mcc=310, mnc=410, mncLength=3}, {mcc=313, mnc=100, mncLength=3}]
+anrMeasOn : true
+b1ThrRsrpFreqOffset : -1
+b1ThrRsrqFreqOffset : 0
+cellReselectionPriority : -1
+connectedModeMobilityPrio : 6
+deriveSsbIndexFromCell : false
+endcB1MeasPriority : 1
+gUtranSyncSignalFrequencyRef : "SubNetwork=ONRM_ROOT_MO,MeContext={xxNodeIDxx},ManagedElement={xxNodeIDxx},ENodeBFunction=1,GUtraNetwork=1,GUtranSyncSignalFrequency={xx5G850SSBxx}-15"
+pMaxNR : 23
+qOffsetFreq : 0
+qQualMin : -30
+qRxLevMin : -104
+threshXHigh : 4
+threshXHighQ : 0
+threshXLow : 0
+threshXLowQ : 0
+timeToTriggerB1Override : -1000
+timeToTriggerNrB1Override : -1000
+triggerQuantityB1Override : NO_OVERRIDE
+voicePrio : 0
+
+
+create
+FDN : SubNetwork=ONRM_ROOT_MO,MeContext={xxNodeIDxx},ManagedElement={xxNodeIDxx},ENodeBFunction=1,EUtranCellFDD={CELLNAME7},GUtranFreqRelation={xx5G850SSBxx}-15-20-0-2,GUtranCellRelation={xxgNodebIDxx}_N005A_1
+gUtranCellRelationId : {xxgNodebIDxx}_N005A_1
+essEnabled : false
+isEndcAllowed : true
+isHoAllowed : true
+isRemoveAllowed : false
+isVoiceHoAllowed : true
+neighborCellRef : "SubNetwork=ONRM_ROOT_MO,MeContext={xxNodeIDxx},ManagedElement={xxNodeIDxx},ENodeBFunction=1,GUtraNetwork=1,ExternalGNodeBFunction={xxgNodebIDxx},ExternalGUtranCell=310410-000000{xxgNbIDxx}-{xx5G850AlphaCellIDxx}"
+
+create
+FDN : SubNetwork=ONRM_ROOT_MO,MeContext={xxNodeIDxx},ManagedElement={xxNodeIDxx},ENodeBFunction=1,EUtranCellFDD={CELLNAME7},GUtranFreqRelation={xx5G850SSBxx}-15-20-0-2,GUtranCellRelation={xxgNodebIDxx}_N005B_1
+gUtranCellRelationId : {xxgNodebIDxx}_N005B_1
+essEnabled : false
+isEndcAllowed : true
+isHoAllowed : true
+isRemoveAllowed : false
+isVoiceHoAllowed : true
+neighborCellRef : "SubNetwork=ONRM_ROOT_MO,MeContext={xxNodeIDxx},ManagedElement={xxNodeIDxx},ENodeBFunction=1,GUtraNetwork=1,ExternalGNodeBFunction={xxgNodebIDxx},ExternalGUtranCell=310410-000000{xxgNbIDxx}-{xx5G850BetaCellIDxx}"
+
+
+create
+FDN : SubNetwork=ONRM_ROOT_MO,MeContext={xxNodeIDxx},ManagedElement={xxNodeIDxx},ENodeBFunction=1,EUtranCellFDD={CELLNAME7},GUtranFreqRelation={xx5G850SSBxx}-15-20-0-2,GUtranCellRelation={xxgNodebIDxx}_N005C_1
+gUtranCellRelationId : {xxgNodebIDxx}_N005C_1
+essEnabled : false
+isEndcAllowed : true
+isHoAllowed : true
+isRemoveAllowed : false
+isVoiceHoAllowed : true
+neighborCellRef : "SubNetwork=ONRM_ROOT_MO,MeContext={xxNodeIDxx},ManagedElement={xxNodeIDxx},ENodeBFunction=1,GUtraNetwork=1,ExternalGNodeBFunction={xxgNodebIDxx},ExternalGUtranCell=310410-000000{xxgNbIDxx}-{xx5G850GammaCellIDxx}"
+
+
+create
+FDN : SubNetwork=ONRM_ROOT_MO,MeContext={xxNodeIDxx},ManagedElement={xxNodeIDxx},ENodeBFunction=1,EUtranCellFDD={CELLNAME8},GUtranFreqRelation={xx5G850SSBxx}-15-20-0-2
+gUtranFreqRelationId : {xx5G850SSBxx}-15-20-0-2
+allowedPlmnList : [{mcc=310, mnc=410, mncLength=3}, {mcc=313, mnc=100, mncLength=3}]
+anrMeasOn : true
+b1ThrRsrpFreqOffset : -1
+b1ThrRsrqFreqOffset : 0
+cellReselectionPriority : -1
+connectedModeMobilityPrio : 6
+deriveSsbIndexFromCell : false
+endcB1MeasPriority : 1
+gUtranSyncSignalFrequencyRef : "SubNetwork=ONRM_ROOT_MO,MeContext={xxNodeIDxx},ManagedElement={xxNodeIDxx},ENodeBFunction=1,GUtraNetwork=1,GUtranSyncSignalFrequency={xx5G850SSBxx}-15"
+pMaxNR : 23
+qOffsetFreq : 0
+qQualMin : -30
+qRxLevMin : -104
+threshXHigh : 4
+threshXHighQ : 0
+threshXLow : 0
+threshXLowQ : 0
+timeToTriggerB1Override : -1000
+timeToTriggerNrB1Override : -1000
+triggerQuantityB1Override : NO_OVERRIDE
+voicePrio : 0
+
+
+
+create
+FDN : SubNetwork=ONRM_ROOT_MO,MeContext={xxNodeIDxx},ManagedElement={xxNodeIDxx},ENodeBFunction=1,EUtranCellFDD={CELLNAME8},GUtranFreqRelation={xx5G850SSBxx}-15-20-0-2,GUtranCellRelation={xxgNodebIDxx}_N005A_1
+gUtranCellRelationId : {xxgNodebIDxx}_N005A_1
+essEnabled : false
+isEndcAllowed : true
+isHoAllowed : true
+isRemoveAllowed : false
+isVoiceHoAllowed : true
+neighborCellRef : "SubNetwork=ONRM_ROOT_MO,MeContext={xxNodeIDxx},ManagedElement={xxNodeIDxx},ENodeBFunction=1,GUtraNetwork=1,ExternalGNodeBFunction={xxgNodebIDxx},ExternalGUtranCell=310410-000000{xxgNbIDxx}-{xx5G850AlphaCellIDxx}"
+
+create
+FDN : SubNetwork=ONRM_ROOT_MO,MeContext={xxNodeIDxx},ManagedElement={xxNodeIDxx},ENodeBFunction=1,EUtranCellFDD={CELLNAME8},GUtranFreqRelation={xx5G850SSBxx}-15-20-0-2,GUtranCellRelation={xxgNodebIDxx}_N005B_1
+gUtranCellRelationId : {xxgNodebIDxx}_N005B_1
+essEnabled : false
+isEndcAllowed : true
+isHoAllowed : true
+isRemoveAllowed : false
+isVoiceHoAllowed : true
+neighborCellRef : "SubNetwork=ONRM_ROOT_MO,MeContext={xxNodeIDxx},ManagedElement={xxNodeIDxx},ENodeBFunction=1,GUtraNetwork=1,ExternalGNodeBFunction={xxgNodebIDxx},ExternalGUtranCell=310410-000000{xxgNbIDxx}-{xx5G850BetaCellIDxx}"
+
+create
+FDN : SubNetwork=ONRM_ROOT_MO,MeContext={xxNodeIDxx},ManagedElement={xxNodeIDxx},ENodeBFunction=1,EUtranCellFDD={CELLNAME8},GUtranFreqRelation={xx5G850SSBxx}-15-20-0-2,GUtranCellRelation={xxgNodebIDxx}_N005C_1
+gUtranCellRelationId : {xxgNodebIDxx}_N005C_1
+essEnabled : false
+isEndcAllowed : true
+isHoAllowed : true
+isRemoveAllowed : false
+isVoiceHoAllowed : true
+neighborCellRef : "SubNetwork=ONRM_ROOT_MO,MeContext={xxNodeIDxx},ManagedElement={xxNodeIDxx},ENodeBFunction=1,GUtraNetwork=1,ExternalGNodeBFunction={xxgNodebIDxx},ExternalGUtranCell=310410-000000{xxgNbIDxx}-{xx5G850GammaCellIDxx}"
+
+
+create
+FDN : SubNetwork=ONRM_ROOT_MO,MeContext={xxNodeIDxx},ManagedElement={xxNodeIDxx},ENodeBFunction=1,EUtranCellFDD={CELLNAME9},GUtranFreqRelation={xx5G850SSBxx}-15-20-0-2
+gUtranFreqRelationId : {xx5G850SSBxx}-15-20-0-2
+allowedPlmnList : [{mcc=310, mnc=410, mncLength=3}, {mcc=313, mnc=100, mncLength=3}]
+anrMeasOn : true
+b1ThrRsrpFreqOffset : -1
+b1ThrRsrqFreqOffset : 0
+cellReselectionPriority : -1
+connectedModeMobilityPrio : 6
+deriveSsbIndexFromCell : false
+endcB1MeasPriority : 1
+gUtranSyncSignalFrequencyRef : "SubNetwork=ONRM_ROOT_MO,MeContext={xxNodeIDxx},ManagedElement={xxNodeIDxx},ENodeBFunction=1,GUtraNetwork=1,GUtranSyncSignalFrequency={xx5G850SSBxx}-15"
+pMaxNR : 23
+qOffsetFreq : 0
+qQualMin : -30
+qRxLevMin : -104
+threshXHigh : 4
+threshXHighQ : 0
+threshXLow : 0
+threshXLowQ : 0
+timeToTriggerB1Override : -1000
+timeToTriggerNrB1Override : -1000
+triggerQuantityB1Override : NO_OVERRIDE
+voicePrio : 0
+
+
+create
+FDN : SubNetwork=ONRM_ROOT_MO,MeContext={xxNodeIDxx},ManagedElement={xxNodeIDxx},ENodeBFunction=1,EUtranCellFDD={CELLNAME9},GUtranFreqRelation={xx5G850SSBxx}-15-20-0-2,GUtranCellRelation={xxgNodebIDxx}_N005A_1
+gUtranCellRelationId : {xxgNodebIDxx}_N005A_1
+essEnabled : false
+isEndcAllowed : true
+isHoAllowed : true
+isRemoveAllowed : false
+isVoiceHoAllowed : true
+neighborCellRef : "SubNetwork=ONRM_ROOT_MO,MeContext={xxNodeIDxx},ManagedElement={xxNodeIDxx},ENodeBFunction=1,GUtraNetwork=1,ExternalGNodeBFunction={xxgNodebIDxx},ExternalGUtranCell=310410-000000{xxgNbIDxx}-{xx5G850AlphaCellIDxx}"
+
+create
+FDN : SubNetwork=ONRM_ROOT_MO,MeContext={xxNodeIDxx},ManagedElement={xxNodeIDxx},ENodeBFunction=1,EUtranCellFDD={CELLNAME9},GUtranFreqRelation={xx5G850SSBxx}-15-20-0-2,GUtranCellRelation={xxgNodebIDxx}_N005B_1
+gUtranCellRelationId : {xxgNodebIDxx}_N005B_1
+essEnabled : false
+isEndcAllowed : true
+isHoAllowed : true
+isRemoveAllowed : false
+isVoiceHoAllowed : true
+neighborCellRef : "SubNetwork=ONRM_ROOT_MO,MeContext={xxNodeIDxx},ManagedElement={xxNodeIDxx},ENodeBFunction=1,GUtraNetwork=1,ExternalGNodeBFunction={xxgNodebIDxx},ExternalGUtranCell=310410-000000{xxgNbIDxx}-{xx5G850BetaCellIDxx}"
+
+create
+FDN : SubNetwork=ONRM_ROOT_MO,MeContext={xxNodeIDxx},ManagedElement={xxNodeIDxx},ENodeBFunction=1,EUtranCellFDD={CELLNAME9},GUtranFreqRelation={xx5G850SSBxx}-15-20-0-2,GUtranCellRelation={xxgNodebIDxx}_N005C_1
+gUtranCellRelationId : {xxgNodebIDxx}_N005C_1
+essEnabled : false
+isEndcAllowed : true
+isHoAllowed : true
+isRemoveAllowed : false
+isVoiceHoAllowed : true
+neighborCellRef : "SubNetwork=ONRM_ROOT_MO,MeContext={xxNodeIDxx},ManagedElement={xxNodeIDxx},ENodeBFunction=1,GUtraNetwork=1,ExternalGNodeBFunction={xxgNodebIDxx},ExternalGUtranCell=310410-000000{xxgNbIDxx}-{xx5G850GammaCellIDxx}"
+
+
+
+create
+FDN : SubNetwork=ONRM_ROOT_MO,MeContext={xxNodeIDxx},ManagedElement={xxNodeIDxx},ENodeBFunction=1,EUtranCellFDD={CELLNAME10},GUtranFreqRelation={xx5G850SSBxx}-15-20-0-2
+gUtranFreqRelationId : {xx5G850SSBxx}-15-20-0-2
+allowedPlmnList : [{mcc=310, mnc=410, mncLength=3}, {mcc=313, mnc=100, mncLength=3}]
+anrMeasOn : true
+b1ThrRsrpFreqOffset : -1
+b1ThrRsrqFreqOffset : 0
+cellReselectionPriority : -1
+connectedModeMobilityPrio : 6
+deriveSsbIndexFromCell : false
+endcB1MeasPriority : 1
+gUtranSyncSignalFrequencyRef : "SubNetwork=ONRM_ROOT_MO,MeContext={xxNodeIDxx},ManagedElement={xxNodeIDxx},ENodeBFunction=1,GUtraNetwork=1,GUtranSyncSignalFrequency={xx5G850SSBxx}-15"
+pMaxNR : 23
+qOffsetFreq : 0
+qQualMin : -30
+qRxLevMin : -104
+threshXHigh : 4
+threshXHighQ : 0
+threshXLow : 0
+threshXLowQ : 0
+timeToTriggerB1Override : -1000
+timeToTriggerNrB1Override : -1000
+triggerQuantityB1Override : NO_OVERRIDE
+voicePrio : 0
+
+
+
+create
+FDN : SubNetwork=ONRM_ROOT_MO,MeContext={xxNodeIDxx},ManagedElement={xxNodeIDxx},ENodeBFunction=1,EUtranCellFDD={CELLNAME10},GUtranFreqRelation={xx5G850SSBxx}-15-20-0-2,GUtranCellRelation={xxgNodebIDxx}_N005A_1
+gUtranCellRelationId : {xxgNodebIDxx}_N005A_1
+essEnabled : false
+isEndcAllowed : true
+isHoAllowed : true
+isRemoveAllowed : false
+isVoiceHoAllowed : true
+neighborCellRef : "SubNetwork=ONRM_ROOT_MO,MeContext={xxNodeIDxx},ManagedElement={xxNodeIDxx},ENodeBFunction=1,GUtraNetwork=1,ExternalGNodeBFunction={xxgNodebIDxx},ExternalGUtranCell=310410-000000{xxgNbIDxx}-{xx5G850AlphaCellIDxx}"
+
+create
+FDN : SubNetwork=ONRM_ROOT_MO,MeContext={xxNodeIDxx},ManagedElement={xxNodeIDxx},ENodeBFunction=1,EUtranCellFDD={CELLNAME10},GUtranFreqRelation={xx5G850SSBxx}-15-20-0-2,GUtranCellRelation={xxgNodebIDxx}_N005B_1
+gUtranCellRelationId : {xxgNodebIDxx}_N005B_1
+essEnabled : false
+isEndcAllowed : true
+isHoAllowed : true
+isRemoveAllowed : false
+isVoiceHoAllowed : true
+neighborCellRef : "SubNetwork=ONRM_ROOT_MO,MeContext={xxNodeIDxx},ManagedElement={xxNodeIDxx},ENodeBFunction=1,GUtraNetwork=1,ExternalGNodeBFunction={xxgNodebIDxx},ExternalGUtranCell=310410-000000{xxgNbIDxx}-{xx5G850BetaCellIDxx}"
+
+
+create
+FDN : SubNetwork=ONRM_ROOT_MO,MeContext={xxNodeIDxx},ManagedElement={xxNodeIDxx},ENodeBFunction=1,EUtranCellFDD={CELLNAME10},GUtranFreqRelation={xx5G850SSBxx}-15-20-0-2,GUtranCellRelation={xxgNodebIDxx}_N005C_1
+gUtranCellRelationId : {xxgNodebIDxx}_N005C_1
+essEnabled : false
+isEndcAllowed : true
+isHoAllowed : true
+isRemoveAllowed : false
+isVoiceHoAllowed : true
+neighborCellRef : "SubNetwork=ONRM_ROOT_MO,MeContext={xxNodeIDxx},ManagedElement={xxNodeIDxx},ENodeBFunction=1,GUtraNetwork=1,ExternalGNodeBFunction={xxgNodebIDxx},ExternalGUtranCell=310410-000000{xxgNbIDxx}-{xx5G850GammaCellIDxx}"
+
+
+
+
+create
+FDN : SubNetwork=ONRM_ROOT_MO,MeContext={xxNodeIDxx},ManagedElement={xxNodeIDxx},ENodeBFunction=1,EUtranCellFDD={CELLNAME11},GUtranFreqRelation={xx5G850SSBxx}-15-20-0-2
+gUtranFreqRelationId : {xx5G850SSBxx}-15-20-0-2
+allowedPlmnList : [{mcc=310, mnc=410, mncLength=3}, {mcc=313, mnc=100, mncLength=3}]
+anrMeasOn : true
+b1ThrRsrpFreqOffset : -1
+b1ThrRsrqFreqOffset : 0
+cellReselectionPriority : -1
+connectedModeMobilityPrio : 6
+deriveSsbIndexFromCell : false
+endcB1MeasPriority : 1
+gUtranSyncSignalFrequencyRef : "SubNetwork=ONRM_ROOT_MO,MeContext={xxNodeIDxx},ManagedElement={xxNodeIDxx},ENodeBFunction=1,GUtraNetwork=1,GUtranSyncSignalFrequency={xx5G850SSBxx}-15"
+pMaxNR : 23
+qOffsetFreq : 0
+qQualMin : -30
+qRxLevMin : -104
+threshXHigh : 4
+threshXHighQ : 0
+threshXLow : 0
+threshXLowQ : 0
+timeToTriggerB1Override : -1000
+timeToTriggerNrB1Override : -1000
+triggerQuantityB1Override : NO_OVERRIDE
+voicePrio : 0
+
+
+
+create
+FDN : SubNetwork=ONRM_ROOT_MO,MeContext={xxNodeIDxx},ManagedElement={xxNodeIDxx},ENodeBFunction=1,EUtranCellFDD={CELLNAME11},GUtranFreqRelation={xx5G850SSBxx}-15-20-0-2,GUtranCellRelation={xxgNodebIDxx}_N005A_1
+gUtranCellRelationId : {xxgNodebIDxx}_N005A_1
+essEnabled : false
+isEndcAllowed : true
+isHoAllowed : true
+isRemoveAllowed : false
+isVoiceHoAllowed : true
+neighborCellRef : "SubNetwork=ONRM_ROOT_MO,MeContext={xxNodeIDxx},ManagedElement={xxNodeIDxx},ENodeBFunction=1,GUtraNetwork=1,ExternalGNodeBFunction={xxgNodebIDxx},ExternalGUtranCell=310410-000000{xxgNbIDxx}-{xx5G850AlphaCellIDxx}"
+
+create
+FDN : SubNetwork=ONRM_ROOT_MO,MeContext={xxNodeIDxx},ManagedElement={xxNodeIDxx},ENodeBFunction=1,EUtranCellFDD={CELLNAME11},GUtranFreqRelation={xx5G850SSBxx}-15-20-0-2,GUtranCellRelation={xxgNodebIDxx}_N005B_1
+gUtranCellRelationId : {xxgNodebIDxx}_N005B_1
+essEnabled : false
+isEndcAllowed : true
+isHoAllowed : true
+isRemoveAllowed : false
+isVoiceHoAllowed : true
+neighborCellRef : "SubNetwork=ONRM_ROOT_MO,MeContext={xxNodeIDxx},ManagedElement={xxNodeIDxx},ENodeBFunction=1,GUtraNetwork=1,ExternalGNodeBFunction={xxgNodebIDxx},ExternalGUtranCell=310410-000000{xxgNbIDxx}-{xx5G850BetaCellIDxx}"
+
+create
+FDN : SubNetwork=ONRM_ROOT_MO,MeContext={xxNodeIDxx},ManagedElement={xxNodeIDxx},ENodeBFunction=1,EUtranCellFDD={CELLNAME11},GUtranFreqRelation={xx5G850SSBxx}-15-20-0-2,GUtranCellRelation={xxgNodebIDxx}_N005C_1
+gUtranCellRelationId : {xxgNodebIDxx}_N005C_1
+essEnabled : false
+isEndcAllowed : true
+isHoAllowed : true
+isRemoveAllowed : false
+isVoiceHoAllowed : true
+neighborCellRef : "SubNetwork=ONRM_ROOT_MO,MeContext={xxNodeIDxx},ManagedElement={xxNodeIDxx},ENodeBFunction=1,GUtraNetwork=1,ExternalGNodeBFunction={xxgNodebIDxx},ExternalGUtranCell=310410-000000{xxgNbIDxx}-{xx5G850GammaCellIDxx}"
+
+
+
+create
+FDN : SubNetwork=ONRM_ROOT_MO,MeContext={xxNodeIDxx},ManagedElement={xxNodeIDxx},ENodeBFunction=1,EUtranCellFDD={CELLNAME12},GUtranFreqRelation={xx5G850SSBxx}-15-20-0-2
+gUtranFreqRelationId : {xx5G850SSBxx}-15-20-0-2
+allowedPlmnList : [{mcc=310, mnc=410, mncLength=3}, {mcc=313, mnc=100, mncLength=3}]
+anrMeasOn : true
+b1ThrRsrpFreqOffset : -1
+b1ThrRsrqFreqOffset : 0
+cellReselectionPriority : -1
+connectedModeMobilityPrio : 6
+deriveSsbIndexFromCell : false
+endcB1MeasPriority : 1
+gUtranSyncSignalFrequencyRef : "SubNetwork=ONRM_ROOT_MO,MeContext={xxNodeIDxx},ManagedElement={xxNodeIDxx},ENodeBFunction=1,GUtraNetwork=1,GUtranSyncSignalFrequency={xx5G850SSBxx}-15"
+pMaxNR : 23
+qOffsetFreq : 0
+qQualMin : -30
+qRxLevMin : -104
+threshXHigh : 4
+threshXHighQ : 0
+threshXLow : 0
+threshXLowQ : 0
+timeToTriggerB1Override : -1000
+timeToTriggerNrB1Override : -1000
+triggerQuantityB1Override : NO_OVERRIDE
+voicePrio : 0
+
+
+
+create
+FDN : SubNetwork=ONRM_ROOT_MO,MeContext={xxNodeIDxx},ManagedElement={xxNodeIDxx},ENodeBFunction=1,EUtranCellFDD={CELLNAME12},GUtranFreqRelation={xx5G850SSBxx}-15-20-0-2,GUtranCellRelation={xxgNodebIDxx}_N005A_1
+gUtranCellRelationId : {xxgNodebIDxx}_N005A_1
+essEnabled : false
+isEndcAllowed : true
+isHoAllowed : true
+isRemoveAllowed : false
+isVoiceHoAllowed : true
+neighborCellRef : "SubNetwork=ONRM_ROOT_MO,MeContext={xxNodeIDxx},ManagedElement={xxNodeIDxx},ENodeBFunction=1,GUtraNetwork=1,ExternalGNodeBFunction={xxgNodebIDxx},ExternalGUtranCell=310410-000000{xxgNbIDxx}-{xx5G850AlphaCellIDxx}"
+
+create
+FDN : SubNetwork=ONRM_ROOT_MO,MeContext={xxNodeIDxx},ManagedElement={xxNodeIDxx},ENodeBFunction=1,EUtranCellFDD={CELLNAME12},GUtranFreqRelation={xx5G850SSBxx}-15-20-0-2,GUtranCellRelation={xxgNodebIDxx}_N005B_1
+gUtranCellRelationId : {xxgNodebIDxx}_N005B_1
+essEnabled : false
+isEndcAllowed : true
+isHoAllowed : true
+isRemoveAllowed : false
+isVoiceHoAllowed : true
+neighborCellRef : "SubNetwork=ONRM_ROOT_MO,MeContext={xxNodeIDxx},ManagedElement={xxNodeIDxx},ENodeBFunction=1,GUtraNetwork=1,ExternalGNodeBFunction={xxgNodebIDxx},ExternalGUtranCell=310410-000000{xxgNbIDxx}-{xx5G850BetaCellIDxx}"
+
+create
+FDN : SubNetwork=ONRM_ROOT_MO,MeContext={xxNodeIDxx},ManagedElement={xxNodeIDxx},ENodeBFunction=1,EUtranCellFDD={CELLNAME12},GUtranFreqRelation={xx5G850SSBxx}-15-20-0-2,GUtranCellRelation={xxgNodebIDxx}_N005C_1
+gUtranCellRelationId : {xxgNodebIDxx}_N005C_1
+essEnabled : false
+isEndcAllowed : true
+isHoAllowed : true
+isRemoveAllowed : false
+isVoiceHoAllowed : true
+neighborCellRef : "SubNetwork=ONRM_ROOT_MO,MeContext={xxNodeIDxx},ManagedElement={xxNodeIDxx},ENodeBFunction=1,GUtraNetwork=1,ExternalGNodeBFunction={xxgNodebIDxx},ExternalGUtranCell=310410-000000{xxgNbIDxx}-{xx5G850GammaCellIDxx}"
+
+
+
+create
+FDN : SubNetwork=ONRM_ROOT_MO,MeContext={xxNodeIDxx},ManagedElement={xxNodeIDxx},ENodeBFunction=1,EUtranCellFDD={CELLNAME13},GUtranFreqRelation={xx5G850SSBxx}-15-20-0-2
+gUtranFreqRelationId : {xx5G850SSBxx}-15-20-0-2
+allowedPlmnList : [{mcc=310, mnc=410, mncLength=3}, {mcc=313, mnc=100, mncLength=3}]
+anrMeasOn : true
+b1ThrRsrpFreqOffset : -1
+b1ThrRsrqFreqOffset : 0
+cellReselectionPriority : -1
+connectedModeMobilityPrio : 6
+deriveSsbIndexFromCell : false
+endcB1MeasPriority : 1
+gUtranSyncSignalFrequencyRef : "SubNetwork=ONRM_ROOT_MO,MeContext={xxNodeIDxx},ManagedElement={xxNodeIDxx},ENodeBFunction=1,GUtraNetwork=1,GUtranSyncSignalFrequency={xx5G850SSBxx}-15"
+pMaxNR : 23
+qOffsetFreq : 0
+qQualMin : -30
+qRxLevMin : -104
+threshXHigh : 4
+threshXHighQ : 0
+threshXLow : 0
+threshXLowQ : 0
+timeToTriggerB1Override : -1000
+timeToTriggerNrB1Override : -1000
+triggerQuantityB1Override : NO_OVERRIDE
+voicePrio : 0
+
+
+create
+FDN : SubNetwork=ONRM_ROOT_MO,MeContext={xxNodeIDxx},ManagedElement={xxNodeIDxx},ENodeBFunction=1,EUtranCellFDD={CELLNAME13},GUtranFreqRelation={xx5G850SSBxx}-15-20-0-2,GUtranCellRelation={xxgNodebIDxx}_N005A_1
+gUtranCellRelationId : {xxgNodebIDxx}_N005A_1
+essEnabled : false
+isEndcAllowed : true
+isHoAllowed : true
+isRemoveAllowed : false
+isVoiceHoAllowed : true
+neighborCellRef : "SubNetwork=ONRM_ROOT_MO,MeContext={xxNodeIDxx},ManagedElement={xxNodeIDxx},ENodeBFunction=1,GUtraNetwork=1,ExternalGNodeBFunction={xxgNodebIDxx},ExternalGUtranCell=310410-000000{xxgNbIDxx}-{xx5G850AlphaCellIDxx}"
+
+create
+FDN : SubNetwork=ONRM_ROOT_MO,MeContext={xxNodeIDxx},ManagedElement={xxNodeIDxx},ENodeBFunction=1,EUtranCellFDD={CELLNAME13},GUtranFreqRelation={xx5G850SSBxx}-15-20-0-2,GUtranCellRelation={xxgNodebIDxx}_N005B_1
+gUtranCellRelationId : {xxgNodebIDxx}_N005B_1
+essEnabled : false
+isEndcAllowed : true
+isHoAllowed : true
+isRemoveAllowed : false
+isVoiceHoAllowed : true
+neighborCellRef : "SubNetwork=ONRM_ROOT_MO,MeContext={xxNodeIDxx},ManagedElement={xxNodeIDxx},ENodeBFunction=1,GUtraNetwork=1,ExternalGNodeBFunction={xxgNodebIDxx},ExternalGUtranCell=310410-000000{xxgNbIDxx}-{xx5G850BetaCellIDxx}"
+
+
+create
+FDN : SubNetwork=ONRM_ROOT_MO,MeContext={xxNodeIDxx},ManagedElement={xxNodeIDxx},ENodeBFunction=1,EUtranCellFDD={CELLNAME13},GUtranFreqRelation={xx5G850SSBxx}-15-20-0-2,GUtranCellRelation={xxgNodebIDxx}_N005C_1
+gUtranCellRelationId : {xxgNodebIDxx}_N005C_1
+essEnabled : false
+isEndcAllowed : true
+isHoAllowed : true
+isRemoveAllowed : false
+isVoiceHoAllowed : true
+neighborCellRef : "SubNetwork=ONRM_ROOT_MO,MeContext={xxNodeIDxx},ManagedElement={xxNodeIDxx},ENodeBFunction=1,GUtraNetwork=1,ExternalGNodeBFunction={xxgNodebIDxx},ExternalGUtranCell=310410-000000{xxgNbIDxx}-{xx5G850GammaCellIDxx}"
+
+
+create
+FDN : SubNetwork=ONRM_ROOT_MO,MeContext={xxNodeIDxx},ManagedElement={xxNodeIDxx},ENodeBFunction=1,EUtranCellFDD={CELLNAME14},GUtranFreqRelation={xx5G850SSBxx}-15-20-0-2
+gUtranFreqRelationId : {xx5G850SSBxx}-15-20-0-2
+allowedPlmnList : [{mcc=310, mnc=410, mncLength=3}, {mcc=313, mnc=100, mncLength=3}]
+anrMeasOn : true
+b1ThrRsrpFreqOffset : -1
+b1ThrRsrqFreqOffset : 0
+cellReselectionPriority : -1
+connectedModeMobilityPrio : 6
+deriveSsbIndexFromCell : false
+endcB1MeasPriority : 1
+gUtranSyncSignalFrequencyRef : "SubNetwork=ONRM_ROOT_MO,MeContext={xxNodeIDxx},ManagedElement={xxNodeIDxx},ENodeBFunction=1,GUtraNetwork=1,GUtranSyncSignalFrequency={xx5G850SSBxx}-15"
+pMaxNR : 23
+qOffsetFreq : 0
+qQualMin : -30
+qRxLevMin : -104
+threshXHigh : 4
+threshXHighQ : 0
+threshXLow : 0
+threshXLowQ : 0
+timeToTriggerB1Override : -1000
+timeToTriggerNrB1Override : -1000
+triggerQuantityB1Override : NO_OVERRIDE
+voicePrio : 0
+
+
+
+create
+FDN : SubNetwork=ONRM_ROOT_MO,MeContext={xxNodeIDxx},ManagedElement={xxNodeIDxx},ENodeBFunction=1,EUtranCellFDD={CELLNAME14},GUtranFreqRelation={xx5G850SSBxx}-15-20-0-2,GUtranCellRelation={xxgNodebIDxx}_N005A_1
+gUtranCellRelationId : {xxgNodebIDxx}_N005A_1
+essEnabled : false
+isEndcAllowed : true
+isHoAllowed : true
+isRemoveAllowed : false
+isVoiceHoAllowed : true
+neighborCellRef : "SubNetwork=ONRM_ROOT_MO,MeContext={xxNodeIDxx},ManagedElement={xxNodeIDxx},ENodeBFunction=1,GUtraNetwork=1,ExternalGNodeBFunction={xxgNodebIDxx},ExternalGUtranCell=310410-000000{xxgNbIDxx}-{xx5G850AlphaCellIDxx}"
+
+create
+FDN : SubNetwork=ONRM_ROOT_MO,MeContext={xxNodeIDxx},ManagedElement={xxNodeIDxx},ENodeBFunction=1,EUtranCellFDD={CELLNAME14},GUtranFreqRelation={xx5G850SSBxx}-15-20-0-2,GUtranCellRelation={xxgNodebIDxx}_N005B_1
+gUtranCellRelationId : {xxgNodebIDxx}_N005B_1
+essEnabled : false
+isEndcAllowed : true
+isHoAllowed : true
+isRemoveAllowed : false
+isVoiceHoAllowed : true
+neighborCellRef : "SubNetwork=ONRM_ROOT_MO,MeContext={xxNodeIDxx},ManagedElement={xxNodeIDxx},ENodeBFunction=1,GUtraNetwork=1,ExternalGNodeBFunction={xxgNodebIDxx},ExternalGUtranCell=310410-000000{xxgNbIDxx}-{xx5G850BetaCellIDxx}"
+
+create
+FDN : SubNetwork=ONRM_ROOT_MO,MeContext={xxNodeIDxx},ManagedElement={xxNodeIDxx},ENodeBFunction=1,EUtranCellFDD={CELLNAME14},GUtranFreqRelation={xx5G850SSBxx}-15-20-0-2,GUtranCellRelation={xxgNodebIDxx}_N005C_1
+gUtranCellRelationId : {xxgNodebIDxx}_N005C_1
+essEnabled : false
+isEndcAllowed : true
+isHoAllowed : true
+isRemoveAllowed : false
+isVoiceHoAllowed : true
+neighborCellRef : "SubNetwork=ONRM_ROOT_MO,MeContext={xxNodeIDxx},ManagedElement={xxNodeIDxx},ENodeBFunction=1,GUtraNetwork=1,ExternalGNodeBFunction={xxgNodebIDxx},ExternalGUtranCell=310410-000000{xxgNbIDxx}-{xx5G850GammaCellIDxx}"
+
+
+create
+FDN : SubNetwork=ONRM_ROOT_MO,MeContext={xxNodeIDxx},ManagedElement={xxNodeIDxx},ENodeBFunction=1,EUtranCellFDD={CELLNAME15},GUtranFreqRelation={xx5G850SSBxx}-15-20-0-2
+gUtranFreqRelationId : {xx5G850SSBxx}-15-20-0-2
+allowedPlmnList : [{mcc=310, mnc=410, mncLength=3}, {mcc=313, mnc=100, mncLength=3}]
+anrMeasOn : true
+b1ThrRsrpFreqOffset : -1
+b1ThrRsrqFreqOffset : 0
+cellReselectionPriority : -1
+connectedModeMobilityPrio : 6
+deriveSsbIndexFromCell : false
+endcB1MeasPriority : 1
+gUtranSyncSignalFrequencyRef : "SubNetwork=ONRM_ROOT_MO,MeContext={xxNodeIDxx},ManagedElement={xxNodeIDxx},ENodeBFunction=1,GUtraNetwork=1,GUtranSyncSignalFrequency={xx5G850SSBxx}-15"
+pMaxNR : 23
+qOffsetFreq : 0
+qQualMin : -30
+qRxLevMin : -104
+threshXHigh : 4
+threshXHighQ : 0
+threshXLow : 0
+threshXLowQ : 0
+timeToTriggerB1Override : -1000
+timeToTriggerNrB1Override : -1000
+triggerQuantityB1Override : NO_OVERRIDE
+voicePrio : 0
+
+
+create
+FDN : SubNetwork=ONRM_ROOT_MO,MeContext={xxNodeIDxx},ManagedElement={xxNodeIDxx},ENodeBFunction=1,EUtranCellFDD={CELLNAME15},GUtranFreqRelation={xx5G850SSBxx}-15-20-0-2,GUtranCellRelation={xxgNodebIDxx}_N005A_1
+gUtranCellRelationId : {xxgNodebIDxx}_N005A_1
+essEnabled : false
+isEndcAllowed : true
+isHoAllowed : true
+isRemoveAllowed : false
+isVoiceHoAllowed : true
+neighborCellRef : "SubNetwork=ONRM_ROOT_MO,MeContext={xxNodeIDxx},ManagedElement={xxNodeIDxx},ENodeBFunction=1,GUtraNetwork=1,ExternalGNodeBFunction={xxgNodebIDxx},ExternalGUtranCell=310410-000000{xxgNbIDxx}-{xx5G850AlphaCellIDxx}"
+
+create
+FDN : SubNetwork=ONRM_ROOT_MO,MeContext={xxNodeIDxx},ManagedElement={xxNodeIDxx},ENodeBFunction=1,EUtranCellFDD={CELLNAME15},GUtranFreqRelation={xx5G850SSBxx}-15-20-0-2,GUtranCellRelation={xxgNodebIDxx}_N005B_1
+gUtranCellRelationId : {xxgNodebIDxx}_N005B_1
+essEnabled : false
+isEndcAllowed : true
+isHoAllowed : true
+isRemoveAllowed : false
+isVoiceHoAllowed : true
+neighborCellRef : "SubNetwork=ONRM_ROOT_MO,MeContext={xxNodeIDxx},ManagedElement={xxNodeIDxx},ENodeBFunction=1,GUtraNetwork=1,ExternalGNodeBFunction={xxgNodebIDxx},ExternalGUtranCell=310410-000000{xxgNbIDxx}-{xx5G850BetaCellIDxx}"
+
+create
+FDN : SubNetwork=ONRM_ROOT_MO,MeContext={xxNodeIDxx},ManagedElement={xxNodeIDxx},ENodeBFunction=1,EUtranCellFDD={CELLNAME15},GUtranFreqRelation={xx5G850SSBxx}-15-20-0-2,GUtranCellRelation={xxgNodebIDxx}_N005C_1
+gUtranCellRelationId : {xxgNodebIDxx}_N005C_1
+essEnabled : false
+isEndcAllowed : true
+isHoAllowed : true
+isRemoveAllowed : false
+isVoiceHoAllowed : true
+neighborCellRef : "SubNetwork=ONRM_ROOT_MO,MeContext={xxNodeIDxx},ManagedElement={xxNodeIDxx},ENodeBFunction=1,GUtraNetwork=1,ExternalGNodeBFunction={xxgNodebIDxx},ExternalGUtranCell=310410-000000{xxgNbIDxx}-{xx5G850GammaCellIDxx}"
+
+
+
+create
+FDN : SubNetwork=ONRM_ROOT_MO,MeContext={xxNodeIDxx},ManagedElement={xxNodeIDxx},ENodeBFunction=1,EUtranCellFDD={CELLNAME16},GUtranFreqRelation={xx5G850SSBxx}-15-20-0-2
+gUtranFreqRelationId : {xx5G850SSBxx}-15-20-0-2
+allowedPlmnList : [{mcc=310, mnc=410, mncLength=3}, {mcc=313, mnc=100, mncLength=3}]
+anrMeasOn : true
+b1ThrRsrpFreqOffset : -1
+b1ThrRsrqFreqOffset : 0
+cellReselectionPriority : -1
+connectedModeMobilityPrio : 6
+deriveSsbIndexFromCell : false
+endcB1MeasPriority : 1
+gUtranSyncSignalFrequencyRef : "SubNetwork=ONRM_ROOT_MO,MeContext={xxNodeIDxx},ManagedElement={xxNodeIDxx},ENodeBFunction=1,GUtraNetwork=1,GUtranSyncSignalFrequency={xx5G850SSBxx}-15"
+pMaxNR : 23
+qOffsetFreq : 0
+qQualMin : -30
+qRxLevMin : -104
+threshXHigh : 4
+threshXHighQ : 0
+threshXLow : 0
+threshXLowQ : 0
+timeToTriggerB1Override : -1000
+timeToTriggerNrB1Override : -1000
+triggerQuantityB1Override : NO_OVERRIDE
+voicePrio : 0
+
+
+
+create
+FDN : SubNetwork=ONRM_ROOT_MO,MeContext={xxNodeIDxx},ManagedElement={xxNodeIDxx},ENodeBFunction=1,EUtranCellFDD={CELLNAME16},GUtranFreqRelation={xx5G850SSBxx}-15-20-0-2,GUtranCellRelation={xxgNodebIDxx}_N005A_1
+gUtranCellRelationId : {xxgNodebIDxx}_N005A_1
+essEnabled : false
+isEndcAllowed : true
+isHoAllowed : true
+isRemoveAllowed : false
+isVoiceHoAllowed : true
+neighborCellRef : "SubNetwork=ONRM_ROOT_MO,MeContext={xxNodeIDxx},ManagedElement={xxNodeIDxx},ENodeBFunction=1,GUtraNetwork=1,ExternalGNodeBFunction={xxgNodebIDxx},ExternalGUtranCell=310410-000000{xxgNbIDxx}-{xx5G850AlphaCellIDxx}"
+
+create
+FDN : SubNetwork=ONRM_ROOT_MO,MeContext={xxNodeIDxx},ManagedElement={xxNodeIDxx},ENodeBFunction=1,EUtranCellFDD={CELLNAME16},GUtranFreqRelation={xx5G850SSBxx}-15-20-0-2,GUtranCellRelation={xxgNodebIDxx}_N005B_1
+gUtranCellRelationId : {xxgNodebIDxx}_N005B_1
+essEnabled : false
+isEndcAllowed : true
+isHoAllowed : true
+isRemoveAllowed : false
+isVoiceHoAllowed : true
+neighborCellRef : "SubNetwork=ONRM_ROOT_MO,MeContext={xxNodeIDxx},ManagedElement={xxNodeIDxx},ENodeBFunction=1,GUtraNetwork=1,ExternalGNodeBFunction={xxgNodebIDxx},ExternalGUtranCell=310410-000000{xxgNbIDxx}-{xx5G850BetaCellIDxx}"
+
+
+create
+FDN : SubNetwork=ONRM_ROOT_MO,MeContext={xxNodeIDxx},ManagedElement={xxNodeIDxx},ENodeBFunction=1,EUtranCellFDD={CELLNAME16},GUtranFreqRelation={xx5G850SSBxx}-15-20-0-2,GUtranCellRelation={xxgNodebIDxx}_N005C_1
+gUtranCellRelationId : {xxgNodebIDxx}_N005C_1
+essEnabled : false
+isEndcAllowed : true
+isHoAllowed : true
+isRemoveAllowed : false
+isVoiceHoAllowed : true
+neighborCellRef : "SubNetwork=ONRM_ROOT_MO,MeContext={xxNodeIDxx},ManagedElement={xxNodeIDxx},ENodeBFunction=1,GUtraNetwork=1,ExternalGNodeBFunction={xxgNodebIDxx},ExternalGUtranCell=310410-000000{xxgNbIDxx}-{xx5G850GammaCellIDxx}"
+
+
+
+
+create
+FDN : SubNetwork=ONRM_ROOT_MO,MeContext={xxNodeIDxx},ManagedElement={xxNodeIDxx},ENodeBFunction=1,EUtranCellFDD={CELLNAME17},GUtranFreqRelation={xx5G850SSBxx}-15-20-0-2
+gUtranFreqRelationId : {xx5G850SSBxx}-15-20-0-2
+allowedPlmnList : [{mcc=310, mnc=410, mncLength=3}, {mcc=313, mnc=100, mncLength=3}]
+anrMeasOn : true
+b1ThrRsrpFreqOffset : -1
+b1ThrRsrqFreqOffset : 0
+cellReselectionPriority : -1
+connectedModeMobilityPrio : 6
+deriveSsbIndexFromCell : false
+endcB1MeasPriority : 1
+gUtranSyncSignalFrequencyRef : "SubNetwork=ONRM_ROOT_MO,MeContext={xxNodeIDxx},ManagedElement={xxNodeIDxx},ENodeBFunction=1,GUtraNetwork=1,GUtranSyncSignalFrequency={xx5G850SSBxx}-15"
+pMaxNR : 23
+qOffsetFreq : 0
+qQualMin : -30
+qRxLevMin : -104
+threshXHigh : 4
+threshXHighQ : 0
+threshXLow : 0
+threshXLowQ : 0
+timeToTriggerB1Override : -1000
+timeToTriggerNrB1Override : -1000
+triggerQuantityB1Override : NO_OVERRIDE
+voicePrio : 0
+
+
+
+create
+FDN : SubNetwork=ONRM_ROOT_MO,MeContext={xxNodeIDxx},ManagedElement={xxNodeIDxx},ENodeBFunction=1,EUtranCellFDD={CELLNAME17},GUtranFreqRelation={xx5G850SSBxx}-15-20-0-2,GUtranCellRelation={xxgNodebIDxx}_N005A_1
+gUtranCellRelationId : {xxgNodebIDxx}_N005A_1
+essEnabled : false
+isEndcAllowed : true
+isHoAllowed : true
+isRemoveAllowed : false
+isVoiceHoAllowed : true
+neighborCellRef : "SubNetwork=ONRM_ROOT_MO,MeContext={xxNodeIDxx},ManagedElement={xxNodeIDxx},ENodeBFunction=1,GUtraNetwork=1,ExternalGNodeBFunction={xxgNodebIDxx},ExternalGUtranCell=310410-000000{xxgNbIDxx}-{xx5G850AlphaCellIDxx}"
+
+create
+FDN : SubNetwork=ONRM_ROOT_MO,MeContext={xxNodeIDxx},ManagedElement={xxNodeIDxx},ENodeBFunction=1,EUtranCellFDD={CELLNAME17},GUtranFreqRelation={xx5G850SSBxx}-15-20-0-2,GUtranCellRelation={xxgNodebIDxx}_N005B_1
+gUtranCellRelationId : {xxgNodebIDxx}_N005B_1
+essEnabled : false
+isEndcAllowed : true
+isHoAllowed : true
+isRemoveAllowed : false
+isVoiceHoAllowed : true
+neighborCellRef : "SubNetwork=ONRM_ROOT_MO,MeContext={xxNodeIDxx},ManagedElement={xxNodeIDxx},ENodeBFunction=1,GUtraNetwork=1,ExternalGNodeBFunction={xxgNodebIDxx},ExternalGUtranCell=310410-000000{xxgNbIDxx}-{xx5G850BetaCellIDxx}"
+
+create
+FDN : SubNetwork=ONRM_ROOT_MO,MeContext={xxNodeIDxx},ManagedElement={xxNodeIDxx},ENodeBFunction=1,EUtranCellFDD={CELLNAME17},GUtranFreqRelation={xx5G850SSBxx}-15-20-0-2,GUtranCellRelation={xxgNodebIDxx}_N005C_1
+gUtranCellRelationId : {xxgNodebIDxx}_N005C_1
+essEnabled : false
+isEndcAllowed : true
+isHoAllowed : true
+isRemoveAllowed : false
+isVoiceHoAllowed : true
+neighborCellRef : "SubNetwork=ONRM_ROOT_MO,MeContext={xxNodeIDxx},ManagedElement={xxNodeIDxx},ENodeBFunction=1,GUtraNetwork=1,ExternalGNodeBFunction={xxgNodebIDxx},ExternalGUtranCell=310410-000000{xxgNbIDxx}-{xx5G850GammaCellIDxx}"
+
+
+
+create
+FDN : SubNetwork=ONRM_ROOT_MO,MeContext={xxNodeIDxx},ManagedElement={xxNodeIDxx},ENodeBFunction=1,EUtranCellFDD={CELLNAME18},GUtranFreqRelation={xx5G850SSBxx}-15-20-0-2
+gUtranFreqRelationId : {xx5G850SSBxx}-15-20-0-2
+allowedPlmnList : [{mcc=310, mnc=410, mncLength=3}, {mcc=313, mnc=100, mncLength=3}]
+anrMeasOn : true
+b1ThrRsrpFreqOffset : -1
+b1ThrRsrqFreqOffset : 0
+cellReselectionPriority : -1
+connectedModeMobilityPrio : 6
+deriveSsbIndexFromCell : false
+endcB1MeasPriority : 1
+gUtranSyncSignalFrequencyRef : "SubNetwork=ONRM_ROOT_MO,MeContext={xxNodeIDxx},ManagedElement={xxNodeIDxx},ENodeBFunction=1,GUtraNetwork=1,GUtranSyncSignalFrequency={xx5G850SSBxx}-15"
+pMaxNR : 23
+qOffsetFreq : 0
+qQualMin : -30
+qRxLevMin : -104
+threshXHigh : 4
+threshXHighQ : 0
+threshXLow : 0
+threshXLowQ : 0
+timeToTriggerB1Override : -1000
+timeToTriggerNrB1Override : -1000
+triggerQuantityB1Override : NO_OVERRIDE
+voicePrio : 0
+
+
+
+create
+FDN : SubNetwork=ONRM_ROOT_MO,MeContext={xxNodeIDxx},ManagedElement={xxNodeIDxx},ENodeBFunction=1,EUtranCellFDD={CELLNAME18},GUtranFreqRelation={xx5G850SSBxx}-15-20-0-2,GUtranCellRelation={xxgNodebIDxx}_N005A_1
+gUtranCellRelationId : {xxgNodebIDxx}_N005A_1
+essEnabled : false
+isEndcAllowed : true
+isHoAllowed : true
+isRemoveAllowed : false
+isVoiceHoAllowed : true
+neighborCellRef : "SubNetwork=ONRM_ROOT_MO,MeContext={xxNodeIDxx},ManagedElement={xxNodeIDxx},ENodeBFunction=1,GUtraNetwork=1,ExternalGNodeBFunction={xxgNodebIDxx},ExternalGUtranCell=310410-000000{xxgNbIDxx}-{xx5G850AlphaCellIDxx}"
+
+create
+FDN : SubNetwork=ONRM_ROOT_MO,MeContext={xxNodeIDxx},ManagedElement={xxNodeIDxx},ENodeBFunction=1,EUtranCellFDD={CELLNAME18},GUtranFreqRelation={xx5G850SSBxx}-15-20-0-2,GUtranCellRelation={xxgNodebIDxx}_N005B_1
+gUtranCellRelationId : {xxgNodebIDxx}_N005B_1
+essEnabled : false
+isEndcAllowed : true
+isHoAllowed : true
+isRemoveAllowed : false
+isVoiceHoAllowed : true
+neighborCellRef : "SubNetwork=ONRM_ROOT_MO,MeContext={xxNodeIDxx},ManagedElement={xxNodeIDxx},ENodeBFunction=1,GUtraNetwork=1,ExternalGNodeBFunction={xxgNodebIDxx},ExternalGUtranCell=310410-000000{xxgNbIDxx}-{xx5G850BetaCellIDxx}"
+
+create
+FDN : SubNetwork=ONRM_ROOT_MO,MeContext={xxNodeIDxx},ManagedElement={xxNodeIDxx},ENodeBFunction=1,EUtranCellFDD={CELLNAME18},GUtranFreqRelation={xx5G850SSBxx}-15-20-0-2,GUtranCellRelation={xxgNodebIDxx}_N005C_1
+gUtranCellRelationId : {xxgNodebIDxx}_N005C_1
+essEnabled : false
+isEndcAllowed : true
+isHoAllowed : true
+isRemoveAllowed : false
+isVoiceHoAllowed : true
+neighborCellRef : "SubNetwork=ONRM_ROOT_MO,MeContext={xxNodeIDxx},ManagedElement={xxNodeIDxx},ENodeBFunction=1,GUtraNetwork=1,ExternalGNodeBFunction={xxgNodebIDxx},ExternalGUtranCell=310410-000000{xxgNbIDxx}-{xx5G850GammaCellIDxx}"
+
+
+create
+FDN : SubNetwork=ONRM_ROOT_MO,MeContext={xxNodeIDxx},ManagedElement={xxNodeIDxx},ENodeBFunction=1,EUtranCellFDD={CELLNAME19},GUtranFreqRelation={xx5G850SSBxx}-15-20-0-2
+gUtranFreqRelationId : {xx5G850SSBxx}-15-20-0-2
+allowedPlmnList : [{mcc=310, mnc=410, mncLength=3}, {mcc=313, mnc=100, mncLength=3}]
+anrMeasOn : true
+b1ThrRsrpFreqOffset : -1
+b1ThrRsrqFreqOffset : 0
+cellReselectionPriority : -1
+connectedModeMobilityPrio : 6
+deriveSsbIndexFromCell : false
+endcB1MeasPriority : 1
+gUtranSyncSignalFrequencyRef : "SubNetwork=ONRM_ROOT_MO,MeContext={xxNodeIDxx},ManagedElement={xxNodeIDxx},ENodeBFunction=1,GUtraNetwork=1,GUtranSyncSignalFrequency={xx5G850SSBxx}-15"
+pMaxNR : 23
+qOffsetFreq : 0
+qQualMin : -30
+qRxLevMin : -104
+threshXHigh : 4
+threshXHighQ : 0
+threshXLow : 0
+threshXLowQ : 0
+timeToTriggerB1Override : -1000
+timeToTriggerNrB1Override : -1000
+triggerQuantityB1Override : NO_OVERRIDE
+voicePrio : 0
+
+
+create
+FDN : SubNetwork=ONRM_ROOT_MO,MeContext={xxNodeIDxx},ManagedElement={xxNodeIDxx},ENodeBFunction=1,EUtranCellFDD={CELLNAME19},GUtranFreqRelation={xx5G850SSBxx}-15-20-0-2,GUtranCellRelation={xxgNodebIDxx}_N005A_1
+gUtranCellRelationId : {xxgNodebIDxx}_N005A_1
+essEnabled : false
+isEndcAllowed : true
+isHoAllowed : true
+isRemoveAllowed : false
+isVoiceHoAllowed : true
+neighborCellRef : "SubNetwork=ONRM_ROOT_MO,MeContext={xxNodeIDxx},ManagedElement={xxNodeIDxx},ENodeBFunction=1,GUtraNetwork=1,ExternalGNodeBFunction={xxgNodebIDxx},ExternalGUtranCell=310410-000000{xxgNbIDxx}-{xx5G850AlphaCellIDxx}"
+
+create
+FDN : SubNetwork=ONRM_ROOT_MO,MeContext={xxNodeIDxx},ManagedElement={xxNodeIDxx},ENodeBFunction=1,EUtranCellFDD={CELLNAME19},GUtranFreqRelation={xx5G850SSBxx}-15-20-0-2,GUtranCellRelation={xxgNodebIDxx}_N005B_1
+gUtranCellRelationId : {xxgNodebIDxx}_N005B_1
+essEnabled : false
+isEndcAllowed : true
+isHoAllowed : true
+isRemoveAllowed : false
+isVoiceHoAllowed : true
+neighborCellRef : "SubNetwork=ONRM_ROOT_MO,MeContext={xxNodeIDxx},ManagedElement={xxNodeIDxx},ENodeBFunction=1,GUtraNetwork=1,ExternalGNodeBFunction={xxgNodebIDxx},ExternalGUtranCell=310410-000000{xxgNbIDxx}-{xx5G850BetaCellIDxx}"
+
+
+create
+FDN : SubNetwork=ONRM_ROOT_MO,MeContext={xxNodeIDxx},ManagedElement={xxNodeIDxx},ENodeBFunction=1,EUtranCellFDD={CELLNAME19},GUtranFreqRelation={xx5G850SSBxx}-15-20-0-2,GUtranCellRelation={xxgNodebIDxx}_N005C_1
+gUtranCellRelationId : {xxgNodebIDxx}_N005C_1
+essEnabled : false
+isEndcAllowed : true
+isHoAllowed : true
+isRemoveAllowed : false
+isVoiceHoAllowed : true
+neighborCellRef : "SubNetwork=ONRM_ROOT_MO,MeContext={xxNodeIDxx},ManagedElement={xxNodeIDxx},ENodeBFunction=1,GUtraNetwork=1,ExternalGNodeBFunction={xxgNodebIDxx},ExternalGUtranCell=310410-000000{xxgNbIDxx}-{xx5G850GammaCellIDxx}"
+
+
+create
+FDN : SubNetwork=ONRM_ROOT_MO,MeContext={xxNodeIDxx},ManagedElement={xxNodeIDxx},ENodeBFunction=1,EUtranCellFDD={CELLNAME20},GUtranFreqRelation={xx5G850SSBxx}-15-20-0-2
+gUtranFreqRelationId : {xx5G850SSBxx}-15-20-0-2
+allowedPlmnList : [{mcc=310, mnc=410, mncLength=3}, {mcc=313, mnc=100, mncLength=3}]
+anrMeasOn : true
+b1ThrRsrpFreqOffset : -1
+b1ThrRsrqFreqOffset : 0
+cellReselectionPriority : -1
+connectedModeMobilityPrio : 6
+deriveSsbIndexFromCell : false
+endcB1MeasPriority : 1
+gUtranSyncSignalFrequencyRef : "SubNetwork=ONRM_ROOT_MO,MeContext={xxNodeIDxx},ManagedElement={xxNodeIDxx},ENodeBFunction=1,GUtraNetwork=1,GUtranSyncSignalFrequency={xx5G850SSBxx}-15"
+pMaxNR : 23
+qOffsetFreq : 0
+qQualMin : -30
+qRxLevMin : -104
+threshXHigh : 4
+threshXHighQ : 0
+threshXLow : 0
+threshXLowQ : 0
+timeToTriggerB1Override : -1000
+timeToTriggerNrB1Override : -1000
+triggerQuantityB1Override : NO_OVERRIDE
+voicePrio : 0
+
+
+
+create
+FDN : SubNetwork=ONRM_ROOT_MO,MeContext={xxNodeIDxx},ManagedElement={xxNodeIDxx},ENodeBFunction=1,EUtranCellFDD={CELLNAME20},GUtranFreqRelation={xx5G850SSBxx}-15-20-0-2,GUtranCellRelation={xxgNodebIDxx}_N005A_1
+gUtranCellRelationId : {xxgNodebIDxx}_N005A_1
+essEnabled : false
+isEndcAllowed : true
+isHoAllowed : true
+isRemoveAllowed : false
+isVoiceHoAllowed : true
+neighborCellRef : "SubNetwork=ONRM_ROOT_MO,MeContext={xxNodeIDxx},ManagedElement={xxNodeIDxx},ENodeBFunction=1,GUtraNetwork=1,ExternalGNodeBFunction={xxgNodebIDxx},ExternalGUtranCell=310410-000000{xxgNbIDxx}-{xx5G850AlphaCellIDxx}"
+
+create
+FDN : SubNetwork=ONRM_ROOT_MO,MeContext={xxNodeIDxx},ManagedElement={xxNodeIDxx},ENodeBFunction=1,EUtranCellFDD={CELLNAME20},GUtranFreqRelation={xx5G850SSBxx}-15-20-0-2,GUtranCellRelation={xxgNodebIDxx}_N005B_1
+gUtranCellRelationId : {xxgNodebIDxx}_N005B_1
+essEnabled : false
+isEndcAllowed : true
+isHoAllowed : true
+isRemoveAllowed : false
+isVoiceHoAllowed : true
+neighborCellRef : "SubNetwork=ONRM_ROOT_MO,MeContext={xxNodeIDxx},ManagedElement={xxNodeIDxx},ENodeBFunction=1,GUtraNetwork=1,ExternalGNodeBFunction={xxgNodebIDxx},ExternalGUtranCell=310410-000000{xxgNbIDxx}-{xx5G850BetaCellIDxx}"
+
+create
+FDN : SubNetwork=ONRM_ROOT_MO,MeContext={xxNodeIDxx},ManagedElement={xxNodeIDxx},ENodeBFunction=1,EUtranCellFDD={CELLNAME20},GUtranFreqRelation={xx5G850SSBxx}-15-20-0-2,GUtranCellRelation={xxgNodebIDxx}_N005C_1
+gUtranCellRelationId : {xxgNodebIDxx}_N005C_1
+essEnabled : false
+isEndcAllowed : true
+isHoAllowed : true
+isRemoveAllowed : false
+isVoiceHoAllowed : true
+neighborCellRef : "SubNetwork=ONRM_ROOT_MO,MeContext={xxNodeIDxx},ManagedElement={xxNodeIDxx},ENodeBFunction=1,GUtraNetwork=1,ExternalGNodeBFunction={xxgNodebIDxx},ExternalGUtranCell=310410-000000{xxgNbIDxx}-{xx5G850GammaCellIDxx}"
+
+
+create
+FDN : SubNetwork=ONRM_ROOT_MO,MeContext={xxNodeIDxx},ManagedElement={xxNodeIDxx},ENodeBFunction=1,EUtranCellFDD={CELLNAME21},GUtranFreqRelation={xx5G850SSBxx}-15-20-0-2
+gUtranFreqRelationId : {xx5G850SSBxx}-15-20-0-2
+allowedPlmnList : [{mcc=310, mnc=410, mncLength=3}, {mcc=313, mnc=100, mncLength=3}]
+anrMeasOn : true
+b1ThrRsrpFreqOffset : -1
+b1ThrRsrqFreqOffset : 0
+cellReselectionPriority : -1
+connectedModeMobilityPrio : 6
+deriveSsbIndexFromCell : false
+endcB1MeasPriority : 1
+gUtranSyncSignalFrequencyRef : "SubNetwork=ONRM_ROOT_MO,MeContext={xxNodeIDxx},ManagedElement={xxNodeIDxx},ENodeBFunction=1,GUtraNetwork=1,GUtranSyncSignalFrequency={xx5G850SSBxx}-15"
+pMaxNR : 23
+qOffsetFreq : 0
+qQualMin : -30
+qRxLevMin : -104
+threshXHigh : 4
+threshXHighQ : 0
+threshXLow : 0
+threshXLowQ : 0
+timeToTriggerB1Override : -1000
+timeToTriggerNrB1Override : -1000
+triggerQuantityB1Override : NO_OVERRIDE
+voicePrio : 0
+
+
+create
+FDN : SubNetwork=ONRM_ROOT_MO,MeContext={xxNodeIDxx},ManagedElement={xxNodeIDxx},ENodeBFunction=1,EUtranCellFDD={CELLNAME21},GUtranFreqRelation={xx5G850SSBxx}-15-20-0-2,GUtranCellRelation={xxgNodebIDxx}_N005A_1
+gUtranCellRelationId : {xxgNodebIDxx}_N005A_1
+essEnabled : false
+isEndcAllowed : true
+isHoAllowed : true
+isRemoveAllowed : false
+isVoiceHoAllowed : true
+neighborCellRef : "SubNetwork=ONRM_ROOT_MO,MeContext={xxNodeIDxx},ManagedElement={xxNodeIDxx},ENodeBFunction=1,GUtraNetwork=1,ExternalGNodeBFunction={xxgNodebIDxx},ExternalGUtranCell=310410-000000{xxgNbIDxx}-{xx5G850AlphaCellIDxx}"
+
+create
+FDN : SubNetwork=ONRM_ROOT_MO,MeContext={xxNodeIDxx},ManagedElement={xxNodeIDxx},ENodeBFunction=1,EUtranCellFDD={CELLNAME21},GUtranFreqRelation={xx5G850SSBxx}-15-20-0-2,GUtranCellRelation={xxgNodebIDxx}_N005B_1
+gUtranCellRelationId : {xxgNodebIDxx}_N005B_1
+essEnabled : false
+isEndcAllowed : true
+isHoAllowed : true
+isRemoveAllowed : false
+isVoiceHoAllowed : true
+neighborCellRef : "SubNetwork=ONRM_ROOT_MO,MeContext={xxNodeIDxx},ManagedElement={xxNodeIDxx},ENodeBFunction=1,GUtraNetwork=1,ExternalGNodeBFunction={xxgNodebIDxx},ExternalGUtranCell=310410-000000{xxgNbIDxx}-{xx5G850BetaCellIDxx}"
+
+create
+FDN : SubNetwork=ONRM_ROOT_MO,MeContext={xxNodeIDxx},ManagedElement={xxNodeIDxx},ENodeBFunction=1,EUtranCellFDD={CELLNAME21},GUtranFreqRelation={xx5G850SSBxx}-15-20-0-2,GUtranCellRelation={xxgNodebIDxx}_N005C_1
+gUtranCellRelationId : {xxgNodebIDxx}_N005C_1
+essEnabled : false
+isEndcAllowed : true
+isHoAllowed : true
+isRemoveAllowed : false
+isVoiceHoAllowed : true
+neighborCellRef : "SubNetwork=ONRM_ROOT_MO,MeContext={xxNodeIDxx},ManagedElement={xxNodeIDxx},ENodeBFunction=1,GUtraNetwork=1,ExternalGNodeBFunction={xxgNodebIDxx},ExternalGUtranCell=310410-000000{xxgNbIDxx}-{xx5G850GammaCellIDxx}"
+
+
+
+create
+FDN : SubNetwork=ONRM_ROOT_MO,MeContext={xxNodeIDxx},ManagedElement={xxNodeIDxx},ENodeBFunction=1,EUtranCellFDD={CELLNAME22},GUtranFreqRelation={xx5G850SSBxx}-15-20-0-2
+gUtranFreqRelationId : {xx5G850SSBxx}-15-20-0-2
+allowedPlmnList : [{mcc=310, mnc=410, mncLength=3}, {mcc=313, mnc=100, mncLength=3}]
+anrMeasOn : true
+b1ThrRsrpFreqOffset : -1
+b1ThrRsrqFreqOffset : 0
+cellReselectionPriority : -1
+connectedModeMobilityPrio : 6
+deriveSsbIndexFromCell : false
+endcB1MeasPriority : 1
+gUtranSyncSignalFrequencyRef : "SubNetwork=ONRM_ROOT_MO,MeContext={xxNodeIDxx},ManagedElement={xxNodeIDxx},ENodeBFunction=1,GUtraNetwork=1,GUtranSyncSignalFrequency={xx5G850SSBxx}-15"
+pMaxNR : 23
+qOffsetFreq : 0
+qQualMin : -30
+qRxLevMin : -104
+threshXHigh : 4
+threshXHighQ : 0
+threshXLow : 0
+threshXLowQ : 0
+timeToTriggerB1Override : -1000
+timeToTriggerNrB1Override : -1000
+triggerQuantityB1Override : NO_OVERRIDE
+voicePrio : 0
+
+
+
+create
+FDN : SubNetwork=ONRM_ROOT_MO,MeContext={xxNodeIDxx},ManagedElement={xxNodeIDxx},ENodeBFunction=1,EUtranCellFDD={CELLNAME22},GUtranFreqRelation={xx5G850SSBxx}-15-20-0-2,GUtranCellRelation={xxgNodebIDxx}_N005A_1
+gUtranCellRelationId : {xxgNodebIDxx}_N005A_1
+essEnabled : false
+isEndcAllowed : true
+isHoAllowed : true
+isRemoveAllowed : false
+isVoiceHoAllowed : true
+neighborCellRef : "SubNetwork=ONRM_ROOT_MO,MeContext={xxNodeIDxx},ManagedElement={xxNodeIDxx},ENodeBFunction=1,GUtraNetwork=1,ExternalGNodeBFunction={xxgNodebIDxx},ExternalGUtranCell=310410-000000{xxgNbIDxx}-{xx5G850AlphaCellIDxx}"
+
+create
+FDN : SubNetwork=ONRM_ROOT_MO,MeContext={xxNodeIDxx},ManagedElement={xxNodeIDxx},ENodeBFunction=1,EUtranCellFDD={CELLNAME22},GUtranFreqRelation={xx5G850SSBxx}-15-20-0-2,GUtranCellRelation={xxgNodebIDxx}_N005B_1
+gUtranCellRelationId : {xxgNodebIDxx}_N005B_1
+essEnabled : false
+isEndcAllowed : true
+isHoAllowed : true
+isRemoveAllowed : false
+isVoiceHoAllowed : true
+neighborCellRef : "SubNetwork=ONRM_ROOT_MO,MeContext={xxNodeIDxx},ManagedElement={xxNodeIDxx},ENodeBFunction=1,GUtraNetwork=1,ExternalGNodeBFunction={xxgNodebIDxx},ExternalGUtranCell=310410-000000{xxgNbIDxx}-{xx5G850BetaCellIDxx}"
+
+
+create
+FDN : SubNetwork=ONRM_ROOT_MO,MeContext={xxNodeIDxx},ManagedElement={xxNodeIDxx},ENodeBFunction=1,EUtranCellFDD={CELLNAME22},GUtranFreqRelation={xx5G850SSBxx}-15-20-0-2,GUtranCellRelation={xxgNodebIDxx}_N005C_1
+gUtranCellRelationId : {xxgNodebIDxx}_N005C_1
+essEnabled : false
+isEndcAllowed : true
+isHoAllowed : true
+isRemoveAllowed : false
+isVoiceHoAllowed : true
+neighborCellRef : "SubNetwork=ONRM_ROOT_MO,MeContext={xxNodeIDxx},ManagedElement={xxNodeIDxx},ENodeBFunction=1,GUtraNetwork=1,ExternalGNodeBFunction={xxgNodebIDxx},ExternalGUtranCell=310410-000000{xxgNbIDxx}-{xx5G850GammaCellIDxx}"
+
+
+
+
+create
+FDN : SubNetwork=ONRM_ROOT_MO,MeContext={xxNodeIDxx},ManagedElement={xxNodeIDxx},ENodeBFunction=1,EUtranCellFDD={CELLNAME23},GUtranFreqRelation={xx5G850SSBxx}-15-20-0-2
+gUtranFreqRelationId : {xx5G850SSBxx}-15-20-0-2
+allowedPlmnList : [{mcc=310, mnc=410, mncLength=3}, {mcc=313, mnc=100, mncLength=3}]
+anrMeasOn : true
+b1ThrRsrpFreqOffset : -1
+b1ThrRsrqFreqOffset : 0
+cellReselectionPriority : -1
+connectedModeMobilityPrio : 6
+deriveSsbIndexFromCell : false
+endcB1MeasPriority : 1
+gUtranSyncSignalFrequencyRef : "SubNetwork=ONRM_ROOT_MO,MeContext={xxNodeIDxx},ManagedElement={xxNodeIDxx},ENodeBFunction=1,GUtraNetwork=1,GUtranSyncSignalFrequency={xx5G850SSBxx}-15"
+pMaxNR : 23
+qOffsetFreq : 0
+qQualMin : -30
+qRxLevMin : -104
+threshXHigh : 4
+threshXHighQ : 0
+threshXLow : 0
+threshXLowQ : 0
+timeToTriggerB1Override : -1000
+timeToTriggerNrB1Override : -1000
+triggerQuantityB1Override : NO_OVERRIDE
+voicePrio : 0
+
+
+
+create
+FDN : SubNetwork=ONRM_ROOT_MO,MeContext={xxNodeIDxx},ManagedElement={xxNodeIDxx},ENodeBFunction=1,EUtranCellFDD={CELLNAME23},GUtranFreqRelation={xx5G850SSBxx}-15-20-0-2,GUtranCellRelation={xxgNodebIDxx}_N005A_1
+gUtranCellRelationId : {xxgNodebIDxx}_N005A_1
+essEnabled : false
+isEndcAllowed : true
+isHoAllowed : true
+isRemoveAllowed : false
+isVoiceHoAllowed : true
+neighborCellRef : "SubNetwork=ONRM_ROOT_MO,MeContext={xxNodeIDxx},ManagedElement={xxNodeIDxx},ENodeBFunction=1,GUtraNetwork=1,ExternalGNodeBFunction={xxgNodebIDxx},ExternalGUtranCell=310410-000000{xxgNbIDxx}-{xx5G850AlphaCellIDxx}"
+
+create
+FDN : SubNetwork=ONRM_ROOT_MO,MeContext={xxNodeIDxx},ManagedElement={xxNodeIDxx},ENodeBFunction=1,EUtranCellFDD={CELLNAME23},GUtranFreqRelation={xx5G850SSBxx}-15-20-0-2,GUtranCellRelation={xxgNodebIDxx}_N005B_1
+gUtranCellRelationId : {xxgNodebIDxx}_N005B_1
+essEnabled : false
+isEndcAllowed : true
+isHoAllowed : true
+isRemoveAllowed : false
+isVoiceHoAllowed : true
+neighborCellRef : "SubNetwork=ONRM_ROOT_MO,MeContext={xxNodeIDxx},ManagedElement={xxNodeIDxx},ENodeBFunction=1,GUtraNetwork=1,ExternalGNodeBFunction={xxgNodebIDxx},ExternalGUtranCell=310410-000000{xxgNbIDxx}-{xx5G850BetaCellIDxx}"
+
+create
+FDN : SubNetwork=ONRM_ROOT_MO,MeContext={xxNodeIDxx},ManagedElement={xxNodeIDxx},ENodeBFunction=1,EUtranCellFDD={CELLNAME23},GUtranFreqRelation={xx5G850SSBxx}-15-20-0-2,GUtranCellRelation={xxgNodebIDxx}_N005C_1
+gUtranCellRelationId : {xxgNodebIDxx}_N005C_1
+essEnabled : false
+isEndcAllowed : true
+isHoAllowed : true
+isRemoveAllowed : false
+isVoiceHoAllowed : true
+neighborCellRef : "SubNetwork=ONRM_ROOT_MO,MeContext={xxNodeIDxx},ManagedElement={xxNodeIDxx},ENodeBFunction=1,GUtraNetwork=1,ExternalGNodeBFunction={xxgNodebIDxx},ExternalGUtranCell=310410-000000{xxgNbIDxx}-{xx5G850GammaCellIDxx}"
+
+
+
+create
+FDN : SubNetwork=ONRM_ROOT_MO,MeContext={xxNodeIDxx},ManagedElement={xxNodeIDxx},ENodeBFunction=1,EUtranCellFDD={CELLNAME24},GUtranFreqRelation={xx5G850SSBxx}-15-20-0-2
+gUtranFreqRelationId : {xx5G850SSBxx}-15-20-0-2
+allowedPlmnList : [{mcc=310, mnc=410, mncLength=3}, {mcc=313, mnc=100, mncLength=3}]
+anrMeasOn : true
+b1ThrRsrpFreqOffset : -1
+b1ThrRsrqFreqOffset : 0
+cellReselectionPriority : -1
+connectedModeMobilityPrio : 6
+deriveSsbIndexFromCell : false
+endcB1MeasPriority : 1
+gUtranSyncSignalFrequencyRef : "SubNetwork=ONRM_ROOT_MO,MeContext={xxNodeIDxx},ManagedElement={xxNodeIDxx},ENodeBFunction=1,GUtraNetwork=1,GUtranSyncSignalFrequency={xx5G850SSBxx}-15"
+pMaxNR : 23
+qOffsetFreq : 0
+qQualMin : -30
+qRxLevMin : -104
+threshXHigh : 4
+threshXHighQ : 0
+threshXLow : 0
+threshXLowQ : 0
+timeToTriggerB1Override : -1000
+timeToTriggerNrB1Override : -1000
+triggerQuantityB1Override : NO_OVERRIDE
+voicePrio : 0
+
+
+
+create
+FDN : SubNetwork=ONRM_ROOT_MO,MeContext={xxNodeIDxx},ManagedElement={xxNodeIDxx},ENodeBFunction=1,EUtranCellFDD={CELLNAME24},GUtranFreqRelation={xx5G850SSBxx}-15-20-0-2,GUtranCellRelation={xxgNodebIDxx}_N005A_1
+gUtranCellRelationId : {xxgNodebIDxx}_N005A_1
+essEnabled : false
+isEndcAllowed : true
+isHoAllowed : true
+isRemoveAllowed : false
+isVoiceHoAllowed : true
+neighborCellRef : "SubNetwork=ONRM_ROOT_MO,MeContext={xxNodeIDxx},ManagedElement={xxNodeIDxx},ENodeBFunction=1,GUtraNetwork=1,ExternalGNodeBFunction={xxgNodebIDxx},ExternalGUtranCell=310410-000000{xxgNbIDxx}-{xx5G850AlphaCellIDxx}"
+
+create
+FDN : SubNetwork=ONRM_ROOT_MO,MeContext={xxNodeIDxx},ManagedElement={xxNodeIDxx},ENodeBFunction=1,EUtranCellFDD={CELLNAME24},GUtranFreqRelation={xx5G850SSBxx}-15-20-0-2,GUtranCellRelation={xxgNodebIDxx}_N005B_1
+gUtranCellRelationId : {xxgNodebIDxx}_N005B_1
+essEnabled : false
+isEndcAllowed : true
+isHoAllowed : true
+isRemoveAllowed : false
+isVoiceHoAllowed : true
+neighborCellRef : "SubNetwork=ONRM_ROOT_MO,MeContext={xxNodeIDxx},ManagedElement={xxNodeIDxx},ENodeBFunction=1,GUtraNetwork=1,ExternalGNodeBFunction={xxgNodebIDxx},ExternalGUtranCell=310410-000000{xxgNbIDxx}-{xx5G850BetaCellIDxx}"
+
+create
+FDN : SubNetwork=ONRM_ROOT_MO,MeContext={xxNodeIDxx},ManagedElement={xxNodeIDxx},ENodeBFunction=1,EUtranCellFDD={CELLNAME24},GUtranFreqRelation={xx5G850SSBxx}-15-20-0-2,GUtranCellRelation={xxgNodebIDxx}_N005C_1
+gUtranCellRelationId : {xxgNodebIDxx}_N005C_1
+essEnabled : false
+isEndcAllowed : true
+isHoAllowed : true
+isRemoveAllowed : false
+isVoiceHoAllowed : true
+neighborCellRef : "SubNetwork=ONRM_ROOT_MO,MeContext={xxNodeIDxx},ManagedElement={xxNodeIDxx},ENodeBFunction=1,GUtraNetwork=1,ExternalGNodeBFunction={xxgNodebIDxx},ExternalGUtranCell=310410-000000{xxgNbIDxx}-{xx5G850GammaCellIDxx}"
+
+
+
+create
+FDN : SubNetwork=ONRM_ROOT_MO,MeContext={xxNodeIDxx},ManagedElement={xxNodeIDxx},ENodeBFunction=1,EUtranCellFDD={CELLNAME25},GUtranFreqRelation={xx5G850SSBxx}-15-20-0-2
+gUtranFreqRelationId : {xx5G850SSBxx}-15-20-0-2
+allowedPlmnList : [{mcc=310, mnc=410, mncLength=3}, {mcc=313, mnc=100, mncLength=3}]
+anrMeasOn : true
+b1ThrRsrpFreqOffset : -1
+b1ThrRsrqFreqOffset : 0
+cellReselectionPriority : -1
+connectedModeMobilityPrio : 6
+deriveSsbIndexFromCell : false
+endcB1MeasPriority : 1
+gUtranSyncSignalFrequencyRef : "SubNetwork=ONRM_ROOT_MO,MeContext={xxNodeIDxx},ManagedElement={xxNodeIDxx},ENodeBFunction=1,GUtraNetwork=1,GUtranSyncSignalFrequency={xx5G850SSBxx}-15"
+pMaxNR : 23
+qOffsetFreq : 0
+qQualMin : -30
+qRxLevMin : -104
+threshXHigh : 4
+threshXHighQ : 0
+threshXLow : 0
+threshXLowQ : 0
+timeToTriggerB1Override : -1000
+timeToTriggerNrB1Override : -1000
+triggerQuantityB1Override : NO_OVERRIDE
+voicePrio : 0
+
+
+create
+FDN : SubNetwork=ONRM_ROOT_MO,MeContext={xxNodeIDxx},ManagedElement={xxNodeIDxx},ENodeBFunction=1,EUtranCellFDD={CELLNAME25},GUtranFreqRelation={xx5G850SSBxx}-15-20-0-2,GUtranCellRelation={xxgNodebIDxx}_N005A_1
+gUtranCellRelationId : {xxgNodebIDxx}_N005A_1
+essEnabled : false
+isEndcAllowed : true
+isHoAllowed : true
+isRemoveAllowed : false
+isVoiceHoAllowed : true
+neighborCellRef : "SubNetwork=ONRM_ROOT_MO,MeContext={xxNodeIDxx},ManagedElement={xxNodeIDxx},ENodeBFunction=1,GUtraNetwork=1,ExternalGNodeBFunction={xxgNodebIDxx},ExternalGUtranCell=310410-000000{xxgNbIDxx}-{xx5G850AlphaCellIDxx}"
+
+create
+FDN : SubNetwork=ONRM_ROOT_MO,MeContext={xxNodeIDxx},ManagedElement={xxNodeIDxx},ENodeBFunction=1,EUtranCellFDD={CELLNAME25},GUtranFreqRelation={xx5G850SSBxx}-15-20-0-2,GUtranCellRelation={xxgNodebIDxx}_N005B_1
+gUtranCellRelationId : {xxgNodebIDxx}_N005B_1
+essEnabled : false
+isEndcAllowed : true
+isHoAllowed : true
+isRemoveAllowed : false
+isVoiceHoAllowed : true
+neighborCellRef : "SubNetwork=ONRM_ROOT_MO,MeContext={xxNodeIDxx},ManagedElement={xxNodeIDxx},ENodeBFunction=1,GUtraNetwork=1,ExternalGNodeBFunction={xxgNodebIDxx},ExternalGUtranCell=310410-000000{xxgNbIDxx}-{xx5G850BetaCellIDxx}"
+
+
+create
+FDN : SubNetwork=ONRM_ROOT_MO,MeContext={xxNodeIDxx},ManagedElement={xxNodeIDxx},ENodeBFunction=1,EUtranCellFDD={CELLNAME25},GUtranFreqRelation={xx5G850SSBxx}-15-20-0-2,GUtranCellRelation={xxgNodebIDxx}_N005C_1
+gUtranCellRelationId : {xxgNodebIDxx}_N005C_1
+essEnabled : false
+isEndcAllowed : true
+isHoAllowed : true
+isRemoveAllowed : false
+isVoiceHoAllowed : true
+neighborCellRef : "SubNetwork=ONRM_ROOT_MO,MeContext={xxNodeIDxx},ManagedElement={xxNodeIDxx},ENodeBFunction=1,GUtraNetwork=1,ExternalGNodeBFunction={xxgNodebIDxx},ExternalGUtranCell=310410-000000{xxgNbIDxx}-{xx5G850GammaCellIDxx}"
+
+
+create
+FDN : SubNetwork=ONRM_ROOT_MO,MeContext={xxNodeIDxx},ManagedElement={xxNodeIDxx},ENodeBFunction=1,EUtranCellFDD={CELLNAME26},GUtranFreqRelation={xx5G850SSBxx}-15-20-0-2
+gUtranFreqRelationId : {xx5G850SSBxx}-15-20-0-2
+allowedPlmnList : [{mcc=310, mnc=410, mncLength=3}, {mcc=313, mnc=100, mncLength=3}]
+anrMeasOn : true
+b1ThrRsrpFreqOffset : -1
+b1ThrRsrqFreqOffset : 0
+cellReselectionPriority : -1
+connectedModeMobilityPrio : 6
+deriveSsbIndexFromCell : false
+endcB1MeasPriority : 1
+gUtranSyncSignalFrequencyRef : "SubNetwork=ONRM_ROOT_MO,MeContext={xxNodeIDxx},ManagedElement={xxNodeIDxx},ENodeBFunction=1,GUtraNetwork=1,GUtranSyncSignalFrequency={xx5G850SSBxx}-15"
+pMaxNR : 23
+qOffsetFreq : 0
+qQualMin : -30
+qRxLevMin : -104
+threshXHigh : 4
+threshXHighQ : 0
+threshXLow : 0
+threshXLowQ : 0
+timeToTriggerB1Override : -1000
+timeToTriggerNrB1Override : -1000
+triggerQuantityB1Override : NO_OVERRIDE
+voicePrio : 0
+
+
+
+create
+FDN : SubNetwork=ONRM_ROOT_MO,MeContext={xxNodeIDxx},ManagedElement={xxNodeIDxx},ENodeBFunction=1,EUtranCellFDD={CELLNAME26},GUtranFreqRelation={xx5G850SSBxx}-15-20-0-2,GUtranCellRelation={xxgNodebIDxx}_N005A_1
+gUtranCellRelationId : {xxgNodebIDxx}_N005A_1
+essEnabled : false
+isEndcAllowed : true
+isHoAllowed : true
+isRemoveAllowed : false
+isVoiceHoAllowed : true
+neighborCellRef : "SubNetwork=ONRM_ROOT_MO,MeContext={xxNodeIDxx},ManagedElement={xxNodeIDxx},ENodeBFunction=1,GUtraNetwork=1,ExternalGNodeBFunction={xxgNodebIDxx},ExternalGUtranCell=310410-000000{xxgNbIDxx}-{xx5G850AlphaCellIDxx}"
+
+create
+FDN : SubNetwork=ONRM_ROOT_MO,MeContext={xxNodeIDxx},ManagedElement={xxNodeIDxx},ENodeBFunction=1,EUtranCellFDD={CELLNAME26},GUtranFreqRelation={xx5G850SSBxx}-15-20-0-2,GUtranCellRelation={xxgNodebIDxx}_N005B_1
+gUtranCellRelationId : {xxgNodebIDxx}_N005B_1
+essEnabled : false
+isEndcAllowed : true
+isHoAllowed : true
+isRemoveAllowed : false
+isVoiceHoAllowed : true
+neighborCellRef : "SubNetwork=ONRM_ROOT_MO,MeContext={xxNodeIDxx},ManagedElement={xxNodeIDxx},ENodeBFunction=1,GUtraNetwork=1,ExternalGNodeBFunction={xxgNodebIDxx},ExternalGUtranCell=310410-000000{xxgNbIDxx}-{xx5G850BetaCellIDxx}"
+
+create
+FDN : SubNetwork=ONRM_ROOT_MO,MeContext={xxNodeIDxx},ManagedElement={xxNodeIDxx},ENodeBFunction=1,EUtranCellFDD={CELLNAME26},GUtranFreqRelation={xx5G850SSBxx}-15-20-0-2,GUtranCellRelation={xxgNodebIDxx}_N005C_1
+gUtranCellRelationId : {xxgNodebIDxx}_N005C_1
+essEnabled : false
+isEndcAllowed : true
+isHoAllowed : true
+isRemoveAllowed : false
+isVoiceHoAllowed : true
+neighborCellRef : "SubNetwork=ONRM_ROOT_MO,MeContext={xxNodeIDxx},ManagedElement={xxNodeIDxx},ENodeBFunction=1,GUtraNetwork=1,ExternalGNodeBFunction={xxgNodebIDxx},ExternalGUtranCell=310410-000000{xxgNbIDxx}-{xx5G850GammaCellIDxx}"
+
+
+create
+FDN : SubNetwork=ONRM_ROOT_MO,MeContext={xxNodeIDxx},ManagedElement={xxNodeIDxx},ENodeBFunction=1,EUtranCellFDD={CELLNAME27},GUtranFreqRelation={xx5G850SSBxx}-15-20-0-2
+gUtranFreqRelationId : {xx5G850SSBxx}-15-20-0-2
+allowedPlmnList : [{mcc=310, mnc=410, mncLength=3}, {mcc=313, mnc=100, mncLength=3}]
+anrMeasOn : true
+b1ThrRsrpFreqOffset : -1
+b1ThrRsrqFreqOffset : 0
+cellReselectionPriority : -1
+connectedModeMobilityPrio : 6
+deriveSsbIndexFromCell : false
+endcB1MeasPriority : 1
+gUtranSyncSignalFrequencyRef : "SubNetwork=ONRM_ROOT_MO,MeContext={xxNodeIDxx},ManagedElement={xxNodeIDxx},ENodeBFunction=1,GUtraNetwork=1,GUtranSyncSignalFrequency={xx5G850SSBxx}-15"
+pMaxNR : 23
+qOffsetFreq : 0
+qQualMin : -30
+qRxLevMin : -104
+threshXHigh : 4
+threshXHighQ : 0
+threshXLow : 0
+threshXLowQ : 0
+timeToTriggerB1Override : -1000
+timeToTriggerNrB1Override : -1000
+triggerQuantityB1Override : NO_OVERRIDE
+voicePrio : 0
+
+
+create
+FDN : SubNetwork=ONRM_ROOT_MO,MeContext={xxNodeIDxx},ManagedElement={xxNodeIDxx},ENodeBFunction=1,EUtranCellFDD={CELLNAME27},GUtranFreqRelation={xx5G850SSBxx}-15-20-0-2,GUtranCellRelation={xxgNodebIDxx}_N005A_1
+gUtranCellRelationId : {xxgNodebIDxx}_N005A_1
+essEnabled : false
+isEndcAllowed : true
+isHoAllowed : true
+isRemoveAllowed : false
+isVoiceHoAllowed : true
+neighborCellRef : "SubNetwork=ONRM_ROOT_MO,MeContext={xxNodeIDxx},ManagedElement={xxNodeIDxx},ENodeBFunction=1,GUtraNetwork=1,ExternalGNodeBFunction={xxgNodebIDxx},ExternalGUtranCell=310410-000000{xxgNbIDxx}-{xx5G850AlphaCellIDxx}"
+
+create
+FDN : SubNetwork=ONRM_ROOT_MO,MeContext={xxNodeIDxx},ManagedElement={xxNodeIDxx},ENodeBFunction=1,EUtranCellFDD={CELLNAME27},GUtranFreqRelation={xx5G850SSBxx}-15-20-0-2,GUtranCellRelation={xxgNodebIDxx}_N005B_1
+gUtranCellRelationId : {xxgNodebIDxx}_N005B_1
+essEnabled : false
+isEndcAllowed : true
+isHoAllowed : true
+isRemoveAllowed : false
+isVoiceHoAllowed : true
+neighborCellRef : "SubNetwork=ONRM_ROOT_MO,MeContext={xxNodeIDxx},ManagedElement={xxNodeIDxx},ENodeBFunction=1,GUtraNetwork=1,ExternalGNodeBFunction={xxgNodebIDxx},ExternalGUtranCell=310410-000000{xxgNbIDxx}-{xx5G850BetaCellIDxx}"
+
+create
+FDN : SubNetwork=ONRM_ROOT_MO,MeContext={xxNodeIDxx},ManagedElement={xxNodeIDxx},ENodeBFunction=1,EUtranCellFDD={CELLNAME27},GUtranFreqRelation={xx5G850SSBxx}-15-20-0-2,GUtranCellRelation={xxgNodebIDxx}_N005C_1
+gUtranCellRelationId : {xxgNodebIDxx}_N005C_1
+essEnabled : false
+isEndcAllowed : true
+isHoAllowed : true
+isRemoveAllowed : false
+isVoiceHoAllowed : true
+neighborCellRef : "SubNetwork=ONRM_ROOT_MO,MeContext={xxNodeIDxx},ManagedElement={xxNodeIDxx},ENodeBFunction=1,GUtraNetwork=1,ExternalGNodeBFunction={xxgNodebIDxx},ExternalGUtranCell=310410-000000{xxgNbIDxx}-{xx5G850GammaCellIDxx}"
+
+
+
+create
+FDN : SubNetwork=ONRM_ROOT_MO,MeContext={xxNodeIDxx},ManagedElement={xxNodeIDxx},ENodeBFunction=1,EUtranCellFDD={CELLNAME28},GUtranFreqRelation={xx5G850SSBxx}-15-20-0-2
+gUtranFreqRelationId : {xx5G850SSBxx}-15-20-0-2
+allowedPlmnList : [{mcc=310, mnc=410, mncLength=3}, {mcc=313, mnc=100, mncLength=3}]
+anrMeasOn : true
+b1ThrRsrpFreqOffset : -1
+b1ThrRsrqFreqOffset : 0
+cellReselectionPriority : -1
+connectedModeMobilityPrio : 6
+deriveSsbIndexFromCell : false
+endcB1MeasPriority : 1
+gUtranSyncSignalFrequencyRef : "SubNetwork=ONRM_ROOT_MO,MeContext={xxNodeIDxx},ManagedElement={xxNodeIDxx},ENodeBFunction=1,GUtraNetwork=1,GUtranSyncSignalFrequency={xx5G850SSBxx}-15"
+pMaxNR : 23
+qOffsetFreq : 0
+qQualMin : -30
+qRxLevMin : -104
+threshXHigh : 4
+threshXHighQ : 0
+threshXLow : 0
+threshXLowQ : 0
+timeToTriggerB1Override : -1000
+timeToTriggerNrB1Override : -1000
+triggerQuantityB1Override : NO_OVERRIDE
+voicePrio : 0
+
+
+
+create
+FDN : SubNetwork=ONRM_ROOT_MO,MeContext={xxNodeIDxx},ManagedElement={xxNodeIDxx},ENodeBFunction=1,EUtranCellFDD={CELLNAME28},GUtranFreqRelation={xx5G850SSBxx}-15-20-0-2,GUtranCellRelation={xxgNodebIDxx}_N005A_1
+gUtranCellRelationId : {xxgNodebIDxx}_N005A_1
+essEnabled : false
+isEndcAllowed : true
+isHoAllowed : true
+isRemoveAllowed : false
+isVoiceHoAllowed : true
+neighborCellRef : "SubNetwork=ONRM_ROOT_MO,MeContext={xxNodeIDxx},ManagedElement={xxNodeIDxx},ENodeBFunction=1,GUtraNetwork=1,ExternalGNodeBFunction={xxgNodebIDxx},ExternalGUtranCell=310410-000000{xxgNbIDxx}-{xx5G850AlphaCellIDxx}"
+
+create
+FDN : SubNetwork=ONRM_ROOT_MO,MeContext={xxNodeIDxx},ManagedElement={xxNodeIDxx},ENodeBFunction=1,EUtranCellFDD={CELLNAME28},GUtranFreqRelation={xx5G850SSBxx}-15-20-0-2,GUtranCellRelation={xxgNodebIDxx}_N005B_1
+gUtranCellRelationId : {xxgNodebIDxx}_N005B_1
+essEnabled : false
+isEndcAllowed : true
+isHoAllowed : true
+isRemoveAllowed : false
+isVoiceHoAllowed : true
+neighborCellRef : "SubNetwork=ONRM_ROOT_MO,MeContext={xxNodeIDxx},ManagedElement={xxNodeIDxx},ENodeBFunction=1,GUtraNetwork=1,ExternalGNodeBFunction={xxgNodebIDxx},ExternalGUtranCell=310410-000000{xxgNbIDxx}-{xx5G850BetaCellIDxx}"
+
+
+create
+FDN : SubNetwork=ONRM_ROOT_MO,MeContext={xxNodeIDxx},ManagedElement={xxNodeIDxx},ENodeBFunction=1,EUtranCellFDD={CELLNAME28},GUtranFreqRelation={xx5G850SSBxx}-15-20-0-2,GUtranCellRelation={xxgNodebIDxx}_N005C_1
+gUtranCellRelationId : {xxgNodebIDxx}_N005C_1
+essEnabled : false
+isEndcAllowed : true
+isHoAllowed : true
+isRemoveAllowed : false
+isVoiceHoAllowed : true
+neighborCellRef : "SubNetwork=ONRM_ROOT_MO,MeContext={xxNodeIDxx},ManagedElement={xxNodeIDxx},ENodeBFunction=1,GUtraNetwork=1,ExternalGNodeBFunction={xxgNodebIDxx},ExternalGUtranCell=310410-000000{xxgNbIDxx}-{xx5G850GammaCellIDxx}"
+
+
+
+
+create
+FDN : SubNetwork=ONRM_ROOT_MO,MeContext={xxNodeIDxx},ManagedElement={xxNodeIDxx},ENodeBFunction=1,EUtranCellFDD={CELLNAME29},GUtranFreqRelation={xx5G850SSBxx}-15-20-0-2
+gUtranFreqRelationId : {xx5G850SSBxx}-15-20-0-2
+allowedPlmnList : [{mcc=310, mnc=410, mncLength=3}, {mcc=313, mnc=100, mncLength=3}]
+anrMeasOn : true
+b1ThrRsrpFreqOffset : -1
+b1ThrRsrqFreqOffset : 0
+cellReselectionPriority : -1
+connectedModeMobilityPrio : 6
+deriveSsbIndexFromCell : false
+endcB1MeasPriority : 1
+gUtranSyncSignalFrequencyRef : "SubNetwork=ONRM_ROOT_MO,MeContext={xxNodeIDxx},ManagedElement={xxNodeIDxx},ENodeBFunction=1,GUtraNetwork=1,GUtranSyncSignalFrequency={xx5G850SSBxx}-15"
+pMaxNR : 23
+qOffsetFreq : 0
+qQualMin : -30
+qRxLevMin : -104
+threshXHigh : 4
+threshXHighQ : 0
+threshXLow : 0
+threshXLowQ : 0
+timeToTriggerB1Override : -1000
+timeToTriggerNrB1Override : -1000
+triggerQuantityB1Override : NO_OVERRIDE
+voicePrio : 0
+
+
+
+create
+FDN : SubNetwork=ONRM_ROOT_MO,MeContext={xxNodeIDxx},ManagedElement={xxNodeIDxx},ENodeBFunction=1,EUtranCellFDD={CELLNAME29},GUtranFreqRelation={xx5G850SSBxx}-15-20-0-2,GUtranCellRelation={xxgNodebIDxx}_N005A_1
+gUtranCellRelationId : {xxgNodebIDxx}_N005A_1
+essEnabled : false
+isEndcAllowed : true
+isHoAllowed : true
+isRemoveAllowed : false
+isVoiceHoAllowed : true
+neighborCellRef : "SubNetwork=ONRM_ROOT_MO,MeContext={xxNodeIDxx},ManagedElement={xxNodeIDxx},ENodeBFunction=1,GUtraNetwork=1,ExternalGNodeBFunction={xxgNodebIDxx},ExternalGUtranCell=310410-000000{xxgNbIDxx}-{xx5G850AlphaCellIDxx}"
+
+create
+FDN : SubNetwork=ONRM_ROOT_MO,MeContext={xxNodeIDxx},ManagedElement={xxNodeIDxx},ENodeBFunction=1,EUtranCellFDD={CELLNAME29},GUtranFreqRelation={xx5G850SSBxx}-15-20-0-2,GUtranCellRelation={xxgNodebIDxx}_N005B_1
+gUtranCellRelationId : {xxgNodebIDxx}_N005B_1
+essEnabled : false
+isEndcAllowed : true
+isHoAllowed : true
+isRemoveAllowed : false
+isVoiceHoAllowed : true
+neighborCellRef : "SubNetwork=ONRM_ROOT_MO,MeContext={xxNodeIDxx},ManagedElement={xxNodeIDxx},ENodeBFunction=1,GUtraNetwork=1,ExternalGNodeBFunction={xxgNodebIDxx},ExternalGUtranCell=310410-000000{xxgNbIDxx}-{xx5G850BetaCellIDxx}"
+
+create
+FDN : SubNetwork=ONRM_ROOT_MO,MeContext={xxNodeIDxx},ManagedElement={xxNodeIDxx},ENodeBFunction=1,EUtranCellFDD={CELLNAME29},GUtranFreqRelation={xx5G850SSBxx}-15-20-0-2,GUtranCellRelation={xxgNodebIDxx}_N005C_1
+gUtranCellRelationId : {xxgNodebIDxx}_N005C_1
+essEnabled : false
+isEndcAllowed : true
+isHoAllowed : true
+isRemoveAllowed : false
+isVoiceHoAllowed : true
+neighborCellRef : "SubNetwork=ONRM_ROOT_MO,MeContext={xxNodeIDxx},ManagedElement={xxNodeIDxx},ENodeBFunction=1,GUtraNetwork=1,ExternalGNodeBFunction={xxgNodebIDxx},ExternalGUtranCell=310410-000000{xxgNbIDxx}-{xx5G850GammaCellIDxx}"
+
+
+
+create
+FDN : SubNetwork=ONRM_ROOT_MO,MeContext={xxNodeIDxx},ManagedElement={xxNodeIDxx},ENodeBFunction=1,EUtranCellFDD={CELLNAME30},GUtranFreqRelation={xx5G850SSBxx}-15-20-0-2
+gUtranFreqRelationId : {xx5G850SSBxx}-15-20-0-2
+allowedPlmnList : [{mcc=310, mnc=410, mncLength=3}, {mcc=313, mnc=100, mncLength=3}]
+anrMeasOn : true
+b1ThrRsrpFreqOffset : -1
+b1ThrRsrqFreqOffset : 0
+cellReselectionPriority : -1
+connectedModeMobilityPrio : 6
+deriveSsbIndexFromCell : false
+endcB1MeasPriority : 1
+gUtranSyncSignalFrequencyRef : "SubNetwork=ONRM_ROOT_MO,MeContext={xxNodeIDxx},ManagedElement={xxNodeIDxx},ENodeBFunction=1,GUtraNetwork=1,GUtranSyncSignalFrequency={xx5G850SSBxx}-15"
+pMaxNR : 23
+qOffsetFreq : 0
+qQualMin : -30
+qRxLevMin : -104
+threshXHigh : 4
+threshXHighQ : 0
+threshXLow : 0
+threshXLowQ : 0
+timeToTriggerB1Override : -1000
+timeToTriggerNrB1Override : -1000
+triggerQuantityB1Override : NO_OVERRIDE
+voicePrio : 0
+
+
+
+create
+FDN : SubNetwork=ONRM_ROOT_MO,MeContext={xxNodeIDxx},ManagedElement={xxNodeIDxx},ENodeBFunction=1,EUtranCellFDD={CELLNAME30},GUtranFreqRelation={xx5G850SSBxx}-15-20-0-2,GUtranCellRelation={xxgNodebIDxx}_N005A_1
+gUtranCellRelationId : {xxgNodebIDxx}_N005A_1
+essEnabled : false
+isEndcAllowed : true
+isHoAllowed : true
+isRemoveAllowed : false
+isVoiceHoAllowed : true
+neighborCellRef : "SubNetwork=ONRM_ROOT_MO,MeContext={xxNodeIDxx},ManagedElement={xxNodeIDxx},ENodeBFunction=1,GUtraNetwork=1,ExternalGNodeBFunction={xxgNodebIDxx},ExternalGUtranCell=310410-000000{xxgNbIDxx}-{xx5G850AlphaCellIDxx}"
+
+create
+FDN : SubNetwork=ONRM_ROOT_MO,MeContext={xxNodeIDxx},ManagedElement={xxNodeIDxx},ENodeBFunction=1,EUtranCellFDD={CELLNAME30},GUtranFreqRelation={xx5G850SSBxx}-15-20-0-2,GUtranCellRelation={xxgNodebIDxx}_N005B_1
+gUtranCellRelationId : {xxgNodebIDxx}_N005B_1
+essEnabled : false
+isEndcAllowed : true
+isHoAllowed : true
+isRemoveAllowed : false
+isVoiceHoAllowed : true
+neighborCellRef : "SubNetwork=ONRM_ROOT_MO,MeContext={xxNodeIDxx},ManagedElement={xxNodeIDxx},ENodeBFunction=1,GUtraNetwork=1,ExternalGNodeBFunction={xxgNodebIDxx},ExternalGUtranCell=310410-000000{xxgNbIDxx}-{xx5G850BetaCellIDxx}"
+
+create
+FDN : SubNetwork=ONRM_ROOT_MO,MeContext={xxNodeIDxx},ManagedElement={xxNodeIDxx},ENodeBFunction=1,EUtranCellFDD={CELLNAME30},GUtranFreqRelation={xx5G850SSBxx}-15-20-0-2,GUtranCellRelation={xxgNodebIDxx}_N005C_1
+gUtranCellRelationId : {xxgNodebIDxx}_N005C_1
+essEnabled : false
+isEndcAllowed : true
+isHoAllowed : true
+isRemoveAllowed : false
+isVoiceHoAllowed : true
+neighborCellRef : "SubNetwork=ONRM_ROOT_MO,MeContext={xxNodeIDxx},ManagedElement={xxNodeIDxx},ENodeBFunction=1,GUtraNetwork=1,ExternalGNodeBFunction={xxgNodebIDxx},ExternalGUtranCell=310410-000000{xxgNbIDxx}-{xx5G850GammaCellIDxx}"
+
+
+create
+FDN : SubNetwork=ONRM_ROOT_MO,MeContext={xxNodeIDxx},ManagedElement={xxNodeIDxx},ENodeBFunction=1,EUtranCellFDD={CELLNAME31},GUtranFreqRelation={xx5G850SSBxx}-15-20-0-2
+gUtranFreqRelationId : {xx5G850SSBxx}-15-20-0-2
+allowedPlmnList : [{mcc=310, mnc=410, mncLength=3}, {mcc=313, mnc=100, mncLength=3}]
+anrMeasOn : true
+b1ThrRsrpFreqOffset : -1
+b1ThrRsrqFreqOffset : 0
+cellReselectionPriority : -1
+connectedModeMobilityPrio : 6
+deriveSsbIndexFromCell : false
+endcB1MeasPriority : 1
+gUtranSyncSignalFrequencyRef : "SubNetwork=ONRM_ROOT_MO,MeContext={xxNodeIDxx},ManagedElement={xxNodeIDxx},ENodeBFunction=1,GUtraNetwork=1,GUtranSyncSignalFrequency={xx5G850SSBxx}-15"
+pMaxNR : 23
+qOffsetFreq : 0
+qQualMin : -30
+qRxLevMin : -104
+threshXHigh : 4
+threshXHighQ : 0
+threshXLow : 0
+threshXLowQ : 0
+timeToTriggerB1Override : -1000
+timeToTriggerNrB1Override : -1000
+triggerQuantityB1Override : NO_OVERRIDE
+voicePrio : 0
+
+
+create
+FDN : SubNetwork=ONRM_ROOT_MO,MeContext={xxNodeIDxx},ManagedElement={xxNodeIDxx},ENodeBFunction=1,EUtranCellFDD={CELLNAME31},GUtranFreqRelation={xx5G850SSBxx}-15-20-0-2,GUtranCellRelation={xxgNodebIDxx}_N005A_1
+gUtranCellRelationId : {xxgNodebIDxx}_N005A_1
+essEnabled : false
+isEndcAllowed : true
+isHoAllowed : true
+isRemoveAllowed : false
+isVoiceHoAllowed : true
+neighborCellRef : "SubNetwork=ONRM_ROOT_MO,MeContext={xxNodeIDxx},ManagedElement={xxNodeIDxx},ENodeBFunction=1,GUtraNetwork=1,ExternalGNodeBFunction={xxgNodebIDxx},ExternalGUtranCell=310410-000000{xxgNbIDxx}-{xx5G850AlphaCellIDxx}"
+
+create
+FDN : SubNetwork=ONRM_ROOT_MO,MeContext={xxNodeIDxx},ManagedElement={xxNodeIDxx},ENodeBFunction=1,EUtranCellFDD={CELLNAME31},GUtranFreqRelation={xx5G850SSBxx}-15-20-0-2,GUtranCellRelation={xxgNodebIDxx}_N005B_1
+gUtranCellRelationId : {xxgNodebIDxx}_N005B_1
+essEnabled : false
+isEndcAllowed : true
+isHoAllowed : true
+isRemoveAllowed : false
+isVoiceHoAllowed : true
+neighborCellRef : "SubNetwork=ONRM_ROOT_MO,MeContext={xxNodeIDxx},ManagedElement={xxNodeIDxx},ENodeBFunction=1,GUtraNetwork=1,ExternalGNodeBFunction={xxgNodebIDxx},ExternalGUtranCell=310410-000000{xxgNbIDxx}-{xx5G850BetaCellIDxx}"
+
+
+create
+FDN : SubNetwork=ONRM_ROOT_MO,MeContext={xxNodeIDxx},ManagedElement={xxNodeIDxx},ENodeBFunction=1,EUtranCellFDD={CELLNAME31},GUtranFreqRelation={xx5G850SSBxx}-15-20-0-2,GUtranCellRelation={xxgNodebIDxx}_N005C_1
+gUtranCellRelationId : {xxgNodebIDxx}_N005C_1
+essEnabled : false
+isEndcAllowed : true
+isHoAllowed : true
+isRemoveAllowed : false
+isVoiceHoAllowed : true
+neighborCellRef : "SubNetwork=ONRM_ROOT_MO,MeContext={xxNodeIDxx},ManagedElement={xxNodeIDxx},ENodeBFunction=1,GUtraNetwork=1,ExternalGNodeBFunction={xxgNodebIDxx},ExternalGUtranCell=310410-000000{xxgNbIDxx}-{xx5G850GammaCellIDxx}"
+
+
+create
+FDN : SubNetwork=ONRM_ROOT_MO,MeContext={xxNodeIDxx},ManagedElement={xxNodeIDxx},ENodeBFunction=1,EUtranCellFDD={CELLNAME32},GUtranFreqRelation={xx5G850SSBxx}-15-20-0-2
+gUtranFreqRelationId : {xx5G850SSBxx}-15-20-0-2
+allowedPlmnList : [{mcc=310, mnc=410, mncLength=3}, {mcc=313, mnc=100, mncLength=3}]
+anrMeasOn : true
+b1ThrRsrpFreqOffset : -1
+b1ThrRsrqFreqOffset : 0
+cellReselectionPriority : -1
+connectedModeMobilityPrio : 6
+deriveSsbIndexFromCell : false
+endcB1MeasPriority : 1
+gUtranSyncSignalFrequencyRef : "SubNetwork=ONRM_ROOT_MO,MeContext={xxNodeIDxx},ManagedElement={xxNodeIDxx},ENodeBFunction=1,GUtraNetwork=1,GUtranSyncSignalFrequency={xx5G850SSBxx}-15"
+pMaxNR : 23
+qOffsetFreq : 0
+qQualMin : -30
+qRxLevMin : -104
+threshXHigh : 4
+threshXHighQ : 0
+threshXLow : 0
+threshXLowQ : 0
+timeToTriggerB1Override : -1000
+timeToTriggerNrB1Override : -1000
+triggerQuantityB1Override : NO_OVERRIDE
+voicePrio : 0
+
+
+
+create
+FDN : SubNetwork=ONRM_ROOT_MO,MeContext={xxNodeIDxx},ManagedElement={xxNodeIDxx},ENodeBFunction=1,EUtranCellFDD={CELLNAME32},GUtranFreqRelation={xx5G850SSBxx}-15-20-0-2,GUtranCellRelation={xxgNodebIDxx}_N005A_1
+gUtranCellRelationId : {xxgNodebIDxx}_N005A_1
+essEnabled : false
+isEndcAllowed : true
+isHoAllowed : true
+isRemoveAllowed : false
+isVoiceHoAllowed : true
+neighborCellRef : "SubNetwork=ONRM_ROOT_MO,MeContext={xxNodeIDxx},ManagedElement={xxNodeIDxx},ENodeBFunction=1,GUtraNetwork=1,ExternalGNodeBFunction={xxgNodebIDxx},ExternalGUtranCell=310410-000000{xxgNbIDxx}-{xx5G850AlphaCellIDxx}"
+
+create
+FDN : SubNetwork=ONRM_ROOT_MO,MeContext={xxNodeIDxx},ManagedElement={xxNodeIDxx},ENodeBFunction=1,EUtranCellFDD={CELLNAME32},GUtranFreqRelation={xx5G850SSBxx}-15-20-0-2,GUtranCellRelation={xxgNodebIDxx}_N005B_1
+gUtranCellRelationId : {xxgNodebIDxx}_N005B_1
+essEnabled : false
+isEndcAllowed : true
+isHoAllowed : true
+isRemoveAllowed : false
+isVoiceHoAllowed : true
+neighborCellRef : "SubNetwork=ONRM_ROOT_MO,MeContext={xxNodeIDxx},ManagedElement={xxNodeIDxx},ENodeBFunction=1,GUtraNetwork=1,ExternalGNodeBFunction={xxgNodebIDxx},ExternalGUtranCell=310410-000000{xxgNbIDxx}-{xx5G850BetaCellIDxx}"
+
+create
+FDN : SubNetwork=ONRM_ROOT_MO,MeContext={xxNodeIDxx},ManagedElement={xxNodeIDxx},ENodeBFunction=1,EUtranCellFDD={CELLNAME32},GUtranFreqRelation={xx5G850SSBxx}-15-20-0-2,GUtranCellRelation={xxgNodebIDxx}_N005C_1
+gUtranCellRelationId : {xxgNodebIDxx}_N005C_1
+essEnabled : false
+isEndcAllowed : true
+isHoAllowed : true
+isRemoveAllowed : false
+isVoiceHoAllowed : true
+neighborCellRef : "SubNetwork=ONRM_ROOT_MO,MeContext={xxNodeIDxx},ManagedElement={xxNodeIDxx},ENodeBFunction=1,GUtraNetwork=1,ExternalGNodeBFunction={xxgNodebIDxx},ExternalGUtranCell=310410-000000{xxgNbIDxx}-{xx5G850GammaCellIDxx}"
+
+
+create
+FDN : SubNetwork=ONRM_ROOT_MO,MeContext={xxNodeIDxx},ManagedElement={xxNodeIDxx},ENodeBFunction=1,EUtranCellFDD={CELLNAME33},GUtranFreqRelation={xx5G850SSBxx}-15-20-0-2
+gUtranFreqRelationId : {xx5G850SSBxx}-15-20-0-2
+allowedPlmnList : [{mcc=310, mnc=410, mncLength=3}, {mcc=313, mnc=100, mncLength=3}]
+anrMeasOn : true
+b1ThrRsrpFreqOffset : -1
+b1ThrRsrqFreqOffset : 0
+cellReselectionPriority : -1
+connectedModeMobilityPrio : 6
+deriveSsbIndexFromCell : false
+endcB1MeasPriority : 1
+gUtranSyncSignalFrequencyRef : "SubNetwork=ONRM_ROOT_MO,MeContext={xxNodeIDxx},ManagedElement={xxNodeIDxx},ENodeBFunction=1,GUtraNetwork=1,GUtranSyncSignalFrequency={xx5G850SSBxx}-15"
+pMaxNR : 23
+qOffsetFreq : 0
+qQualMin : -30
+qRxLevMin : -104
+threshXHigh : 4
+threshXHighQ : 0
+threshXLow : 0
+threshXLowQ : 0
+timeToTriggerB1Override : -1000
+timeToTriggerNrB1Override : -1000
+triggerQuantityB1Override : NO_OVERRIDE
+voicePrio : 0
+
+
+create
+FDN : SubNetwork=ONRM_ROOT_MO,MeContext={xxNodeIDxx},ManagedElement={xxNodeIDxx},ENodeBFunction=1,EUtranCellFDD={CELLNAME33},GUtranFreqRelation={xx5G850SSBxx}-15-20-0-2,GUtranCellRelation={xxgNodebIDxx}_N005A_1
+gUtranCellRelationId : {xxgNodebIDxx}_N005A_1
+essEnabled : false
+isEndcAllowed : true
+isHoAllowed : true
+isRemoveAllowed : false
+isVoiceHoAllowed : true
+neighborCellRef : "SubNetwork=ONRM_ROOT_MO,MeContext={xxNodeIDxx},ManagedElement={xxNodeIDxx},ENodeBFunction=1,GUtraNetwork=1,ExternalGNodeBFunction={xxgNodebIDxx},ExternalGUtranCell=310410-000000{xxgNbIDxx}-{xx5G850AlphaCellIDxx}"
+
+create
+FDN : SubNetwork=ONRM_ROOT_MO,MeContext={xxNodeIDxx},ManagedElement={xxNodeIDxx},ENodeBFunction=1,EUtranCellFDD={CELLNAME33},GUtranFreqRelation={xx5G850SSBxx}-15-20-0-2,GUtranCellRelation={xxgNodebIDxx}_N005B_1
+gUtranCellRelationId : {xxgNodebIDxx}_N005B_1
+essEnabled : false
+isEndcAllowed : true
+isHoAllowed : true
+isRemoveAllowed : false
+isVoiceHoAllowed : true
+neighborCellRef : "SubNetwork=ONRM_ROOT_MO,MeContext={xxNodeIDxx},ManagedElement={xxNodeIDxx},ENodeBFunction=1,GUtraNetwork=1,ExternalGNodeBFunction={xxgNodebIDxx},ExternalGUtranCell=310410-000000{xxgNbIDxx}-{xx5G850BetaCellIDxx}"
+
+create
+FDN : SubNetwork=ONRM_ROOT_MO,MeContext={xxNodeIDxx},ManagedElement={xxNodeIDxx},ENodeBFunction=1,EUtranCellFDD={CELLNAME33},GUtranFreqRelation={xx5G850SSBxx}-15-20-0-2,GUtranCellRelation={xxgNodebIDxx}_N005C_1
+gUtranCellRelationId : {xxgNodebIDxx}_N005C_1
+essEnabled : false
+isEndcAllowed : true
+isHoAllowed : true
+isRemoveAllowed : false
+isVoiceHoAllowed : true
+neighborCellRef : "SubNetwork=ONRM_ROOT_MO,MeContext={xxNodeIDxx},ManagedElement={xxNodeIDxx},ENodeBFunction=1,GUtraNetwork=1,ExternalGNodeBFunction={xxgNodebIDxx},ExternalGUtranCell=310410-000000{xxgNbIDxx}-{xx5G850GammaCellIDxx}"
+
+
+
+create
+FDN : SubNetwork=ONRM_ROOT_MO,MeContext={xxNodeIDxx},ManagedElement={xxNodeIDxx},ENodeBFunction=1,EUtranCellFDD={CELLNAME34},GUtranFreqRelation={xx5G850SSBxx}-15-20-0-2
+gUtranFreqRelationId : {xx5G850SSBxx}-15-20-0-2
+allowedPlmnList : [{mcc=310, mnc=410, mncLength=3}, {mcc=313, mnc=100, mncLength=3}]
+anrMeasOn : true
+b1ThrRsrpFreqOffset : -1
+b1ThrRsrqFreqOffset : 0
+cellReselectionPriority : -1
+connectedModeMobilityPrio : 6
+deriveSsbIndexFromCell : false
+endcB1MeasPriority : 1
+gUtranSyncSignalFrequencyRef : "SubNetwork=ONRM_ROOT_MO,MeContext={xxNodeIDxx},ManagedElement={xxNodeIDxx},ENodeBFunction=1,GUtraNetwork=1,GUtranSyncSignalFrequency={xx5G850SSBxx}-15"
+pMaxNR : 23
+qOffsetFreq : 0
+qQualMin : -30
+qRxLevMin : -104
+threshXHigh : 4
+threshXHighQ : 0
+threshXLow : 0
+threshXLowQ : 0
+timeToTriggerB1Override : -1000
+timeToTriggerNrB1Override : -1000
+triggerQuantityB1Override : NO_OVERRIDE
+voicePrio : 0
+
+
+
+create
+FDN : SubNetwork=ONRM_ROOT_MO,MeContext={xxNodeIDxx},ManagedElement={xxNodeIDxx},ENodeBFunction=1,EUtranCellFDD={CELLNAME34},GUtranFreqRelation={xx5G850SSBxx}-15-20-0-2,GUtranCellRelation={xxgNodebIDxx}_N005A_1
+gUtranCellRelationId : {xxgNodebIDxx}_N005A_1
+essEnabled : false
+isEndcAllowed : true
+isHoAllowed : true
+isRemoveAllowed : false
+isVoiceHoAllowed : true
+neighborCellRef : "SubNetwork=ONRM_ROOT_MO,MeContext={xxNodeIDxx},ManagedElement={xxNodeIDxx},ENodeBFunction=1,GUtraNetwork=1,ExternalGNodeBFunction={xxgNodebIDxx},ExternalGUtranCell=310410-000000{xxgNbIDxx}-{xx5G850AlphaCellIDxx}"
+
+create
+FDN : SubNetwork=ONRM_ROOT_MO,MeContext={xxNodeIDxx},ManagedElement={xxNodeIDxx},ENodeBFunction=1,EUtranCellFDD={CELLNAME34},GUtranFreqRelation={xx5G850SSBxx}-15-20-0-2,GUtranCellRelation={xxgNodebIDxx}_N005B_1
+gUtranCellRelationId : {xxgNodebIDxx}_N005B_1
+essEnabled : false
+isEndcAllowed : true
+isHoAllowed : true
+isRemoveAllowed : false
+isVoiceHoAllowed : true
+neighborCellRef : "SubNetwork=ONRM_ROOT_MO,MeContext={xxNodeIDxx},ManagedElement={xxNodeIDxx},ENodeBFunction=1,GUtraNetwork=1,ExternalGNodeBFunction={xxgNodebIDxx},ExternalGUtranCell=310410-000000{xxgNbIDxx}-{xx5G850BetaCellIDxx}"
+
+
+create
+FDN : SubNetwork=ONRM_ROOT_MO,MeContext={xxNodeIDxx},ManagedElement={xxNodeIDxx},ENodeBFunction=1,EUtranCellFDD={CELLNAME34},GUtranFreqRelation={xx5G850SSBxx}-15-20-0-2,GUtranCellRelation={xxgNodebIDxx}_N005C_1
+gUtranCellRelationId : {xxgNodebIDxx}_N005C_1
+essEnabled : false
+isEndcAllowed : true
+isHoAllowed : true
+isRemoveAllowed : false
+isVoiceHoAllowed : true
+neighborCellRef : "SubNetwork=ONRM_ROOT_MO,MeContext={xxNodeIDxx},ManagedElement={xxNodeIDxx},ENodeBFunction=1,GUtraNetwork=1,ExternalGNodeBFunction={xxgNodebIDxx},ExternalGUtranCell=310410-000000{xxgNbIDxx}-{xx5G850GammaCellIDxx}"
+
+
+
+
+create
+FDN : SubNetwork=ONRM_ROOT_MO,MeContext={xxNodeIDxx},ManagedElement={xxNodeIDxx},ENodeBFunction=1,EUtranCellFDD={CELLNAME35},GUtranFreqRelation={xx5G850SSBxx}-15-20-0-2
+gUtranFreqRelationId : {xx5G850SSBxx}-15-20-0-2
+allowedPlmnList : [{mcc=310, mnc=410, mncLength=3}, {mcc=313, mnc=100, mncLength=3}]
+anrMeasOn : true
+b1ThrRsrpFreqOffset : -1
+b1ThrRsrqFreqOffset : 0
+cellReselectionPriority : -1
+connectedModeMobilityPrio : 6
+deriveSsbIndexFromCell : false
+endcB1MeasPriority : 1
+gUtranSyncSignalFrequencyRef : "SubNetwork=ONRM_ROOT_MO,MeContext={xxNodeIDxx},ManagedElement={xxNodeIDxx},ENodeBFunction=1,GUtraNetwork=1,GUtranSyncSignalFrequency={xx5G850SSBxx}-15"
+pMaxNR : 23
+qOffsetFreq : 0
+qQualMin : -30
+qRxLevMin : -104
+threshXHigh : 4
+threshXHighQ : 0
+threshXLow : 0
+threshXLowQ : 0
+timeToTriggerB1Override : -1000
+timeToTriggerNrB1Override : -1000
+triggerQuantityB1Override : NO_OVERRIDE
+voicePrio : 0
+
+
+
+create
+FDN : SubNetwork=ONRM_ROOT_MO,MeContext={xxNodeIDxx},ManagedElement={xxNodeIDxx},ENodeBFunction=1,EUtranCellFDD={CELLNAME35},GUtranFreqRelation={xx5G850SSBxx}-15-20-0-2,GUtranCellRelation={xxgNodebIDxx}_N005A_1
+gUtranCellRelationId : {xxgNodebIDxx}_N005A_1
+essEnabled : false
+isEndcAllowed : true
+isHoAllowed : true
+isRemoveAllowed : false
+isVoiceHoAllowed : true
+neighborCellRef : "SubNetwork=ONRM_ROOT_MO,MeContext={xxNodeIDxx},ManagedElement={xxNodeIDxx},ENodeBFunction=1,GUtraNetwork=1,ExternalGNodeBFunction={xxgNodebIDxx},ExternalGUtranCell=310410-000000{xxgNbIDxx}-{xx5G850AlphaCellIDxx}"
+
+create
+FDN : SubNetwork=ONRM_ROOT_MO,MeContext={xxNodeIDxx},ManagedElement={xxNodeIDxx},ENodeBFunction=1,EUtranCellFDD={CELLNAME35},GUtranFreqRelation={xx5G850SSBxx}-15-20-0-2,GUtranCellRelation={xxgNodebIDxx}_N005B_1
+gUtranCellRelationId : {xxgNodebIDxx}_N005B_1
+essEnabled : false
+isEndcAllowed : true
+isHoAllowed : true
+isRemoveAllowed : false
+isVoiceHoAllowed : true
+neighborCellRef : "SubNetwork=ONRM_ROOT_MO,MeContext={xxNodeIDxx},ManagedElement={xxNodeIDxx},ENodeBFunction=1,GUtraNetwork=1,ExternalGNodeBFunction={xxgNodebIDxx},ExternalGUtranCell=310410-000000{xxgNbIDxx}-{xx5G850BetaCellIDxx}"
+
+create
+FDN : SubNetwork=ONRM_ROOT_MO,MeContext={xxNodeIDxx},ManagedElement={xxNodeIDxx},ENodeBFunction=1,EUtranCellFDD={CELLNAME35},GUtranFreqRelation={xx5G850SSBxx}-15-20-0-2,GUtranCellRelation={xxgNodebIDxx}_N005C_1
+gUtranCellRelationId : {xxgNodebIDxx}_N005C_1
+essEnabled : false
+isEndcAllowed : true
+isHoAllowed : true
+isRemoveAllowed : false
+isVoiceHoAllowed : true
+neighborCellRef : "SubNetwork=ONRM_ROOT_MO,MeContext={xxNodeIDxx},ManagedElement={xxNodeIDxx},ENodeBFunction=1,GUtraNetwork=1,ExternalGNodeBFunction={xxgNodebIDxx},ExternalGUtranCell=310410-000000{xxgNbIDxx}-{xx5G850GammaCellIDxx}"
+
+
+
+create
+FDN : SubNetwork=ONRM_ROOT_MO,MeContext={xxNodeIDxx},ManagedElement={xxNodeIDxx},ENodeBFunction=1,EUtranCellFDD={CELLNAME36},GUtranFreqRelation={xx5G850SSBxx}-15-20-0-2
+gUtranFreqRelationId : {xx5G850SSBxx}-15-20-0-2
+allowedPlmnList : [{mcc=310, mnc=410, mncLength=3}, {mcc=313, mnc=100, mncLength=3}]
+anrMeasOn : true
+b1ThrRsrpFreqOffset : -1
+b1ThrRsrqFreqOffset : 0
+cellReselectionPriority : -1
+connectedModeMobilityPrio : 6
+deriveSsbIndexFromCell : false
+endcB1MeasPriority : 1
+gUtranSyncSignalFrequencyRef : "SubNetwork=ONRM_ROOT_MO,MeContext={xxNodeIDxx},ManagedElement={xxNodeIDxx},ENodeBFunction=1,GUtraNetwork=1,GUtranSyncSignalFrequency={xx5G850SSBxx}-15"
+pMaxNR : 23
+qOffsetFreq : 0
+qQualMin : -30
+qRxLevMin : -104
+threshXHigh : 4
+threshXHighQ : 0
+threshXLow : 0
+threshXLowQ : 0
+timeToTriggerB1Override : -1000
+timeToTriggerNrB1Override : -1000
+triggerQuantityB1Override : NO_OVERRIDE
+voicePrio : 0
+
+
+
+create
+FDN : SubNetwork=ONRM_ROOT_MO,MeContext={xxNodeIDxx},ManagedElement={xxNodeIDxx},ENodeBFunction=1,EUtranCellFDD={CELLNAME36},GUtranFreqRelation={xx5G850SSBxx}-15-20-0-2,GUtranCellRelation={xxgNodebIDxx}_N005A_1
+gUtranCellRelationId : {xxgNodebIDxx}_N005A_1
+essEnabled : false
+isEndcAllowed : true
+isHoAllowed : true
+isRemoveAllowed : false
+isVoiceHoAllowed : true
+neighborCellRef : "SubNetwork=ONRM_ROOT_MO,MeContext={xxNodeIDxx},ManagedElement={xxNodeIDxx},ENodeBFunction=1,GUtraNetwork=1,ExternalGNodeBFunction={xxgNodebIDxx},ExternalGUtranCell=310410-000000{xxgNbIDxx}-{xx5G850AlphaCellIDxx}"
+
+create
+FDN : SubNetwork=ONRM_ROOT_MO,MeContext={xxNodeIDxx},ManagedElement={xxNodeIDxx},ENodeBFunction=1,EUtranCellFDD={CELLNAME36},GUtranFreqRelation={xx5G850SSBxx}-15-20-0-2,GUtranCellRelation={xxgNodebIDxx}_N005B_1
+gUtranCellRelationId : {xxgNodebIDxx}_N005B_1
+essEnabled : false
+isEndcAllowed : true
+isHoAllowed : true
+isRemoveAllowed : false
+isVoiceHoAllowed : true
+neighborCellRef : "SubNetwork=ONRM_ROOT_MO,MeContext={xxNodeIDxx},ManagedElement={xxNodeIDxx},ENodeBFunction=1,GUtraNetwork=1,ExternalGNodeBFunction={xxgNodebIDxx},ExternalGUtranCell=310410-000000{xxgNbIDxx}-{xx5G850BetaCellIDxx}"
+
+create
+FDN : SubNetwork=ONRM_ROOT_MO,MeContext={xxNodeIDxx},ManagedElement={xxNodeIDxx},ENodeBFunction=1,EUtranCellFDD={CELLNAME36},GUtranFreqRelation={xx5G850SSBxx}-15-20-0-2,GUtranCellRelation={xxgNodebIDxx}_N005C_1
+gUtranCellRelationId : {xxgNodebIDxx}_N005C_1
+essEnabled : false
+isEndcAllowed : true
+isHoAllowed : true
+isRemoveAllowed : false
+isVoiceHoAllowed : true
+neighborCellRef : "SubNetwork=ONRM_ROOT_MO,MeContext={xxNodeIDxx},ManagedElement={xxNodeIDxx},ENodeBFunction=1,GUtraNetwork=1,ExternalGNodeBFunction={xxgNodebIDxx},ExternalGUtranCell=310410-000000{xxgNbIDxx}-{xx5G850GammaCellIDxx}"
+
+
+
+create
+FDN : SubNetwork=ONRM_ROOT_MO,MeContext={xxNodeIDxx},ManagedElement={xxNodeIDxx},ENodeBFunction=1,EUtranCellFDD={CELLNAME37},GUtranFreqRelation={xx5G850SSBxx}-15-20-0-2
+gUtranFreqRelationId : {xx5G850SSBxx}-15-20-0-2
+allowedPlmnList : [{mcc=310, mnc=410, mncLength=3}, {mcc=313, mnc=100, mncLength=3}]
+anrMeasOn : true
+b1ThrRsrpFreqOffset : -1
+b1ThrRsrqFreqOffset : 0
+cellReselectionPriority : -1
+connectedModeMobilityPrio : 6
+deriveSsbIndexFromCell : false
+endcB1MeasPriority : 1
+gUtranSyncSignalFrequencyRef : "SubNetwork=ONRM_ROOT_MO,MeContext={xxNodeIDxx},ManagedElement={xxNodeIDxx},ENodeBFunction=1,GUtraNetwork=1,GUtranSyncSignalFrequency={xx5G850SSBxx}-15"
+pMaxNR : 23
+qOffsetFreq : 0
+qQualMin : -30
+qRxLevMin : -104
+threshXHigh : 4
+threshXHighQ : 0
+threshXLow : 0
+threshXLowQ : 0
+timeToTriggerB1Override : -1000
+timeToTriggerNrB1Override : -1000
+triggerQuantityB1Override : NO_OVERRIDE
+voicePrio : 0
+
+
+create
+FDN : SubNetwork=ONRM_ROOT_MO,MeContext={xxNodeIDxx},ManagedElement={xxNodeIDxx},ENodeBFunction=1,EUtranCellFDD={CELLNAME37},GUtranFreqRelation={xx5G850SSBxx}-15-20-0-2,GUtranCellRelation={xxgNodebIDxx}_N005A_1
+gUtranCellRelationId : {xxgNodebIDxx}_N005A_1
+essEnabled : false
+isEndcAllowed : true
+isHoAllowed : true
+isRemoveAllowed : false
+isVoiceHoAllowed : true
+neighborCellRef : "SubNetwork=ONRM_ROOT_MO,MeContext={xxNodeIDxx},ManagedElement={xxNodeIDxx},ENodeBFunction=1,GUtraNetwork=1,ExternalGNodeBFunction={xxgNodebIDxx},ExternalGUtranCell=310410-000000{xxgNbIDxx}-{xx5G850AlphaCellIDxx}"
+
+create
+FDN : SubNetwork=ONRM_ROOT_MO,MeContext={xxNodeIDxx},ManagedElement={xxNodeIDxx},ENodeBFunction=1,EUtranCellFDD={CELLNAME37},GUtranFreqRelation={xx5G850SSBxx}-15-20-0-2,GUtranCellRelation={xxgNodebIDxx}_N005B_1
+gUtranCellRelationId : {xxgNodebIDxx}_N005B_1
+essEnabled : false
+isEndcAllowed : true
+isHoAllowed : true
+isRemoveAllowed : false
+isVoiceHoAllowed : true
+neighborCellRef : "SubNetwork=ONRM_ROOT_MO,MeContext={xxNodeIDxx},ManagedElement={xxNodeIDxx},ENodeBFunction=1,GUtraNetwork=1,ExternalGNodeBFunction={xxgNodebIDxx},ExternalGUtranCell=310410-000000{xxgNbIDxx}-{xx5G850BetaCellIDxx}"
+
+
+create
+FDN : SubNetwork=ONRM_ROOT_MO,MeContext={xxNodeIDxx},ManagedElement={xxNodeIDxx},ENodeBFunction=1,EUtranCellFDD={CELLNAME37},GUtranFreqRelation={xx5G850SSBxx}-15-20-0-2,GUtranCellRelation={xxgNodebIDxx}_N005C_1
+gUtranCellRelationId : {xxgNodebIDxx}_N005C_1
+essEnabled : false
+isEndcAllowed : true
+isHoAllowed : true
+isRemoveAllowed : false
+isVoiceHoAllowed : true
+neighborCellRef : "SubNetwork=ONRM_ROOT_MO,MeContext={xxNodeIDxx},ManagedElement={xxNodeIDxx},ENodeBFunction=1,GUtraNetwork=1,ExternalGNodeBFunction={xxgNodebIDxx},ExternalGUtranCell=310410-000000{xxgNbIDxx}-{xx5G850GammaCellIDxx}"
+
+
+create
+FDN : SubNetwork=ONRM_ROOT_MO,MeContext={xxNodeIDxx},ManagedElement={xxNodeIDxx},ENodeBFunction=1,EUtranCellFDD={CELLNAME38},GUtranFreqRelation={xx5G850SSBxx}-15-20-0-2
+gUtranFreqRelationId : {xx5G850SSBxx}-15-20-0-2
+allowedPlmnList : [{mcc=310, mnc=410, mncLength=3}, {mcc=313, mnc=100, mncLength=3}]
+anrMeasOn : true
+b1ThrRsrpFreqOffset : -1
+b1ThrRsrqFreqOffset : 0
+cellReselectionPriority : -1
+connectedModeMobilityPrio : 6
+deriveSsbIndexFromCell : false
+endcB1MeasPriority : 1
+gUtranSyncSignalFrequencyRef : "SubNetwork=ONRM_ROOT_MO,MeContext={xxNodeIDxx},ManagedElement={xxNodeIDxx},ENodeBFunction=1,GUtraNetwork=1,GUtranSyncSignalFrequency={xx5G850SSBxx}-15"
+pMaxNR : 23
+qOffsetFreq : 0
+qQualMin : -30
+qRxLevMin : -104
+threshXHigh : 4
+threshXHighQ : 0
+threshXLow : 0
+threshXLowQ : 0
+timeToTriggerB1Override : -1000
+timeToTriggerNrB1Override : -1000
+triggerQuantityB1Override : NO_OVERRIDE
+voicePrio : 0
+
+
+
+create
+FDN : SubNetwork=ONRM_ROOT_MO,MeContext={xxNodeIDxx},ManagedElement={xxNodeIDxx},ENodeBFunction=1,EUtranCellFDD={CELLNAME38},GUtranFreqRelation={xx5G850SSBxx}-15-20-0-2,GUtranCellRelation={xxgNodebIDxx}_N005A_1
+gUtranCellRelationId : {xxgNodebIDxx}_N005A_1
+essEnabled : false
+isEndcAllowed : true
+isHoAllowed : true
+isRemoveAllowed : false
+isVoiceHoAllowed : true
+neighborCellRef : "SubNetwork=ONRM_ROOT_MO,MeContext={xxNodeIDxx},ManagedElement={xxNodeIDxx},ENodeBFunction=1,GUtraNetwork=1,ExternalGNodeBFunction={xxgNodebIDxx},ExternalGUtranCell=310410-000000{xxgNbIDxx}-{xx5G850AlphaCellIDxx}"
+
+create
+FDN : SubNetwork=ONRM_ROOT_MO,MeContext={xxNodeIDxx},ManagedElement={xxNodeIDxx},ENodeBFunction=1,EUtranCellFDD={CELLNAME38},GUtranFreqRelation={xx5G850SSBxx}-15-20-0-2,GUtranCellRelation={xxgNodebIDxx}_N005B_1
+gUtranCellRelationId : {xxgNodebIDxx}_N005B_1
+essEnabled : false
+isEndcAllowed : true
+isHoAllowed : true
+isRemoveAllowed : false
+isVoiceHoAllowed : true
+neighborCellRef : "SubNetwork=ONRM_ROOT_MO,MeContext={xxNodeIDxx},ManagedElement={xxNodeIDxx},ENodeBFunction=1,GUtraNetwork=1,ExternalGNodeBFunction={xxgNodebIDxx},ExternalGUtranCell=310410-000000{xxgNbIDxx}-{xx5G850BetaCellIDxx}"
+
+create
+FDN : SubNetwork=ONRM_ROOT_MO,MeContext={xxNodeIDxx},ManagedElement={xxNodeIDxx},ENodeBFunction=1,EUtranCellFDD={CELLNAME38},GUtranFreqRelation={xx5G850SSBxx}-15-20-0-2,GUtranCellRelation={xxgNodebIDxx}_N005C_1
+gUtranCellRelationId : {xxgNodebIDxx}_N005C_1
+essEnabled : false
+isEndcAllowed : true
+isHoAllowed : true
+isRemoveAllowed : false
+isVoiceHoAllowed : true
+neighborCellRef : "SubNetwork=ONRM_ROOT_MO,MeContext={xxNodeIDxx},ManagedElement={xxNodeIDxx},ENodeBFunction=1,GUtraNetwork=1,ExternalGNodeBFunction={xxgNodebIDxx},ExternalGUtranCell=310410-000000{xxgNbIDxx}-{xx5G850GammaCellIDxx}"
+
+
+create
+FDN : SubNetwork=ONRM_ROOT_MO,MeContext={xxNodeIDxx},ManagedElement={xxNodeIDxx},ENodeBFunction=1,EUtranCellFDD={CELLNAME39},GUtranFreqRelation={xx5G850SSBxx}-15-20-0-2
+gUtranFreqRelationId : {xx5G850SSBxx}-15-20-0-2
+allowedPlmnList : [{mcc=310, mnc=410, mncLength=3}, {mcc=313, mnc=100, mncLength=3}]
+anrMeasOn : true
+b1ThrRsrpFreqOffset : -1
+b1ThrRsrqFreqOffset : 0
+cellReselectionPriority : -1
+connectedModeMobilityPrio : 6
+deriveSsbIndexFromCell : false
+endcB1MeasPriority : 1
+gUtranSyncSignalFrequencyRef : "SubNetwork=ONRM_ROOT_MO,MeContext={xxNodeIDxx},ManagedElement={xxNodeIDxx},ENodeBFunction=1,GUtraNetwork=1,GUtranSyncSignalFrequency={xx5G850SSBxx}-15"
+pMaxNR : 23
+qOffsetFreq : 0
+qQualMin : -30
+qRxLevMin : -104
+threshXHigh : 4
+threshXHighQ : 0
+threshXLow : 0
+threshXLowQ : 0
+timeToTriggerB1Override : -1000
+timeToTriggerNrB1Override : -1000
+triggerQuantityB1Override : NO_OVERRIDE
+voicePrio : 0
+
+
+create
+FDN : SubNetwork=ONRM_ROOT_MO,MeContext={xxNodeIDxx},ManagedElement={xxNodeIDxx},ENodeBFunction=1,EUtranCellFDD={CELLNAME39},GUtranFreqRelation={xx5G850SSBxx}-15-20-0-2,GUtranCellRelation={xxgNodebIDxx}_N005A_1
+gUtranCellRelationId : {xxgNodebIDxx}_N005A_1
+essEnabled : false
+isEndcAllowed : true
+isHoAllowed : true
+isRemoveAllowed : false
+isVoiceHoAllowed : true
+neighborCellRef : "SubNetwork=ONRM_ROOT_MO,MeContext={xxNodeIDxx},ManagedElement={xxNodeIDxx},ENodeBFunction=1,GUtraNetwork=1,ExternalGNodeBFunction={xxgNodebIDxx},ExternalGUtranCell=310410-000000{xxgNbIDxx}-{xx5G850AlphaCellIDxx}"
+
+create
+FDN : SubNetwork=ONRM_ROOT_MO,MeContext={xxNodeIDxx},ManagedElement={xxNodeIDxx},ENodeBFunction=1,EUtranCellFDD={CELLNAME39},GUtranFreqRelation={xx5G850SSBxx}-15-20-0-2,GUtranCellRelation={xxgNodebIDxx}_N005B_1
+gUtranCellRelationId : {xxgNodebIDxx}_N005B_1
+essEnabled : false
+isEndcAllowed : true
+isHoAllowed : true
+isRemoveAllowed : false
+isVoiceHoAllowed : true
+neighborCellRef : "SubNetwork=ONRM_ROOT_MO,MeContext={xxNodeIDxx},ManagedElement={xxNodeIDxx},ENodeBFunction=1,GUtraNetwork=1,ExternalGNodeBFunction={xxgNodebIDxx},ExternalGUtranCell=310410-000000{xxgNbIDxx}-{xx5G850BetaCellIDxx}"
+
+create
+FDN : SubNetwork=ONRM_ROOT_MO,MeContext={xxNodeIDxx},ManagedElement={xxNodeIDxx},ENodeBFunction=1,EUtranCellFDD={CELLNAME39},GUtranFreqRelation={xx5G850SSBxx}-15-20-0-2,GUtranCellRelation={xxgNodebIDxx}_N005C_1
+gUtranCellRelationId : {xxgNodebIDxx}_N005C_1
+essEnabled : false
+isEndcAllowed : true
+isHoAllowed : true
+isRemoveAllowed : false
+isVoiceHoAllowed : true
+neighborCellRef : "SubNetwork=ONRM_ROOT_MO,MeContext={xxNodeIDxx},ManagedElement={xxNodeIDxx},ENodeBFunction=1,GUtraNetwork=1,ExternalGNodeBFunction={xxgNodebIDxx},ExternalGUtranCell=310410-000000{xxgNbIDxx}-{xx5G850GammaCellIDxx}"
+
+
+
+create
+FDN : SubNetwork=ONRM_ROOT_MO,MeContext={xxNodeIDxx},ManagedElement={xxNodeIDxx},ENodeBFunction=1,EUtranCellFDD={CELLNAME40},GUtranFreqRelation={xx5G850SSBxx}-15-20-0-2
+gUtranFreqRelationId : {xx5G850SSBxx}-15-20-0-2
+allowedPlmnList : [{mcc=310, mnc=410, mncLength=3}, {mcc=313, mnc=100, mncLength=3}]
+anrMeasOn : true
+b1ThrRsrpFreqOffset : -1
+b1ThrRsrqFreqOffset : 0
+cellReselectionPriority : -1
+connectedModeMobilityPrio : 6
+deriveSsbIndexFromCell : false
+endcB1MeasPriority : 1
+gUtranSyncSignalFrequencyRef : "SubNetwork=ONRM_ROOT_MO,MeContext={xxNodeIDxx},ManagedElement={xxNodeIDxx},ENodeBFunction=1,GUtraNetwork=1,GUtranSyncSignalFrequency={xx5G850SSBxx}-15"
+pMaxNR : 23
+qOffsetFreq : 0
+qQualMin : -30
+qRxLevMin : -104
+threshXHigh : 4
+threshXHighQ : 0
+threshXLow : 0
+threshXLowQ : 0
+timeToTriggerB1Override : -1000
+timeToTriggerNrB1Override : -1000
+triggerQuantityB1Override : NO_OVERRIDE
+voicePrio : 0
+
+
+
+create
+FDN : SubNetwork=ONRM_ROOT_MO,MeContext={xxNodeIDxx},ManagedElement={xxNodeIDxx},ENodeBFunction=1,EUtranCellFDD={CELLNAME40},GUtranFreqRelation={xx5G850SSBxx}-15-20-0-2,GUtranCellRelation={xxgNodebIDxx}_N005A_1
+gUtranCellRelationId : {xxgNodebIDxx}_N005A_1
+essEnabled : false
+isEndcAllowed : true
+isHoAllowed : true
+isRemoveAllowed : false
+isVoiceHoAllowed : true
+neighborCellRef : "SubNetwork=ONRM_ROOT_MO,MeContext={xxNodeIDxx},ManagedElement={xxNodeIDxx},ENodeBFunction=1,GUtraNetwork=1,ExternalGNodeBFunction={xxgNodebIDxx},ExternalGUtranCell=310410-000000{xxgNbIDxx}-{xx5G850AlphaCellIDxx}"
+
+create
+FDN : SubNetwork=ONRM_ROOT_MO,MeContext={xxNodeIDxx},ManagedElement={xxNodeIDxx},ENodeBFunction=1,EUtranCellFDD={CELLNAME40},GUtranFreqRelation={xx5G850SSBxx}-15-20-0-2,GUtranCellRelation={xxgNodebIDxx}_N005B_1
+gUtranCellRelationId : {xxgNodebIDxx}_N005B_1
+essEnabled : false
+isEndcAllowed : true
+isHoAllowed : true
+isRemoveAllowed : false
+isVoiceHoAllowed : true
+neighborCellRef : "SubNetwork=ONRM_ROOT_MO,MeContext={xxNodeIDxx},ManagedElement={xxNodeIDxx},ENodeBFunction=1,GUtraNetwork=1,ExternalGNodeBFunction={xxgNodebIDxx},ExternalGUtranCell=310410-000000{xxgNbIDxx}-{xx5G850BetaCellIDxx}"
+
+
+create
+FDN : SubNetwork=ONRM_ROOT_MO,MeContext={xxNodeIDxx},ManagedElement={xxNodeIDxx},ENodeBFunction=1,EUtranCellFDD={CELLNAME40},GUtranFreqRelation={xx5G850SSBxx}-15-20-0-2,GUtranCellRelation={xxgNodebIDxx}_N005C_1
+gUtranCellRelationId : {xxgNodebIDxx}_N005C_1
+essEnabled : false
+isEndcAllowed : true
+isHoAllowed : true
+isRemoveAllowed : false
+isVoiceHoAllowed : true
+neighborCellRef : "SubNetwork=ONRM_ROOT_MO,MeContext={xxNodeIDxx},ManagedElement={xxNodeIDxx},ENodeBFunction=1,GUtraNetwork=1,ExternalGNodeBFunction={xxgNodebIDxx},ExternalGUtranCell=310410-000000{xxgNbIDxx}-{xx5G850GammaCellIDxx}"
+
+
+
+
+create
+FDN : SubNetwork=ONRM_ROOT_MO,MeContext={xxNodeIDxx},ManagedElement={xxNodeIDxx},ENodeBFunction=1,EUtranCellFDD={CELLNAME41},GUtranFreqRelation={xx5G850SSBxx}-15-20-0-2
+gUtranFreqRelationId : {xx5G850SSBxx}-15-20-0-2
+allowedPlmnList : [{mcc=310, mnc=410, mncLength=3}, {mcc=313, mnc=100, mncLength=3}]
+anrMeasOn : true
+b1ThrRsrpFreqOffset : -1
+b1ThrRsrqFreqOffset : 0
+cellReselectionPriority : -1
+connectedModeMobilityPrio : 6
+deriveSsbIndexFromCell : false
+endcB1MeasPriority : 1
+gUtranSyncSignalFrequencyRef : "SubNetwork=ONRM_ROOT_MO,MeContext={xxNodeIDxx},ManagedElement={xxNodeIDxx},ENodeBFunction=1,GUtraNetwork=1,GUtranSyncSignalFrequency={xx5G850SSBxx}-15"
+pMaxNR : 23
+qOffsetFreq : 0
+qQualMin : -30
+qRxLevMin : -104
+threshXHigh : 4
+threshXHighQ : 0
+threshXLow : 0
+threshXLowQ : 0
+timeToTriggerB1Override : -1000
+timeToTriggerNrB1Override : -1000
+triggerQuantityB1Override : NO_OVERRIDE
+voicePrio : 0
+
+
+
+create
+FDN : SubNetwork=ONRM_ROOT_MO,MeContext={xxNodeIDxx},ManagedElement={xxNodeIDxx},ENodeBFunction=1,EUtranCellFDD={CELLNAME41},GUtranFreqRelation={xx5G850SSBxx}-15-20-0-2,GUtranCellRelation={xxgNodebIDxx}_N005A_1
+gUtranCellRelationId : {xxgNodebIDxx}_N005A_1
+essEnabled : false
+isEndcAllowed : true
+isHoAllowed : true
+isRemoveAllowed : false
+isVoiceHoAllowed : true
+neighborCellRef : "SubNetwork=ONRM_ROOT_MO,MeContext={xxNodeIDxx},ManagedElement={xxNodeIDxx},ENodeBFunction=1,GUtraNetwork=1,ExternalGNodeBFunction={xxgNodebIDxx},ExternalGUtranCell=310410-000000{xxgNbIDxx}-{xx5G850AlphaCellIDxx}"
+
+create
+FDN : SubNetwork=ONRM_ROOT_MO,MeContext={xxNodeIDxx},ManagedElement={xxNodeIDxx},ENodeBFunction=1,EUtranCellFDD={CELLNAME41},GUtranFreqRelation={xx5G850SSBxx}-15-20-0-2,GUtranCellRelation={xxgNodebIDxx}_N005B_1
+gUtranCellRelationId : {xxgNodebIDxx}_N005B_1
+essEnabled : false
+isEndcAllowed : true
+isHoAllowed : true
+isRemoveAllowed : false
+isVoiceHoAllowed : true
+neighborCellRef : "SubNetwork=ONRM_ROOT_MO,MeContext={xxNodeIDxx},ManagedElement={xxNodeIDxx},ENodeBFunction=1,GUtraNetwork=1,ExternalGNodeBFunction={xxgNodebIDxx},ExternalGUtranCell=310410-000000{xxgNbIDxx}-{xx5G850BetaCellIDxx}"
+
+create
+FDN : SubNetwork=ONRM_ROOT_MO,MeContext={xxNodeIDxx},ManagedElement={xxNodeIDxx},ENodeBFunction=1,EUtranCellFDD={CELLNAME41},GUtranFreqRelation={xx5G850SSBxx}-15-20-0-2,GUtranCellRelation={xxgNodebIDxx}_N005C_1
+gUtranCellRelationId : {xxgNodebIDxx}_N005C_1
+essEnabled : false
+isEndcAllowed : true
+isHoAllowed : true
+isRemoveAllowed : false
+isVoiceHoAllowed : true
+neighborCellRef : "SubNetwork=ONRM_ROOT_MO,MeContext={xxNodeIDxx},ManagedElement={xxNodeIDxx},ENodeBFunction=1,GUtraNetwork=1,ExternalGNodeBFunction={xxgNodebIDxx},ExternalGUtranCell=310410-000000{xxgNbIDxx}-{xx5G850GammaCellIDxx}"
+
+
+
+create
+FDN : SubNetwork=ONRM_ROOT_MO,MeContext={xxNodeIDxx},ManagedElement={xxNodeIDxx},ENodeBFunction=1,EUtranCellFDD={CELLNAME42},GUtranFreqRelation={xx5G850SSBxx}-15-20-0-2
+gUtranFreqRelationId : {xx5G850SSBxx}-15-20-0-2
+allowedPlmnList : [{mcc=310, mnc=410, mncLength=3}, {mcc=313, mnc=100, mncLength=3}]
+anrMeasOn : true
+b1ThrRsrpFreqOffset : -1
+b1ThrRsrqFreqOffset : 0
+cellReselectionPriority : -1
+connectedModeMobilityPrio : 6
+deriveSsbIndexFromCell : false
+endcB1MeasPriority : 1
+gUtranSyncSignalFrequencyRef : "SubNetwork=ONRM_ROOT_MO,MeContext={xxNodeIDxx},ManagedElement={xxNodeIDxx},ENodeBFunction=1,GUtraNetwork=1,GUtranSyncSignalFrequency={xx5G850SSBxx}-15"
+pMaxNR : 23
+qOffsetFreq : 0
+qQualMin : -30
+qRxLevMin : -104
+threshXHigh : 4
+threshXHighQ : 0
+threshXLow : 0
+threshXLowQ : 0
+timeToTriggerB1Override : -1000
+timeToTriggerNrB1Override : -1000
+triggerQuantityB1Override : NO_OVERRIDE
+voicePrio : 0
+
+
+
+create
+FDN : SubNetwork=ONRM_ROOT_MO,MeContext={xxNodeIDxx},ManagedElement={xxNodeIDxx},ENodeBFunction=1,EUtranCellFDD={CELLNAME42},GUtranFreqRelation={xx5G850SSBxx}-15-20-0-2,GUtranCellRelation={xxgNodebIDxx}_N005A_1
+gUtranCellRelationId : {xxgNodebIDxx}_N005A_1
+essEnabled : false
+isEndcAllowed : true
+isHoAllowed : true
+isRemoveAllowed : false
+isVoiceHoAllowed : true
+neighborCellRef : "SubNetwork=ONRM_ROOT_MO,MeContext={xxNodeIDxx},ManagedElement={xxNodeIDxx},ENodeBFunction=1,GUtraNetwork=1,ExternalGNodeBFunction={xxgNodebIDxx},ExternalGUtranCell=310410-000000{xxgNbIDxx}-{xx5G850AlphaCellIDxx}"
+
+create
+FDN : SubNetwork=ONRM_ROOT_MO,MeContext={xxNodeIDxx},ManagedElement={xxNodeIDxx},ENodeBFunction=1,EUtranCellFDD={CELLNAME42},GUtranFreqRelation={xx5G850SSBxx}-15-20-0-2,GUtranCellRelation={xxgNodebIDxx}_N005B_1
+gUtranCellRelationId : {xxgNodebIDxx}_N005B_1
+essEnabled : false
+isEndcAllowed : true
+isHoAllowed : true
+isRemoveAllowed : false
+isVoiceHoAllowed : true
+neighborCellRef : "SubNetwork=ONRM_ROOT_MO,MeContext={xxNodeIDxx},ManagedElement={xxNodeIDxx},ENodeBFunction=1,GUtraNetwork=1,ExternalGNodeBFunction={xxgNodebIDxx},ExternalGUtranCell=310410-000000{xxgNbIDxx}-{xx5G850BetaCellIDxx}"
+
+create
+FDN : SubNetwork=ONRM_ROOT_MO,MeContext={xxNodeIDxx},ManagedElement={xxNodeIDxx},ENodeBFunction=1,EUtranCellFDD={CELLNAME42},GUtranFreqRelation={xx5G850SSBxx}-15-20-0-2,GUtranCellRelation={xxgNodebIDxx}_N005C_1
+gUtranCellRelationId : {xxgNodebIDxx}_N005C_1
+essEnabled : false
+isEndcAllowed : true
+isHoAllowed : true
+isRemoveAllowed : false
+isVoiceHoAllowed : true
+neighborCellRef : "SubNetwork=ONRM_ROOT_MO,MeContext={xxNodeIDxx},ManagedElement={xxNodeIDxx},ENodeBFunction=1,GUtraNetwork=1,ExternalGNodeBFunction={xxgNodebIDxx},ExternalGUtranCell=310410-000000{xxgNbIDxx}-{xx5G850GammaCellIDxx}"
+
+
+create
+FDN : SubNetwork=ONRM_ROOT_MO,MeContext={xxNodeIDxx},ManagedElement={xxNodeIDxx},ENodeBFunction=1,EUtranCellFDD={CELLNAME43},GUtranFreqRelation={xx5G850SSBxx}-15-20-0-2
+gUtranFreqRelationId : {xx5G850SSBxx}-15-20-0-2
+allowedPlmnList : [{mcc=310, mnc=410, mncLength=3}, {mcc=313, mnc=100, mncLength=3}]
+anrMeasOn : true
+b1ThrRsrpFreqOffset : -1
+b1ThrRsrqFreqOffset : 0
+cellReselectionPriority : -1
+connectedModeMobilityPrio : 6
+deriveSsbIndexFromCell : false
+endcB1MeasPriority : 1
+gUtranSyncSignalFrequencyRef : "SubNetwork=ONRM_ROOT_MO,MeContext={xxNodeIDxx},ManagedElement={xxNodeIDxx},ENodeBFunction=1,GUtraNetwork=1,GUtranSyncSignalFrequency={xx5G850SSBxx}-15"
+pMaxNR : 23
+qOffsetFreq : 0
+qQualMin : -30
+qRxLevMin : -104
+threshXHigh : 4
+threshXHighQ : 0
+threshXLow : 0
+threshXLowQ : 0
+timeToTriggerB1Override : -1000
+timeToTriggerNrB1Override : -1000
+triggerQuantityB1Override : NO_OVERRIDE
+voicePrio : 0
+
+
+create
+FDN : SubNetwork=ONRM_ROOT_MO,MeContext={xxNodeIDxx},ManagedElement={xxNodeIDxx},ENodeBFunction=1,EUtranCellFDD={CELLNAME43},GUtranFreqRelation={xx5G850SSBxx}-15-20-0-2,GUtranCellRelation={xxgNodebIDxx}_N005A_1
+gUtranCellRelationId : {xxgNodebIDxx}_N005A_1
+essEnabled : false
+isEndcAllowed : true
+isHoAllowed : true
+isRemoveAllowed : false
+isVoiceHoAllowed : true
+neighborCellRef : "SubNetwork=ONRM_ROOT_MO,MeContext={xxNodeIDxx},ManagedElement={xxNodeIDxx},ENodeBFunction=1,GUtraNetwork=1,ExternalGNodeBFunction={xxgNodebIDxx},ExternalGUtranCell=310410-000000{xxgNbIDxx}-{xx5G850AlphaCellIDxx}"
+
+create
+FDN : SubNetwork=ONRM_ROOT_MO,MeContext={xxNodeIDxx},ManagedElement={xxNodeIDxx},ENodeBFunction=1,EUtranCellFDD={CELLNAME43},GUtranFreqRelation={xx5G850SSBxx}-15-20-0-2,GUtranCellRelation={xxgNodebIDxx}_N005B_1
+gUtranCellRelationId : {xxgNodebIDxx}_N005B_1
+essEnabled : false
+isEndcAllowed : true
+isHoAllowed : true
+isRemoveAllowed : false
+isVoiceHoAllowed : true
+neighborCellRef : "SubNetwork=ONRM_ROOT_MO,MeContext={xxNodeIDxx},ManagedElement={xxNodeIDxx},ENodeBFunction=1,GUtraNetwork=1,ExternalGNodeBFunction={xxgNodebIDxx},ExternalGUtranCell=310410-000000{xxgNbIDxx}-{xx5G850BetaCellIDxx}"
+
+
+create
+FDN : SubNetwork=ONRM_ROOT_MO,MeContext={xxNodeIDxx},ManagedElement={xxNodeIDxx},ENodeBFunction=1,EUtranCellFDD={CELLNAME43},GUtranFreqRelation={xx5G850SSBxx}-15-20-0-2,GUtranCellRelation={xxgNodebIDxx}_N005C_1
+gUtranCellRelationId : {xxgNodebIDxx}_N005C_1
+essEnabled : false
+isEndcAllowed : true
+isHoAllowed : true
+isRemoveAllowed : false
+isVoiceHoAllowed : true
+neighborCellRef : "SubNetwork=ONRM_ROOT_MO,MeContext={xxNodeIDxx},ManagedElement={xxNodeIDxx},ENodeBFunction=1,GUtraNetwork=1,ExternalGNodeBFunction={xxgNodebIDxx},ExternalGUtranCell=310410-000000{xxgNbIDxx}-{xx5G850GammaCellIDxx}"
+
+
+create
+FDN : SubNetwork=ONRM_ROOT_MO,MeContext={xxNodeIDxx},ManagedElement={xxNodeIDxx},ENodeBFunction=1,EUtranCellFDD={CELLNAME44},GUtranFreqRelation={xx5G850SSBxx}-15-20-0-2
+gUtranFreqRelationId : {xx5G850SSBxx}-15-20-0-2
+allowedPlmnList : [{mcc=310, mnc=410, mncLength=3}, {mcc=313, mnc=100, mncLength=3}]
+anrMeasOn : true
+b1ThrRsrpFreqOffset : -1
+b1ThrRsrqFreqOffset : 0
+cellReselectionPriority : -1
+connectedModeMobilityPrio : 6
+deriveSsbIndexFromCell : false
+endcB1MeasPriority : 1
+gUtranSyncSignalFrequencyRef : "SubNetwork=ONRM_ROOT_MO,MeContext={xxNodeIDxx},ManagedElement={xxNodeIDxx},ENodeBFunction=1,GUtraNetwork=1,GUtranSyncSignalFrequency={xx5G850SSBxx}-15"
+pMaxNR : 23
+qOffsetFreq : 0
+qQualMin : -30
+qRxLevMin : -104
+threshXHigh : 4
+threshXHighQ : 0
+threshXLow : 0
+threshXLowQ : 0
+timeToTriggerB1Override : -1000
+timeToTriggerNrB1Override : -1000
+triggerQuantityB1Override : NO_OVERRIDE
+voicePrio : 0
+
+
+
+create
+FDN : SubNetwork=ONRM_ROOT_MO,MeContext={xxNodeIDxx},ManagedElement={xxNodeIDxx},ENodeBFunction=1,EUtranCellFDD={CELLNAME44},GUtranFreqRelation={xx5G850SSBxx}-15-20-0-2,GUtranCellRelation={xxgNodebIDxx}_N005A_1
+gUtranCellRelationId : {xxgNodebIDxx}_N005A_1
+essEnabled : false
+isEndcAllowed : true
+isHoAllowed : true
+isRemoveAllowed : false
+isVoiceHoAllowed : true
+neighborCellRef : "SubNetwork=ONRM_ROOT_MO,MeContext={xxNodeIDxx},ManagedElement={xxNodeIDxx},ENodeBFunction=1,GUtraNetwork=1,ExternalGNodeBFunction={xxgNodebIDxx},ExternalGUtranCell=310410-000000{xxgNbIDxx}-{xx5G850AlphaCellIDxx}"
+
+create
+FDN : SubNetwork=ONRM_ROOT_MO,MeContext={xxNodeIDxx},ManagedElement={xxNodeIDxx},ENodeBFunction=1,EUtranCellFDD={CELLNAME44},GUtranFreqRelation={xx5G850SSBxx}-15-20-0-2,GUtranCellRelation={xxgNodebIDxx}_N005B_1
+gUtranCellRelationId : {xxgNodebIDxx}_N005B_1
+essEnabled : false
+isEndcAllowed : true
+isHoAllowed : true
+isRemoveAllowed : false
+isVoiceHoAllowed : true
+neighborCellRef : "SubNetwork=ONRM_ROOT_MO,MeContext={xxNodeIDxx},ManagedElement={xxNodeIDxx},ENodeBFunction=1,GUtraNetwork=1,ExternalGNodeBFunction={xxgNodebIDxx},ExternalGUtranCell=310410-000000{xxgNbIDxx}-{xx5G850BetaCellIDxx}"
+
+create
+FDN : SubNetwork=ONRM_ROOT_MO,MeContext={xxNodeIDxx},ManagedElement={xxNodeIDxx},ENodeBFunction=1,EUtranCellFDD={CELLNAME44},GUtranFreqRelation={xx5G850SSBxx}-15-20-0-2,GUtranCellRelation={xxgNodebIDxx}_N005C_1
+gUtranCellRelationId : {xxgNodebIDxx}_N005C_1
+essEnabled : false
+isEndcAllowed : true
+isHoAllowed : true
+isRemoveAllowed : false
+isVoiceHoAllowed : true
+neighborCellRef : "SubNetwork=ONRM_ROOT_MO,MeContext={xxNodeIDxx},ManagedElement={xxNodeIDxx},ENodeBFunction=1,GUtraNetwork=1,ExternalGNodeBFunction={xxgNodebIDxx},ExternalGUtranCell=310410-000000{xxgNbIDxx}-{xx5G850GammaCellIDxx}"
+
+
+create
+FDN : SubNetwork=ONRM_ROOT_MO,MeContext={xxNodeIDxx},ManagedElement={xxNodeIDxx},ENodeBFunction=1,EUtranCellFDD={CELLNAME45},GUtranFreqRelation={xx5G850SSBxx}-15-20-0-2
+gUtranFreqRelationId : {xx5G850SSBxx}-15-20-0-2
+allowedPlmnList : [{mcc=310, mnc=410, mncLength=3}, {mcc=313, mnc=100, mncLength=3}]
+anrMeasOn : true
+b1ThrRsrpFreqOffset : -1
+b1ThrRsrqFreqOffset : 0
+cellReselectionPriority : -1
+connectedModeMobilityPrio : 6
+deriveSsbIndexFromCell : false
+endcB1MeasPriority : 1
+gUtranSyncSignalFrequencyRef : "SubNetwork=ONRM_ROOT_MO,MeContext={xxNodeIDxx},ManagedElement={xxNodeIDxx},ENodeBFunction=1,GUtraNetwork=1,GUtranSyncSignalFrequency={xx5G850SSBxx}-15"
+pMaxNR : 23
+qOffsetFreq : 0
+qQualMin : -30
+qRxLevMin : -104
+threshXHigh : 4
+threshXHighQ : 0
+threshXLow : 0
+threshXLowQ : 0
+timeToTriggerB1Override : -1000
+timeToTriggerNrB1Override : -1000
+triggerQuantityB1Override : NO_OVERRIDE
+voicePrio : 0
+
+
+create
+FDN : SubNetwork=ONRM_ROOT_MO,MeContext={xxNodeIDxx},ManagedElement={xxNodeIDxx},ENodeBFunction=1,EUtranCellFDD={CELLNAME45},GUtranFreqRelation={xx5G850SSBxx}-15-20-0-2,GUtranCellRelation={xxgNodebIDxx}_N005A_1
+gUtranCellRelationId : {xxgNodebIDxx}_N005A_1
+essEnabled : false
+isEndcAllowed : true
+isHoAllowed : true
+isRemoveAllowed : false
+isVoiceHoAllowed : true
+neighborCellRef : "SubNetwork=ONRM_ROOT_MO,MeContext={xxNodeIDxx},ManagedElement={xxNodeIDxx},ENodeBFunction=1,GUtraNetwork=1,ExternalGNodeBFunction={xxgNodebIDxx},ExternalGUtranCell=310410-000000{xxgNbIDxx}-{xx5G850AlphaCellIDxx}"
+
+create
+FDN : SubNetwork=ONRM_ROOT_MO,MeContext={xxNodeIDxx},ManagedElement={xxNodeIDxx},ENodeBFunction=1,EUtranCellFDD={CELLNAME45},GUtranFreqRelation={xx5G850SSBxx}-15-20-0-2,GUtranCellRelation={xxgNodebIDxx}_N005B_1
+gUtranCellRelationId : {xxgNodebIDxx}_N005B_1
+essEnabled : false
+isEndcAllowed : true
+isHoAllowed : true
+isRemoveAllowed : false
+isVoiceHoAllowed : true
+neighborCellRef : "SubNetwork=ONRM_ROOT_MO,MeContext={xxNodeIDxx},ManagedElement={xxNodeIDxx},ENodeBFunction=1,GUtraNetwork=1,ExternalGNodeBFunction={xxgNodebIDxx},ExternalGUtranCell=310410-000000{xxgNbIDxx}-{xx5G850BetaCellIDxx}"
+
+create
+FDN : SubNetwork=ONRM_ROOT_MO,MeContext={xxNodeIDxx},ManagedElement={xxNodeIDxx},ENodeBFunction=1,EUtranCellFDD={CELLNAME45},GUtranFreqRelation={xx5G850SSBxx}-15-20-0-2,GUtranCellRelation={xxgNodebIDxx}_N005C_1
+gUtranCellRelationId : {xxgNodebIDxx}_N005C_1
+essEnabled : false
+isEndcAllowed : true
+isHoAllowed : true
+isRemoveAllowed : false
+isVoiceHoAllowed : true
+neighborCellRef : "SubNetwork=ONRM_ROOT_MO,MeContext={xxNodeIDxx},ManagedElement={xxNodeIDxx},ENodeBFunction=1,GUtraNetwork=1,ExternalGNodeBFunction={xxgNodebIDxx},ExternalGUtranCell=310410-000000{xxgNbIDxx}-{xx5G850GammaCellIDxx}"
+
+
+
+create
+FDN : SubNetwork=ONRM_ROOT_MO,MeContext={xxNodeIDxx},ManagedElement={xxNodeIDxx},ENodeBFunction=1,EUtranCellFDD={CELLNAME46},GUtranFreqRelation={xx5G850SSBxx}-15-20-0-2
+gUtranFreqRelationId : {xx5G850SSBxx}-15-20-0-2
+allowedPlmnList : [{mcc=310, mnc=410, mncLength=3}, {mcc=313, mnc=100, mncLength=3}]
+anrMeasOn : true
+b1ThrRsrpFreqOffset : -1
+b1ThrRsrqFreqOffset : 0
+cellReselectionPriority : -1
+connectedModeMobilityPrio : 6
+deriveSsbIndexFromCell : false
+endcB1MeasPriority : 1
+gUtranSyncSignalFrequencyRef : "SubNetwork=ONRM_ROOT_MO,MeContext={xxNodeIDxx},ManagedElement={xxNodeIDxx},ENodeBFunction=1,GUtraNetwork=1,GUtranSyncSignalFrequency={xx5G850SSBxx}-15"
+pMaxNR : 23
+qOffsetFreq : 0
+qQualMin : -30
+qRxLevMin : -104
+threshXHigh : 4
+threshXHighQ : 0
+threshXLow : 0
+threshXLowQ : 0
+timeToTriggerB1Override : -1000
+timeToTriggerNrB1Override : -1000
+triggerQuantityB1Override : NO_OVERRIDE
+voicePrio : 0
+
+
+
+create
+FDN : SubNetwork=ONRM_ROOT_MO,MeContext={xxNodeIDxx},ManagedElement={xxNodeIDxx},ENodeBFunction=1,EUtranCellFDD={CELLNAME46},GUtranFreqRelation={xx5G850SSBxx}-15-20-0-2,GUtranCellRelation={xxgNodebIDxx}_N005A_1
+gUtranCellRelationId : {xxgNodebIDxx}_N005A_1
+essEnabled : false
+isEndcAllowed : true
+isHoAllowed : true
+isRemoveAllowed : false
+isVoiceHoAllowed : true
+neighborCellRef : "SubNetwork=ONRM_ROOT_MO,MeContext={xxNodeIDxx},ManagedElement={xxNodeIDxx},ENodeBFunction=1,GUtraNetwork=1,ExternalGNodeBFunction={xxgNodebIDxx},ExternalGUtranCell=310410-000000{xxgNbIDxx}-{xx5G850AlphaCellIDxx}"
+
+create
+FDN : SubNetwork=ONRM_ROOT_MO,MeContext={xxNodeIDxx},ManagedElement={xxNodeIDxx},ENodeBFunction=1,EUtranCellFDD={CELLNAME46},GUtranFreqRelation={xx5G850SSBxx}-15-20-0-2,GUtranCellRelation={xxgNodebIDxx}_N005B_1
+gUtranCellRelationId : {xxgNodebIDxx}_N005B_1
+essEnabled : false
+isEndcAllowed : true
+isHoAllowed : true
+isRemoveAllowed : false
+isVoiceHoAllowed : true
+neighborCellRef : "SubNetwork=ONRM_ROOT_MO,MeContext={xxNodeIDxx},ManagedElement={xxNodeIDxx},ENodeBFunction=1,GUtraNetwork=1,ExternalGNodeBFunction={xxgNodebIDxx},ExternalGUtranCell=310410-000000{xxgNbIDxx}-{xx5G850BetaCellIDxx}"
+
+
+create
+FDN : SubNetwork=ONRM_ROOT_MO,MeContext={xxNodeIDxx},ManagedElement={xxNodeIDxx},ENodeBFunction=1,EUtranCellFDD={CELLNAME46},GUtranFreqRelation={xx5G850SSBxx}-15-20-0-2,GUtranCellRelation={xxgNodebIDxx}_N005C_1
+gUtranCellRelationId : {xxgNodebIDxx}_N005C_1
+essEnabled : false
+isEndcAllowed : true
+isHoAllowed : true
+isRemoveAllowed : false
+isVoiceHoAllowed : true
+neighborCellRef : "SubNetwork=ONRM_ROOT_MO,MeContext={xxNodeIDxx},ManagedElement={xxNodeIDxx},ENodeBFunction=1,GUtraNetwork=1,ExternalGNodeBFunction={xxgNodebIDxx},ExternalGUtranCell=310410-000000{xxgNbIDxx}-{xx5G850GammaCellIDxx}"
+
+
+
+
+create
+FDN : SubNetwork=ONRM_ROOT_MO,MeContext={xxNodeIDxx},ManagedElement={xxNodeIDxx},ENodeBFunction=1,EUtranCellFDD={CELLNAME47},GUtranFreqRelation={xx5G850SSBxx}-15-20-0-2
+gUtranFreqRelationId : {xx5G850SSBxx}-15-20-0-2
+allowedPlmnList : [{mcc=310, mnc=410, mncLength=3}, {mcc=313, mnc=100, mncLength=3}]
+anrMeasOn : true
+b1ThrRsrpFreqOffset : -1
+b1ThrRsrqFreqOffset : 0
+cellReselectionPriority : -1
+connectedModeMobilityPrio : 6
+deriveSsbIndexFromCell : false
+endcB1MeasPriority : 1
+gUtranSyncSignalFrequencyRef : "SubNetwork=ONRM_ROOT_MO,MeContext={xxNodeIDxx},ManagedElement={xxNodeIDxx},ENodeBFunction=1,GUtraNetwork=1,GUtranSyncSignalFrequency={xx5G850SSBxx}-15"
+pMaxNR : 23
+qOffsetFreq : 0
+qQualMin : -30
+qRxLevMin : -104
+threshXHigh : 4
+threshXHighQ : 0
+threshXLow : 0
+threshXLowQ : 0
+timeToTriggerB1Override : -1000
+timeToTriggerNrB1Override : -1000
+triggerQuantityB1Override : NO_OVERRIDE
+voicePrio : 0
+
+
+
+create
+FDN : SubNetwork=ONRM_ROOT_MO,MeContext={xxNodeIDxx},ManagedElement={xxNodeIDxx},ENodeBFunction=1,EUtranCellFDD={CELLNAME47},GUtranFreqRelation={xx5G850SSBxx}-15-20-0-2,GUtranCellRelation={xxgNodebIDxx}_N005A_1
+gUtranCellRelationId : {xxgNodebIDxx}_N005A_1
+essEnabled : false
+isEndcAllowed : true
+isHoAllowed : true
+isRemoveAllowed : false
+isVoiceHoAllowed : true
+neighborCellRef : "SubNetwork=ONRM_ROOT_MO,MeContext={xxNodeIDxx},ManagedElement={xxNodeIDxx},ENodeBFunction=1,GUtraNetwork=1,ExternalGNodeBFunction={xxgNodebIDxx},ExternalGUtranCell=310410-000000{xxgNbIDxx}-{xx5G850AlphaCellIDxx}"
+
+create
+FDN : SubNetwork=ONRM_ROOT_MO,MeContext={xxNodeIDxx},ManagedElement={xxNodeIDxx},ENodeBFunction=1,EUtranCellFDD={CELLNAME47},GUtranFreqRelation={xx5G850SSBxx}-15-20-0-2,GUtranCellRelation={xxgNodebIDxx}_N005B_1
+gUtranCellRelationId : {xxgNodebIDxx}_N005B_1
+essEnabled : false
+isEndcAllowed : true
+isHoAllowed : true
+isRemoveAllowed : false
+isVoiceHoAllowed : true
+neighborCellRef : "SubNetwork=ONRM_ROOT_MO,MeContext={xxNodeIDxx},ManagedElement={xxNodeIDxx},ENodeBFunction=1,GUtraNetwork=1,ExternalGNodeBFunction={xxgNodebIDxx},ExternalGUtranCell=310410-000000{xxgNbIDxx}-{xx5G850BetaCellIDxx}"
+
+create
+FDN : SubNetwork=ONRM_ROOT_MO,MeContext={xxNodeIDxx},ManagedElement={xxNodeIDxx},ENodeBFunction=1,EUtranCellFDD={CELLNAME47},GUtranFreqRelation={xx5G850SSBxx}-15-20-0-2,GUtranCellRelation={xxgNodebIDxx}_N005C_1
+gUtranCellRelationId : {xxgNodebIDxx}_N005C_1
+essEnabled : false
+isEndcAllowed : true
+isHoAllowed : true
+isRemoveAllowed : false
+isVoiceHoAllowed : true
+neighborCellRef : "SubNetwork=ONRM_ROOT_MO,MeContext={xxNodeIDxx},ManagedElement={xxNodeIDxx},ENodeBFunction=1,GUtraNetwork=1,ExternalGNodeBFunction={xxgNodebIDxx},ExternalGUtranCell=310410-000000{xxgNbIDxx}-{xx5G850GammaCellIDxx}"
+
+
+
+create
+FDN : SubNetwork=ONRM_ROOT_MO,MeContext={xxNodeIDxx},ManagedElement={xxNodeIDxx},ENodeBFunction=1,EUtranCellFDD={CELLNAME48},GUtranFreqRelation={xx5G850SSBxx}-15-20-0-2
+gUtranFreqRelationId : {xx5G850SSBxx}-15-20-0-2
+allowedPlmnList : [{mcc=310, mnc=410, mncLength=3}, {mcc=313, mnc=100, mncLength=3}]
+anrMeasOn : true
+b1ThrRsrpFreqOffset : -1
+b1ThrRsrqFreqOffset : 0
+cellReselectionPriority : -1
+connectedModeMobilityPrio : 6
+deriveSsbIndexFromCell : false
+endcB1MeasPriority : 1
+gUtranSyncSignalFrequencyRef : "SubNetwork=ONRM_ROOT_MO,MeContext={xxNodeIDxx},ManagedElement={xxNodeIDxx},ENodeBFunction=1,GUtraNetwork=1,GUtranSyncSignalFrequency={xx5G850SSBxx}-15"
+pMaxNR : 23
+qOffsetFreq : 0
+qQualMin : -30
+qRxLevMin : -104
+threshXHigh : 4
+threshXHighQ : 0
+threshXLow : 0
+threshXLowQ : 0
+timeToTriggerB1Override : -1000
+timeToTriggerNrB1Override : -1000
+triggerQuantityB1Override : NO_OVERRIDE
+voicePrio : 0
+
+
+
+create
+FDN : SubNetwork=ONRM_ROOT_MO,MeContext={xxNodeIDxx},ManagedElement={xxNodeIDxx},ENodeBFunction=1,EUtranCellFDD={CELLNAME48},GUtranFreqRelation={xx5G850SSBxx}-15-20-0-2,GUtranCellRelation={xxgNodebIDxx}_N005A_1
+gUtranCellRelationId : {xxgNodebIDxx}_N005A_1
+essEnabled : false
+isEndcAllowed : true
+isHoAllowed : true
+isRemoveAllowed : false
+isVoiceHoAllowed : true
+neighborCellRef : "SubNetwork=ONRM_ROOT_MO,MeContext={xxNodeIDxx},ManagedElement={xxNodeIDxx},ENodeBFunction=1,GUtraNetwork=1,ExternalGNodeBFunction={xxgNodebIDxx},ExternalGUtranCell=310410-000000{xxgNbIDxx}-{xx5G850AlphaCellIDxx}"
+
+create
+FDN : SubNetwork=ONRM_ROOT_MO,MeContext={xxNodeIDxx},ManagedElement={xxNodeIDxx},ENodeBFunction=1,EUtranCellFDD={CELLNAME48},GUtranFreqRelation={xx5G850SSBxx}-15-20-0-2,GUtranCellRelation={xxgNodebIDxx}_N005B_1
+gUtranCellRelationId : {xxgNodebIDxx}_N005B_1
+essEnabled : false
+isEndcAllowed : true
+isHoAllowed : true
+isRemoveAllowed : false
+isVoiceHoAllowed : true
+neighborCellRef : "SubNetwork=ONRM_ROOT_MO,MeContext={xxNodeIDxx},ManagedElement={xxNodeIDxx},ENodeBFunction=1,GUtraNetwork=1,ExternalGNodeBFunction={xxgNodebIDxx},ExternalGUtranCell=310410-000000{xxgNbIDxx}-{xx5G850BetaCellIDxx}"
+
+create
+FDN : SubNetwork=ONRM_ROOT_MO,MeContext={xxNodeIDxx},ManagedElement={xxNodeIDxx},ENodeBFunction=1,EUtranCellFDD={CELLNAME48},GUtranFreqRelation={xx5G850SSBxx}-15-20-0-2,GUtranCellRelation={xxgNodebIDxx}_N005C_1
+gUtranCellRelationId : {xxgNodebIDxx}_N005C_1
+essEnabled : false
+isEndcAllowed : true
+isHoAllowed : true
+isRemoveAllowed : false
+isVoiceHoAllowed : true
+neighborCellRef : "SubNetwork=ONRM_ROOT_MO,MeContext={xxNodeIDxx},ManagedElement={xxNodeIDxx},ENodeBFunction=1,GUtraNetwork=1,ExternalGNodeBFunction={xxgNodebIDxx},ExternalGUtranCell=310410-000000{xxgNbIDxx}-{xx5G850GammaCellIDxx}"
+
+
+create
+FDN : SubNetwork=ONRM_ROOT_MO,MeContext={xxNodeIDxx},ManagedElement={xxNodeIDxx},ENodeBFunction=1,EUtranCellFDD={CELLNAME49},GUtranFreqRelation={xx5G850SSBxx}-15-20-0-2
+gUtranFreqRelationId : {xx5G850SSBxx}-15-20-0-2
+allowedPlmnList : [{mcc=310, mnc=410, mncLength=3}, {mcc=313, mnc=100, mncLength=3}]
+anrMeasOn : true
+b1ThrRsrpFreqOffset : -1
+b1ThrRsrqFreqOffset : 0
+cellReselectionPriority : -1
+connectedModeMobilityPrio : 6
+deriveSsbIndexFromCell : false
+endcB1MeasPriority : 1
+gUtranSyncSignalFrequencyRef : "SubNetwork=ONRM_ROOT_MO,MeContext={xxNodeIDxx},ManagedElement={xxNodeIDxx},ENodeBFunction=1,GUtraNetwork=1,GUtranSyncSignalFrequency={xx5G850SSBxx}-15"
+pMaxNR : 23
+qOffsetFreq : 0
+qQualMin : -30
+qRxLevMin : -104
+threshXHigh : 4
+threshXHighQ : 0
+threshXLow : 0
+threshXLowQ : 0
+timeToTriggerB1Override : -1000
+timeToTriggerNrB1Override : -1000
+triggerQuantityB1Override : NO_OVERRIDE
+voicePrio : 0
+
+
+
+create
+FDN : SubNetwork=ONRM_ROOT_MO,MeContext={xxNodeIDxx},ManagedElement={xxNodeIDxx},ENodeBFunction=1,EUtranCellFDD={CELLNAME49},GUtranFreqRelation={xx5G850SSBxx}-15-20-0-2,GUtranCellRelation={xxgNodebIDxx}_N005A_1
+gUtranCellRelationId : {xxgNodebIDxx}_N005A_1
+essEnabled : false
+isEndcAllowed : true
+isHoAllowed : true
+isRemoveAllowed : false
+isVoiceHoAllowed : true
+neighborCellRef : "SubNetwork=ONRM_ROOT_MO,MeContext={xxNodeIDxx},ManagedElement={xxNodeIDxx},ENodeBFunction=1,GUtraNetwork=1,ExternalGNodeBFunction={xxgNodebIDxx},ExternalGUtranCell=310410-000000{xxgNbIDxx}-{xx5G850AlphaCellIDxx}"
+
+create
+FDN : SubNetwork=ONRM_ROOT_MO,MeContext={xxNodeIDxx},ManagedElement={xxNodeIDxx},ENodeBFunction=1,EUtranCellFDD={CELLNAME49},GUtranFreqRelation={xx5G850SSBxx}-15-20-0-2,GUtranCellRelation={xxgNodebIDxx}_N005B_1
+gUtranCellRelationId : {xxgNodebIDxx}_N005B_1
+essEnabled : false
+isEndcAllowed : true
+isHoAllowed : true
+isRemoveAllowed : false
+isVoiceHoAllowed : true
+neighborCellRef : "SubNetwork=ONRM_ROOT_MO,MeContext={xxNodeIDxx},ManagedElement={xxNodeIDxx},ENodeBFunction=1,GUtraNetwork=1,ExternalGNodeBFunction={xxgNodebIDxx},ExternalGUtranCell=310410-000000{xxgNbIDxx}-{xx5G850BetaCellIDxx}"
+
+create
+FDN : SubNetwork=ONRM_ROOT_MO,MeContext={xxNodeIDxx},ManagedElement={xxNodeIDxx},ENodeBFunction=1,EUtranCellFDD={CELLNAME49},GUtranFreqRelation={xx5G850SSBxx}-15-20-0-2,GUtranCellRelation={xxgNodebIDxx}_N005C_1
+gUtranCellRelationId : {xxgNodebIDxx}_N005C_1
+essEnabled : false
+isEndcAllowed : true
+isHoAllowed : true
+isRemoveAllowed : false
+isVoiceHoAllowed : true
+neighborCellRef : "SubNetwork=ONRM_ROOT_MO,MeContext={xxNodeIDxx},ManagedElement={xxNodeIDxx},ENodeBFunction=1,GUtraNetwork=1,ExternalGNodeBFunction={xxgNodebIDxx},ExternalGUtranCell=310410-000000{xxgNbIDxx}-{xx5G850GammaCellIDxx}"
+
+
+
+create
+FDN : SubNetwork=ONRM_ROOT_MO,MeContext={xxNodeIDxx},ManagedElement={xxNodeIDxx},ENodeBFunction=1,EUtranCellFDD={CELLNAME50},GUtranFreqRelation={xx5G850SSBxx}-15-20-0-2
+gUtranFreqRelationId : {xx5G850SSBxx}-15-20-0-2
+allowedPlmnList : [{mcc=310, mnc=410, mncLength=3}, {mcc=313, mnc=100, mncLength=3}]
+anrMeasOn : true
+b1ThrRsrpFreqOffset : -1
+b1ThrRsrqFreqOffset : 0
+cellReselectionPriority : -1
+connectedModeMobilityPrio : 6
+deriveSsbIndexFromCell : false
+endcB1MeasPriority : 1
+gUtranSyncSignalFrequencyRef : "SubNetwork=ONRM_ROOT_MO,MeContext={xxNodeIDxx},ManagedElement={xxNodeIDxx},ENodeBFunction=1,GUtraNetwork=1,GUtranSyncSignalFrequency={xx5G850SSBxx}-15"
+pMaxNR : 23
+qOffsetFreq : 0
+qQualMin : -30
+qRxLevMin : -104
+threshXHigh : 4
+threshXHighQ : 0
+threshXLow : 0
+threshXLowQ : 0
+timeToTriggerB1Override : -1000
+timeToTriggerNrB1Override : -1000
+triggerQuantityB1Override : NO_OVERRIDE
+voicePrio : 0
+
+
+
+create
+FDN : SubNetwork=ONRM_ROOT_MO,MeContext={xxNodeIDxx},ManagedElement={xxNodeIDxx},ENodeBFunction=1,EUtranCellFDD={CELLNAME50},GUtranFreqRelation={xx5G850SSBxx}-15-20-0-2,GUtranCellRelation={xxgNodebIDxx}_N005A_1
+gUtranCellRelationId : {xxgNodebIDxx}_N005A_1
+essEnabled : false
+isEndcAllowed : true
+isHoAllowed : true
+isRemoveAllowed : false
+isVoiceHoAllowed : true
+neighborCellRef : "SubNetwork=ONRM_ROOT_MO,MeContext={xxNodeIDxx},ManagedElement={xxNodeIDxx},ENodeBFunction=1,GUtraNetwork=1,ExternalGNodeBFunction={xxgNodebIDxx},ExternalGUtranCell=310410-000000{xxgNbIDxx}-{xx5G850AlphaCellIDxx}"
+
+create
+FDN : SubNetwork=ONRM_ROOT_MO,MeContext={xxNodeIDxx},ManagedElement={xxNodeIDxx},ENodeBFunction=1,EUtranCellFDD={CELLNAME50},GUtranFreqRelation={xx5G850SSBxx}-15-20-0-2,GUtranCellRelation={xxgNodebIDxx}_N005B_1
+gUtranCellRelationId : {xxgNodebIDxx}_N005B_1
+essEnabled : false
+isEndcAllowed : true
+isHoAllowed : true
+isRemoveAllowed : false
+isVoiceHoAllowed : true
+neighborCellRef : "SubNetwork=ONRM_ROOT_MO,MeContext={xxNodeIDxx},ManagedElement={xxNodeIDxx},ENodeBFunction=1,GUtraNetwork=1,ExternalGNodeBFunction={xxgNodebIDxx},ExternalGUtranCell=310410-000000{xxgNbIDxx}-{xx5G850BetaCellIDxx}"
+
+create
+FDN : SubNetwork=ONRM_ROOT_MO,MeContext={xxNodeIDxx},ManagedElement={xxNodeIDxx},ENodeBFunction=1,EUtranCellFDD={CELLNAME50},GUtranFreqRelation={xx5G850SSBxx}-15-20-0-2,GUtranCellRelation={xxgNodebIDxx}_N005C_1
+gUtranCellRelationId : {xxgNodebIDxx}_N005C_1
+essEnabled : false
+isEndcAllowed : true
+isHoAllowed : true
+isRemoveAllowed : false
+isVoiceHoAllowed : true
+neighborCellRef : "SubNetwork=ONRM_ROOT_MO,MeContext={xxNodeIDxx},ManagedElement={xxNodeIDxx},ENodeBFunction=1,GUtraNetwork=1,ExternalGNodeBFunction={xxgNodebIDxx},ExternalGUtranCell=310410-000000{xxgNbIDxx}-{xx5G850GammaCellIDxx}"
+

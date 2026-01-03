@@ -1,0 +1,154 @@
+
+
+create
+FDN : SubNetwork=ONRM_ROOT_MO,MeContext={xxNodeIDxx},ManagedElement={xxNodeIDxx},Equipment=1,AntennaUnitGroup={xxAntennaUnitGroupxx},AntennaUnit={xxAntennaUnitxx},AntennaSubunit={xxAntennaSubunitxx},AuPort=3
+auPortId : 3
+
+
+create
+FDN : SubNetwork=ONRM_ROOT_MO,MeContext={xxNodeIDxx},ManagedElement={xxNodeIDxx},Equipment=1,AntennaUnitGroup={xxAntennaUnitGroupxx},AntennaUnit={xxAntennaUnitxx},AntennaSubunit={xxAntennaSubunitxx},AuPort=4
+auPortId : 4
+
+
+create
+FDN : SubNetwork=ONRM_ROOT_MO,MeContext={xxNodeIDxx},ManagedElement={xxNodeIDxx},Equipment=1,FieldReplaceableUnit=RRU-{xxRRUxx},RfPort=C
+rfPortId : C
+administrativeState : UNLOCKED
+antennaSupervisionActive : false
+automaticANUrecovery : true
+pimdAlarmActive : false
+pimdMeasDuration : 1
+pimdThreshold : 300
+userLabel : <empty>
+vswrSupervisionActive : true
+vswrSupervisionSensitivity : 70
+
+
+create
+FDN : SubNetwork=ONRM_ROOT_MO,MeContext={xxNodeIDxx},ManagedElement={xxNodeIDxx},Equipment=1,FieldReplaceableUnit=RRU-{xxRRUxx},RfPort=D
+rfPortId : D
+administrativeState : UNLOCKED
+antennaSupervisionActive : false
+automaticANUrecovery : true
+pimdAlarmActive : false
+pimdMeasDuration : 1
+pimdThreshold : 300
+userLabel : <empty>
+vswrSupervisionActive : true
+vswrSupervisionSensitivity : 70
+
+
+create
+FDN : SubNetwork=ONRM_ROOT_MO,MeContext={xxNodeIDxx},ManagedElement={xxNodeIDxx},Equipment=1,FieldReplaceableUnit=RRU-{xxRRUxx},RfPort=R
+rfPortId : R
+administrativeState : UNLOCKED
+antennaSupervisionActive : false
+automaticANUrecovery : true
+pimdAlarmActive : false
+pimdMeasDuration : 1
+pimdThreshold : 300
+userLabel : <empty>
+vswrSupervisionActive : false
+vswrSupervisionSensitivity : -1
+
+
+set
+FDN : SubNetwork=ONRM_ROOT_MO,MeContext={xxNodeIDxx},ManagedElement={xxNodeIDxx},Equipment=1,AntennaUnitGroup={xxAntennaUnitGroupxx},RfBranch={xxrfb2xx}
+auPortRef : "SubNetwork=ONRM_ROOT_MO,MeContext={xxNodeIDxx},ManagedElement={xxNodeIDxx},Equipment=1,AntennaUnitGroup={xxAntennaUnitGroupxx},AntennaUnit={xxAntennaUnitxx},AntennaSubunit={xxAntennaSubunitxx},AuPort=2"
+bandList : <empty>
+dlAttenuation : [{xxAttenuationxx}, {xxAttenuationxx}, {xxAttenuationxx}, {xxAttenuationxx}, {xxAttenuationxx}, {xxAttenuationxx}, {xxAttenuationxx}, {xxAttenuationxx}, {xxAttenuationxx}, {xxAttenuationxx}, {xxAttenuationxx}, {xxAttenuationxx}, {xxAttenuationxx}, {xxAttenuationxx}, {xxAttenuationxx}]
+dlAttenuationPerFqRange : [-1, -1, -1, -1]
+dlTrafficDelay : [{xxTrafficDelayxx}, {xxTrafficDelayxx}, {xxTrafficDelayxx}, {xxTrafficDelayxx}, {xxTrafficDelayxx}, {xxTrafficDelayxx}, {xxTrafficDelayxx}, {xxTrafficDelayxx}, {xxTrafficDelayxx}, {xxTrafficDelayxx}, {xxTrafficDelayxx}, {xxTrafficDelayxx}, {xxTrafficDelayxx}, {xxTrafficDelayxx}, {xxTrafficDelayxx}]
+dlTrafficDelayPerFqRange : [-1, -1, -1, -1]
+rfPortRef : "SubNetwork=ONRM_ROOT_MO,MeContext={xxNodeIDxx},ManagedElement={xxNodeIDxx},Equipment=1,FieldReplaceableUnit=RRU-{xxRRUxx},RfPort=C"
+tmaRef : <empty>
+ulAttenuation : [{xxAttenuationxx}, {xxAttenuationxx}, {xxAttenuationxx}, {xxAttenuationxx}, {xxAttenuationxx}, {xxAttenuationxx}, {xxAttenuationxx}, {xxAttenuationxx}, {xxAttenuationxx}, {xxAttenuationxx}, {xxAttenuationxx}, {xxAttenuationxx}, {xxAttenuationxx}, {xxAttenuationxx}, {xxAttenuationxx}]
+ulAttenuationPerFqRange : [-1, -1, -1, -1]
+ulTrafficDelay : [{xxTrafficDelayxx}, {xxTrafficDelayxx}, {xxTrafficDelayxx}, {xxTrafficDelayxx}, {xxTrafficDelayxx}, {xxTrafficDelayxx}, {xxTrafficDelayxx}, {xxTrafficDelayxx}, {xxTrafficDelayxx}, {xxTrafficDelayxx}, {xxTrafficDelayxx}, {xxTrafficDelayxx}, {xxTrafficDelayxx}, {xxTrafficDelayxx}, {xxTrafficDelayxx}]
+ulTrafficDelayPerFqRange : [-1, -1, -1, -1]
+userLabel : <empty>
+
+
+create
+FDN : SubNetwork=ONRM_ROOT_MO,MeContext={xxNodeIDxx},ManagedElement={xxNodeIDxx},Equipment=1,AntennaUnitGroup={xxAntennaUnitGroupxx},RfBranch={xxrfb3xx}
+rfBranchId : {xxrfb3xx}
+auPortRef : "SubNetwork=ONRM_ROOT_MO,MeContext={xxNodeIDxx},ManagedElement={xxNodeIDxx},Equipment=1,AntennaUnitGroup={xxAntennaUnitGroupxx},AntennaUnit={xxAntennaUnitxx},AntennaSubunit={xxAntennaSubunitxx},AuPort=3"
+bandList : <empty>
+dlAttenuation : [{xxAttenuationxx}, {xxAttenuationxx}, {xxAttenuationxx}, {xxAttenuationxx}, {xxAttenuationxx}, {xxAttenuationxx}, {xxAttenuationxx}, {xxAttenuationxx}, {xxAttenuationxx}, {xxAttenuationxx}, {xxAttenuationxx}, {xxAttenuationxx}, {xxAttenuationxx}, {xxAttenuationxx}, {xxAttenuationxx}]
+dlAttenuationPerFqRange : [-1, -1, -1, -1]
+dlTrafficDelay : [{xxTrafficDelayxx}, {xxTrafficDelayxx}, {xxTrafficDelayxx}, {xxTrafficDelayxx}, {xxTrafficDelayxx}, {xxTrafficDelayxx}, {xxTrafficDelayxx}, {xxTrafficDelayxx}, {xxTrafficDelayxx}, {xxTrafficDelayxx}, {xxTrafficDelayxx}, {xxTrafficDelayxx}, {xxTrafficDelayxx}, {xxTrafficDelayxx}, {xxTrafficDelayxx}]
+dlTrafficDelayPerFqRange : [-1, -1, -1, -1]
+rfPortRef : "SubNetwork=ONRM_ROOT_MO,MeContext={xxNodeIDxx},ManagedElement={xxNodeIDxx},Equipment=1,FieldReplaceableUnit=RRU-{xxRRUxx},RfPort=B"
+tmaRef : <empty>
+ulAttenuation : [{xxAttenuationxx}, {xxAttenuationxx}, {xxAttenuationxx}, {xxAttenuationxx}, {xxAttenuationxx}, {xxAttenuationxx}, {xxAttenuationxx}, {xxAttenuationxx}, {xxAttenuationxx}, {xxAttenuationxx}, {xxAttenuationxx}, {xxAttenuationxx}, {xxAttenuationxx}, {xxAttenuationxx}, {xxAttenuationxx}]
+ulAttenuationPerFqRange : [-1, -1, -1, -1]
+ulTrafficDelay : [{xxTrafficDelayxx}, {xxTrafficDelayxx}, {xxTrafficDelayxx}, {xxTrafficDelayxx}, {xxTrafficDelayxx}, {xxTrafficDelayxx}, {xxTrafficDelayxx}, {xxTrafficDelayxx}, {xxTrafficDelayxx}, {xxTrafficDelayxx}, {xxTrafficDelayxx}, {xxTrafficDelayxx}, {xxTrafficDelayxx}, {xxTrafficDelayxx}, {xxTrafficDelayxx}]
+ulTrafficDelayPerFqRange : [-1, -1, -1, -1]
+userLabel : <empty>
+
+
+create
+FDN : SubNetwork=ONRM_ROOT_MO,MeContext={xxNodeIDxx},ManagedElement={xxNodeIDxx},Equipment=1,AntennaUnitGroup={xxAntennaUnitGroupxx},RfBranch={xxrfb4xx}
+rfBranchId : {xxrfb4xx}
+auPortRef : "SubNetwork=ONRM_ROOT_MO,MeContext={xxNodeIDxx},ManagedElement={xxNodeIDxx},Equipment=1,AntennaUnitGroup={xxAntennaUnitGroupxx},AntennaUnit={xxAntennaUnitxx},AntennaSubunit={xxAntennaSubunitxx},AuPort=4"
+bandList : <empty>
+dlAttenuation : [{xxAttenuationxx}, {xxAttenuationxx}, {xxAttenuationxx}, {xxAttenuationxx}, {xxAttenuationxx}, {xxAttenuationxx}, {xxAttenuationxx}, {xxAttenuationxx}, {xxAttenuationxx}, {xxAttenuationxx}, {xxAttenuationxx}, {xxAttenuationxx}, {xxAttenuationxx}, {xxAttenuationxx}, {xxAttenuationxx}]
+dlAttenuationPerFqRange : [-1, -1, -1, -1]
+dlTrafficDelay : [{xxTrafficDelayxx}, {xxTrafficDelayxx}, {xxTrafficDelayxx}, {xxTrafficDelayxx}, {xxTrafficDelayxx}, {xxTrafficDelayxx}, {xxTrafficDelayxx}, {xxTrafficDelayxx}, {xxTrafficDelayxx}, {xxTrafficDelayxx}, {xxTrafficDelayxx}, {xxTrafficDelayxx}, {xxTrafficDelayxx}, {xxTrafficDelayxx}, {xxTrafficDelayxx}]
+dlTrafficDelayPerFqRange : [-1, -1, -1, -1]
+rfPortRef : "SubNetwork=ONRM_ROOT_MO,MeContext={xxNodeIDxx},ManagedElement={xxNodeIDxx},Equipment=1,FieldReplaceableUnit=RRU-{xxRRUxx},RfPort=D"
+tmaRef : <empty>
+ulAttenuation : [{xxAttenuationxx}, {xxAttenuationxx}, {xxAttenuationxx}, {xxAttenuationxx}, {xxAttenuationxx}, {xxAttenuationxx}, {xxAttenuationxx}, {xxAttenuationxx}, {xxAttenuationxx}, {xxAttenuationxx}, {xxAttenuationxx}, {xxAttenuationxx}, {xxAttenuationxx}, {xxAttenuationxx}, {xxAttenuationxx}]
+ulAttenuationPerFqRange : [-1, -1, -1, -1]
+ulTrafficDelay : [{xxTrafficDelayxx}, {xxTrafficDelayxx}, {xxTrafficDelayxx}, {xxTrafficDelayxx}, {xxTrafficDelayxx}, {xxTrafficDelayxx}, {xxTrafficDelayxx}, {xxTrafficDelayxx}, {xxTrafficDelayxx}, {xxTrafficDelayxx}, {xxTrafficDelayxx}, {xxTrafficDelayxx}, {xxTrafficDelayxx}, {xxTrafficDelayxx}, {xxTrafficDelayxx}]
+ulTrafficDelayPerFqRange : [-1, -1, -1, -1]
+userLabel : <empty>
+
+set
+FDN : SubNetwork=ONRM_ROOT_MO,MeContext={xxNodeIDxx},ManagedElement={xxNodeIDxx},Equipment=1,AntennaUnitGroup={xxAntennaUnitGroupxx},RfBranch={xxrfb1xx}
+auPortRef : "SubNetwork=ONRM_ROOT_MO,MeContext={xxNodeIDxx},ManagedElement={xxNodeIDxx},Equipment=1,AntennaUnitGroup={xxAntennaUnitGroupxx},AntennaUnit={xxAntennaUnitxx},AntennaSubunit={xxAntennaSubunitxx},AuPort=1"
+rfPortRef : "SubNetwork=ONRM_ROOT_MO,MeContext={xxNodeIDxx},ManagedElement={xxNodeIDxx},Equipment=1,FieldReplaceableUnit=RRU-{xxRRUxx},RfPort=A"
+
+
+set
+FDN : SubNetwork=ONRM_ROOT_MO,MeContext={xxNodeIDxx},ManagedElement={xxNodeIDxx},Equipment=1,AntennaUnitGroup={xxAntennaUnitGroupxx},RfBranch={xxrfb2xx}
+auPortRef : "SubNetwork=ONRM_ROOT_MO,MeContext={xxNodeIDxx},ManagedElement={xxNodeIDxx},Equipment=1,AntennaUnitGroup={xxAntennaUnitGroupxx},AntennaUnit={xxAntennaUnitxx},AntennaSubunit={xxAntennaSubunitxx},AuPort=2"
+rfPortRef : "SubNetwork=ONRM_ROOT_MO,MeContext={xxNodeIDxx},ManagedElement={xxNodeIDxx},Equipment=1,FieldReplaceableUnit=RRU-{xxRRUxx},RfPort=C"
+
+
+set
+FDN : SubNetwork=ONRM_ROOT_MO,MeContext={xxNodeIDxx},ManagedElement={xxNodeIDxx},Equipment=1,AntennaUnitGroup={xxAntennaUnitGroupxx},RfBranch={xxrfb3xx}
+auPortRef : "SubNetwork=ONRM_ROOT_MO,MeContext={xxNodeIDxx},ManagedElement={xxNodeIDxx},Equipment=1,AntennaUnitGroup={xxAntennaUnitGroupxx},AntennaUnit={xxAntennaUnitxx},AntennaSubunit={xxAntennaSubunitxx},AuPort=3"
+rfPortRef : "SubNetwork=ONRM_ROOT_MO,MeContext={xxNodeIDxx},ManagedElement={xxNodeIDxx},Equipment=1,FieldReplaceableUnit=RRU-{xxRRUxx},RfPort=B"
+
+
+set
+FDN : SubNetwork=ONRM_ROOT_MO,MeContext={xxNodeIDxx},ManagedElement={xxNodeIDxx},Equipment=1,AntennaUnitGroup={xxAntennaUnitGroupxx},RfBranch={xxrfb4xx}
+auPortRef : "SubNetwork=ONRM_ROOT_MO,MeContext={xxNodeIDxx},ManagedElement={xxNodeIDxx},Equipment=1,AntennaUnitGroup={xxAntennaUnitGroupxx},AntennaUnit={xxAntennaUnitxx},AntennaSubunit={xxAntennaSubunitxx},AuPort=4"
+rfPortRef : "SubNetwork=ONRM_ROOT_MO,MeContext={xxNodeIDxx},ManagedElement={xxNodeIDxx},Equipment=1,FieldReplaceableUnit=RRU-{xxRRUxx},RfPort=D"
+
+
+set
+FDN : SubNetwork=ONRM_ROOT_MO,MeContext={xxNodeIDxx},ManagedElement={xxNodeIDxx},NodeSupport=1,SectorEquipmentFunction={xxSectorEquipmentFunctionxx}
+administrativeState : UNLOCKED
+noiseFigure : <empty>
+radioEquipmentOrdering : <empty>
+rfBranchRef : ["SubNetwork=ONRM_ROOT_MO,MeContext={xxNodeIDxx},ManagedElement={xxNodeIDxx},Equipment=1,AntennaUnitGroup={xxAntennaUnitGroupxx},RfBranch={xxrfb1xx}", "SubNetwork=ONRM_ROOT_MO,MeContext={xxNodeIDxx},ManagedElement={xxNodeIDxx},Equipment=1,AntennaUnitGroup={xxAntennaUnitGroupxx},RfBranch={xxrfb2xx}", "SubNetwork=ONRM_ROOT_MO,MeContext={xxNodeIDxx},ManagedElement={xxNodeIDxx},Equipment=1,AntennaUnitGroup={xxAntennaUnitGroupxx},RfBranch={xxrfb3xx}", "SubNetwork=ONRM_ROOT_MO,MeContext={xxNodeIDxx},ManagedElement={xxNodeIDxx},Equipment=1,AntennaUnitGroup={xxAntennaUnitGroupxx},RfBranch={xxrfb4xx}"]
+userLabel : <empty>
+
+
+set
+FDN : SubNetwork=ONRM_ROOT_MO,MeContext={xxNodeIDxx},ManagedElement={xxNodeIDxx},ENodeBFunction=1,SectorCarrier={xxSectorCarrierxx}
+noOfRxAntennas : 4
+noOfTxAntennas : 4
+rfBranchRxRef : <empty>
+rfBranchTxRef : <empty>
+
+
+set
+FDN : SubNetwork=ONRM_ROOT_MO,MeContext={xxNodeIDxx},ManagedElement={xxNodeIDxx},ENodeBFunction=1,SectorCarrier={xxSectorCarrierxx}
+configuredMaxTxPower : {xxconfiguredMaxTxPowerxx}
+noOfRxAntennas : 4
+noOfTxAntennas : 4
+rfBranchRxRef : ["SubNetwork=ONRM_ROOT_MO,MeContext={xxNodeIDxx},ManagedElement={xxNodeIDxx},Equipment=1,AntennaUnitGroup={xxAntennaUnitGroupxx},RfBranch={xxrfb1xx}", "SubNetwork=ONRM_ROOT_MO,MeContext={xxNodeIDxx},ManagedElement={xxNodeIDxx},Equipment=1,AntennaUnitGroup={xxAntennaUnitGroupxx},RfBranch={xxrfb2xx}", "SubNetwork=ONRM_ROOT_MO,MeContext={xxNodeIDxx},ManagedElement={xxNodeIDxx},Equipment=1,AntennaUnitGroup={xxAntennaUnitGroupxx},RfBranch={xxrfb3xx}", "SubNetwork=ONRM_ROOT_MO,MeContext={xxNodeIDxx},ManagedElement={xxNodeIDxx},Equipment=1,AntennaUnitGroup={xxAntennaUnitGroupxx},RfBranch={xxrfb4xx}"]
+rfBranchTxRef : ["SubNetwork=ONRM_ROOT_MO,MeContext={xxNodeIDxx},ManagedElement={xxNodeIDxx},Equipment=1,AntennaUnitGroup={xxAntennaUnitGroupxx},RfBranch={xxrfb1xx}", "SubNetwork=ONRM_ROOT_MO,MeContext={xxNodeIDxx},ManagedElement={xxNodeIDxx},Equipment=1,AntennaUnitGroup={xxAntennaUnitGroupxx},RfBranch={xxrfb2xx}", "SubNetwork=ONRM_ROOT_MO,MeContext={xxNodeIDxx},ManagedElement={xxNodeIDxx},Equipment=1,AntennaUnitGroup={xxAntennaUnitGroupxx},RfBranch={xxrfb3xx}", "SubNetwork=ONRM_ROOT_MO,MeContext={xxNodeIDxx},ManagedElement={xxNodeIDxx},Equipment=1,AntennaUnitGroup={xxAntennaUnitGroupxx},RfBranch={xxrfb4xx}"]

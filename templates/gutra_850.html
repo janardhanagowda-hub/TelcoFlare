@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>5G 850 GUTRA Generator</title>
+	<style>
+        body {
+            background: #0f172a;
+            color: #e5e7eb;
+            font-family: Arial, Helvetica, sans-serif;
+            padding: 40px;
+        }
+
+        h2 {
+            margin-bottom: 20px;
+            color: #38bdf8;
+        }
+
+        form {
+            max-width: 520px;
+            background: #020617;
+            padding: 25px;
+            border-radius: 8px;
+            box-shadow: 0 0 15px rgba(0,0,0,0.6);
+        }
+
+        label {
+            font-size: 14px;
+            color: #cbd5f5;
+        }
+
+        input, textarea {
+            width: 100%;
+            padding: 8px;
+            margin-top: 6px;
+            margin-bottom: 16px;
+            border-radius: 4px;
+            border: 1px solid #334155;
+            background: #020617;
+            color: #e5e7eb;
+        }
+
+        input:focus, textarea:focus {
+            outline: none;
+            border-color: #38bdf8;
+        }
+
+        textarea {
+            resize: vertical;
+        }
+
+        button {
+            width: 100%;
+            padding: 10px;
+            background: #38bdf8;
+            border: none;
+            border-radius: 5px;
+            color: #020617;
+            font-weight: bold;
+            cursor: pointer;
+            font-size: 15px;
+        }
+
+        button:hover {
+            background: #0ea5e9;
+        }
+    </style>
+</head>
+<body>
+
+<h2>5G 850 GUTRA Template Generator</h2>
+
+<form method="post" action="/tool/gutra_850">
+
+    <input type="text" name="xxNodeIDxx" placeholder="NodeID" required><br>
+
+    <input type="text" name="xxgNodebIDxx" placeholder="ExternalGNodeBFunction" required><br>
+
+    <input type="text" name="xxgNbIDxx" placeholder="gNodeBId" required><br>
+
+    <input type="text" name="xxNrIPxx" placeholder="NR ipv6 Address" required><br>
+
+    <input type="text" name="xx5G850SSBxx" placeholder="5G850 SSB" required><br>
+
+    <input type="text" name="xx5G850AlphaCellIDxx" placeholder="5G850 Alpha Cell ID" required><br>
+
+    <input type="text" name="xx5G850BetaCellIDxx" placeholder="5G850 Beta Cell ID" required><br>
+
+    <input type="text" name="xx5G850GammaCellIDxx" placeholder="5G850 Gamma Cell ID" required><br>
+
+    <textarea
+        name="cellnames"
+        rows="10"
+        cols="40"
+        placeholder="CELL IDs (one per line)"
+        required
+    ></textarea><br>
+
+    <button type="submit">Generate File</button>
+
+</form>
+
+{% if message %}
+<p>{{ message }}</p>
+{% endif %}
+
+</body>
+</html>

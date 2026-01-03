@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>PCS ESS Tool</title>
+    <style>
+        body {
+            background: #0f172a;
+            color: #e5e7eb;
+            font-family: Arial, Helvetica, sans-serif;
+            padding: 40px;
+        }
+
+        h2 {
+            margin-bottom: 20px;
+            color: #38bdf8;
+        }
+
+        form {
+            max-width: 520px;
+            background: #020617;
+            padding: 25px;
+            border-radius: 8px;
+            box-shadow: 0 0 15px rgba(0,0,0,0.6);
+        }
+
+        label {
+            font-size: 14px;
+            color: #cbd5f5;
+        }
+
+        input, textarea {
+            width: 100%;
+            padding: 8px;
+            margin-top: 6px;
+            margin-bottom: 16px;
+            border-radius: 4px;
+            border: 1px solid #334155;
+            background: #020617;
+            color: #e5e7eb;
+        }
+
+        input:focus, textarea:focus {
+            outline: none;
+            border-color: #38bdf8;
+        }
+
+        textarea {
+            resize: vertical;
+        }
+
+        button {
+            width: 100%;
+            padding: 10px;
+            background: #38bdf8;
+            border: none;
+            border-radius: 5px;
+            color: #020617;
+            font-weight: bold;
+            cursor: pointer;
+            font-size: 15px;
+        }
+
+        button:hover {
+            background: #0ea5e9;
+        }
+    </style>
+</head>
+
+<body>
+
+<h2>PCS ESS Template Generator</h2>
+
+<form method="post" action="/tool/pcs_ess">
+
+    <label>Node ID</label>
+    <input name="xxNodeIDxx" required>
+
+    <label>ENB ID</label>
+    <input name="xxENBIDxx">
+
+    <label>B2 SSB</label>
+    <input name="xxB2SSBxx">
+
+    <label>B2 Alpha Cell ID</label>
+    <input name="xxB2AlphaCellIDxx">
+
+    <label>B2 Beta Cell ID</label>
+    <input name="xxB2BetaCellIDxx">
+
+    <label>B2 Gamma Cell ID</label>
+    <input name="xxB2GammaCellIDxx">
+
+    <label>B2 Alpha PCI</label>
+    <input name="xxB2AlphaPCIxx">
+
+    <label>B2 Beta PCI</label>
+    <input name="xxB2BetaPCIxx">
+
+    <label>B2 Gamma PCI</label>
+    <input name="xxB2GammaPCIxx">
+
+    <label>TAC</label>
+    <input name="xxTACxx">
+
+    <label>LTE Cell Names (one per line)</label>
+    <textarea name="ltecellnames" rows="4"></textarea>
+
+    <label>LTE SCS (one per line)</label>
+    <textarea name="ltescs" rows="4"></textarea>
+
+    <label>NR Cell Names (one per line)</label>
+    <textarea name="nrcellnames" rows="4"></textarea>
+
+    <button type="submit">Generate PCS ESS</button>
+
+</form>
+
+</body>
+</html>

@@ -1,0 +1,318 @@
+
+
+
+set
+FDN : SubNetwork=ONRM_ROOT_MO,MeContext={xxNodeIDxx},ManagedElement={xxNodeIDxx},SystemFunctions=1,Lm=1,CapacityState=CXC4012411
+featureState : ACTIVATED
+
+set
+FDN : SubNetwork=ONRM_ROOT_MO,MeContext={xxNodeIDxx},ManagedElement={xxNodeIDxx},SystemFunctions=1,Lm=1,FeatureState=CXC4012218
+featureState : ACTIVATED
+
+set
+FDN : SubNetwork=ONRM_ROOT_MO,MeContext={xxNodeIDxx},ManagedElement={xxNodeIDxx},SystemFunctions=1,Lm=1,FeatureState=CXC4012381
+featureState : ACTIVATED
+
+set
+FDN : SubNetwork=ONRM_ROOT_MO,MeContext={xxNodeIDxx},ManagedElement={xxNodeIDxx},SystemFunctions=1,Lm=1,FeatureState=CXC4012543
+featureState : ACTIVATED
+
+set
+FDN : SubNetwork=ONRM_ROOT_MO,MeContext={xxNodeIDxx},ManagedElement={xxNodeIDxx},SystemFunctions=1,Lm=1,FeatureState=CXC4012581
+featureState : ACTIVATED
+
+set
+FDN : SubNetwork=ONRM_ROOT_MO,MeContext={xxNodeIDxx},ManagedElement={xxNodeIDxx},SystemFunctions=1,Lm=1,FeatureState=CXC4012583
+featureState : ACTIVATED
+
+set
+FDN : SubNetwork=ONRM_ROOT_MO,MeContext={xxNodeIDxx},ManagedElement={xxNodeIDxx},SystemFunctions=1,Lm=1,FeatureState=CXC4012507
+featureState : ACTIVATED
+
+set
+FDN : SubNetwork=ONRM_ROOT_MO,MeContext={xxNodeIDxx},ManagedElement={xxNodeIDxx},SystemFunctions=1,Lm=1,FeatureState=CXC4012554
+featureState : ACTIVATED
+
+
+
+set
+FDN : SubNetwork=ONRM_ROOT_MO,MeContext={xxNodeIDxx},ManagedElement={xxNodeIDxx},ENodeBFunction=1,EUtranCellFDD={LTECELLNAME1}
+adjustCrsPowerEnhEnabled : false
+ulSrsEnable : false
+prsConfigIndex : 11
+prsMutingPatternLen : 4
+pdcchCfiMode : CFI_AUTO_MAXIMUM_3
+prescheduling : false
+prsPeriod : PP160
+noConsecutiveSubframes : SF1
+prsPowerBoosting : 0
+prsTransmisScheme : ANTENNA_SWITCHING
+dlInterferenceManagementActive : false
+cellRange : 23
+catm1SupportEnabled : false
+ttiBundlingAtSetup : OFF
+
+set
+FDN : SubNetwork=ONRM_ROOT_MO,MeContext={xxNodeIDxx},ManagedElement={xxNodeIDxx},ENodeBFunction=1,{LTESC1}
+essScLocalId : 30
+essScPairId : 3322
+rfBranchTxRef : <empty>
+rfBranchRxRef : <empty>
+
+set
+FDN : SubNetwork=ONRM_ROOT_MO,MeContext={xxNodeIDxx},ManagedElement={xxNodeIDxx},GNBDUFunction=1,NRCellDU={NRCELLNAME1}
+essMbsfnSubframeVariant : SA_BASIC
+csiRsPeriodicity : 20
+trsPeriodicity : 40
+secondaryCellOnly : false
+rachPreambleFormat : RACH_PREAMBLE_FORMAT_02
+ssbPeriodicity : 20
+pdschStartPrbStrategy : RANDOM_START_WITHIN_BAND
+cellRange : 23000
+csiRsConfig2P : {aRestriction=<empty>, csiRsControl2Ports=OFF}
+csiRsConfig4P : {i11Restriction=FF, csiRsControl4Ports=TWO_ONE}
+csiRsConfig8P : {csiRsControl8Ports=FOUR_ONE_N1AZ, i12Restriction="", i11Restriction="FFFF"}
+csiRsConfig16P : {i11Restriction=<empty>, i12Restriction=<empty>, csiRsControl16Ports=OFF}
+csiRsConfig32P : {i11Restriction=<empty>, i12Restriction=<empty>, csiRsControl32Ports=OFF}
+
+set
+FDN : SubNetwork=ONRM_ROOT_MO,MeContext={xxNodeIDxx},ManagedElement={xxNodeIDxx},ENodeBFunction=1,EUtranCellFDD={LTECELLNAME2}
+adjustCrsPowerEnhEnabled : false
+ulSrsEnable : false
+prsConfigIndex : 11
+prsMutingPatternLen : 4
+pdcchCfiMode : CFI_AUTO_MAXIMUM_3
+prescheduling : false
+prsPeriod : PP160
+noConsecutiveSubframes : SF1
+prsPowerBoosting : 0
+prsTransmisScheme : ANTENNA_SWITCHING
+dlInterferenceManagementActive : false
+cellRange : 23
+catm1SupportEnabled : false
+ttiBundlingAtSetup : OFF
+
+set
+FDN : SubNetwork=ONRM_ROOT_MO,MeContext={xxNodeIDxx},ManagedElement={xxNodeIDxx},ENodeBFunction=1,{LTESC2}
+essScLocalId : 31
+essScPairId : 3323
+rfBranchTxRef : <empty>
+rfBranchRxRef : <empty>
+
+set
+FDN : SubNetwork=ONRM_ROOT_MO,MeContext={xxNodeIDxx},ManagedElement={xxNodeIDxx},GNBDUFunction=1,NRCellDU={NRCELLNAME2}
+essMbsfnSubframeVariant : SA_BASIC
+csiRsPeriodicity : 20
+trsPeriodicity : 40
+secondaryCellOnly : false
+rachPreambleFormat : RACH_PREAMBLE_FORMAT_02
+ssbPeriodicity : 20
+pdschStartPrbStrategy : RANDOM_START_WITHIN_BAND
+cellRange : 23000
+csiRsConfig2P : {aRestriction=<empty>, csiRsControl2Ports=OFF}
+csiRsConfig4P : {i11Restriction=FF, csiRsControl4Ports=TWO_ONE}
+csiRsConfig8P : {csiRsControl8Ports=FOUR_ONE_N1AZ, i12Restriction="", i11Restriction="FFFF"}
+csiRsConfig16P : {i11Restriction=<empty>, i12Restriction=<empty>, csiRsControl16Ports=OFF}
+csiRsConfig32P : {i11Restriction=<empty>, i12Restriction=<empty>, csiRsControl32Ports=OFF}
+
+set
+FDN : SubNetwork=ONRM_ROOT_MO,MeContext={xxNodeIDxx},ManagedElement={xxNodeIDxx},ENodeBFunction=1,EUtranCellFDD={LTECELLNAME3}
+adjustCrsPowerEnhEnabled : false
+ulSrsEnable : false
+prsConfigIndex : 11
+prsMutingPatternLen : 4
+pdcchCfiMode : CFI_AUTO_MAXIMUM_3
+prescheduling : false
+prsPeriod : PP160
+noConsecutiveSubframes : SF1
+prsPowerBoosting : 0
+prsTransmisScheme : ANTENNA_SWITCHING
+dlInterferenceManagementActive : false
+cellRange : 23
+catm1SupportEnabled : false
+ttiBundlingAtSetup : OFF
+
+set
+FDN : SubNetwork=ONRM_ROOT_MO,MeContext={xxNodeIDxx},ManagedElement={xxNodeIDxx},ENodeBFunction=1,{LTESC3}
+essScLocalId : 32
+essScPairId : 3324
+rfBranchTxRef : <empty>
+rfBranchRxRef : <empty>
+
+set
+FDN : SubNetwork=ONRM_ROOT_MO,MeContext={xxNodeIDxx},ManagedElement={xxNodeIDxx},GNBDUFunction=1,NRCellDU={NRCELLNAME3}
+essMbsfnSubframeVariant : SA_BASIC
+csiRsPeriodicity : 20
+trsPeriodicity : 40
+secondaryCellOnly : false
+rachPreambleFormat : RACH_PREAMBLE_FORMAT_02
+ssbPeriodicity : 20
+pdschStartPrbStrategy : RANDOM_START_WITHIN_BAND
+cellRange : 23000
+csiRsConfig2P : {aRestriction=<empty>, csiRsControl2Ports=OFF}
+csiRsConfig4P : {i11Restriction=FF, csiRsControl4Ports=TWO_ONE}
+csiRsConfig8P : {csiRsControl8Ports=FOUR_ONE_N1AZ, i12Restriction="", i11Restriction="FFFF"}
+csiRsConfig16P : {i11Restriction=<empty>, i12Restriction=<empty>, csiRsControl16Ports=OFF}
+csiRsConfig32P : {i11Restriction=<empty>, i12Restriction=<empty>, csiRsControl32Ports=OFF}
+
+set
+FDN : "SubNetwork=ONRM_ROOT_MO,MeContext={xxNodeIDxx},ManagedElement={xxNodeIDxx},GNBDUFunction=1,NRSectorCarrier={NRCELLNAME1}"
+essScLocalId : 30
+essScPairId : 3322
+
+set
+FDN : "SubNetwork=ONRM_ROOT_MO,MeContext={xxNodeIDxx},ManagedElement={xxNodeIDxx},GNBDUFunction=1,NRSectorCarrier={NRCELLNAME2}"
+essScLocalId : 31
+essScPairId : 3323
+
+
+set
+FDN : "SubNetwork=ONRM_ROOT_MO,MeContext={xxNodeIDxx},ManagedElement={xxNodeIDxx},GNBDUFunction=1,NRSectorCarrier={NRCELLNAME3}"
+essScLocalId : 32
+essScPairId : 3324
+
+
+
+set 
+FDN : SubNetwork=ONRM_ROOT_MO,MeContext={xxNodeIDxx},ManagedElement={xxNodeIDxx},ENodeBFunction=1,EUtranCellFDD={LTECELLNAME1},GUtranFreqRelation={xxB2SSBxx}-15-20-0-2 
+endcB1MeasPriority : -1
+
+set
+FDN : SubNetwork=ONRM_ROOT_MO,MeContext={xxNodeIDxx},ManagedElement={xxNodeIDxx},ENodeBFunction=1,EUtranCellFDD={LTECELLNAME2},GUtranFreqRelation={xxB2SSBxx}-15-20-0-2 
+endcB1MeasPriority : -1
+
+set
+FDN : SubNetwork=ONRM_ROOT_MO,MeContext={xxNodeIDxx},ManagedElement={xxNodeIDxx},ENodeBFunction=1,EUtranCellFDD={LTECELLNAME3},GUtranFreqRelation={xxB2SSBxx}-15-20-0-2 
+endcB1MeasPriority : -1
+
+
+set
+FDN : SubNetwork=ONRM_ROOT_MO,MeContext={xxNodeIDxx},ManagedElement={xxNodeIDxx},ENodeBFunction=1,EUtranCellFDD={LTECELLNAME1},GUtranFreqRelation={xxB2SSBxx}-15-20-0-2,GUtranCellRelation={NRCELLNAME1}
+essEnabled : true
+isRemoveAllowed : false
+
+set
+FDN : SubNetwork=ONRM_ROOT_MO,MeContext={xxNodeIDxx},ManagedElement={xxNodeIDxx},ENodeBFunction=1,EUtranCellFDD={LTECELLNAME2},GUtranFreqRelation={xxB2SSBxx}-15-20-0-2,GUtranCellRelation={NRCELLNAME2}
+essEnabled : true
+isRemoveAllowed : false
+
+
+set
+FDN : SubNetwork=ONRM_ROOT_MO,MeContext={xxNodeIDxx},ManagedElement={xxNodeIDxx},ENodeBFunction=1,EUtranCellFDD={LTECELLNAME3},GUtranFreqRelation={xxB2SSBxx}-15-20-0-2,GUtranCellRelation={NRCELLNAME3}
+essEnabled : true
+isRemoveAllowed : false
+
+
+create
+FDN : SubNetwork=ONRM_ROOT_MO,MeContext={xxNodeIDxx},ManagedElement={xxNodeIDxx},ENodeBFunction=1,SpectrumSharingFunction=1
+spectrumSharingFunctionId : 1
+
+
+create
+FDN : SubNetwork=ONRM_ROOT_MO,MeContext={xxNodeIDxx},ManagedElement={xxNodeIDxx},ENodeBFunction=1,SpectrumSharingFunction=1,SharingGroup={LTECELLNAME1}:{NRCELLNAME1}
+sharingGroupId : {LTECELLNAME1}:{NRCELLNAME1}
+eUtranCellRef : "SubNetwork=ONRM_ROOT_MO,MeContext={xxNodeIDxx},ManagedElement={xxNodeIDxx},ENodeBFunction=1,EUtranCellFDD={LTECELLNAME1}"
+gUtranCellRelationRef : "SubNetwork=ONRM_ROOT_MO,MeContext={xxNodeIDxx},ManagedElement={xxNodeIDxx},ENodeBFunction=1,EUtranCellFDD={LTECELLNAME1},GUtranFreqRelation={xxB2SSBxx}-15-20-0-2,GUtranCellRelation={NRCELLNAME1}"
+
+create
+FDN : SubNetwork=ONRM_ROOT_MO,MeContext={xxNodeIDxx},ManagedElement={xxNodeIDxx},ENodeBFunction=1,SpectrumSharingFunction=1,SharingGroup={LTECELLNAME1}:{NRCELLNAME1}
+sharingGroupId : {LTECELLNAME1}:{NRCELLNAME1}
+eUtranCellRef : "SubNetwork=ONRM_ROOT_MO,MeContext={xxNodeIDxx},ManagedElement={xxNodeIDxx},ENodeBFunction=1,EUtranCellFDD={LTECELLNAME1}"
+gUtranCellRelationRef : "SubNetwork=ONRM_ROOT_MO,MeContext={xxNodeIDxx},ManagedElement={xxNodeIDxx},ENodeBFunction=1,EUtranCellFDD={LTECELLNAME1},GUtranFreqRelation={xxB2SSBxx}-15-20-0-2,GUtranCellRelation={NRCELLNAME1}"
+
+create
+FDN : SubNetwork=ONRM_ROOT_MO,MeContext={xxNodeIDxx},ManagedElement={xxNodeIDxx},ENodeBFunction=1,SpectrumSharingFunction=1,SharingGroup={LTECELLNAME1}:{NRCELLNAME1}
+sharingGroupId : {LTECELLNAME1}:{NRCELLNAME1}
+eUtranCellRef : "SubNetwork=ONRM_ROOT_MO,MeContext={xxNodeIDxx},ManagedElement={xxNodeIDxx},ENodeBFunction=1,EUtranCellFDD={LTECELLNAME1}"
+gUtranCellRelationRef : "SubNetwork=ONRM_ROOT_MO,MeContext={xxNodeIDxx},ManagedElement={xxNodeIDxx},ENodeBFunction=1,EUtranCellFDD={LTECELLNAME1},GUtranFreqRelation={xxB2SSBxx}-15-20-0-2,GUtranCellRelation={NRCELLNAME1}"
+
+
+
+create
+FDN : SubNetwork=ONRM_ROOT_MO,MeContext={xxNodeIDxx},ManagedElement={xxNodeIDxx},ENodeBFunction=1,SpectrumSharingFunction=1,SharingGroup={LTECELLNAME2}:{NRCELLNAME2}
+sharingGroupId : {LTECELLNAME2}:{NRCELLNAME2}
+eUtranCellRef : "SubNetwork=ONRM_ROOT_MO,MeContext={xxNodeIDxx},ManagedElement={xxNodeIDxx},ENodeBFunction=1,EUtranCellFDD={LTECELLNAME2}"
+gUtranCellRelationRef : "SubNetwork=ONRM_ROOT_MO,MeContext={xxNodeIDxx},ManagedElement={xxNodeIDxx},ENodeBFunction=1,EUtranCellFDD={LTECELLNAME2},GUtranFreqRelation={xxB2SSBxx}-15-20-0-2,GUtranCellRelation={NRCELLNAME2}"
+
+create
+FDN : SubNetwork=ONRM_ROOT_MO,MeContext={xxNodeIDxx},ManagedElement={xxNodeIDxx},ENodeBFunction=1,SpectrumSharingFunction=1,SharingGroup={LTECELLNAME2}:{NRCELLNAME2}
+sharingGroupId : {LTECELLNAME2}:{NRCELLNAME2}
+eUtranCellRef : "SubNetwork=ONRM_ROOT_MO,MeContext={xxNodeIDxx},ManagedElement={xxNodeIDxx},ENodeBFunction=1,EUtranCellFDD={LTECELLNAME2}"
+gUtranCellRelationRef : "SubNetwork=ONRM_ROOT_MO,MeContext={xxNodeIDxx},ManagedElement={xxNodeIDxx},ENodeBFunction=1,EUtranCellFDD={LTECELLNAME2},GUtranFreqRelation={xxB2SSBxx}-15-20-0-2,GUtranCellRelation={NRCELLNAME2}"
+
+create
+FDN : SubNetwork=ONRM_ROOT_MO,MeContext={xxNodeIDxx},ManagedElement={xxNodeIDxx},ENodeBFunction=1,SpectrumSharingFunction=1,SharingGroup={LTECELLNAME2}:{NRCELLNAME2}
+sharingGroupId : {LTECELLNAME2}:{NRCELLNAME2}
+eUtranCellRef : "SubNetwork=ONRM_ROOT_MO,MeContext={xxNodeIDxx},ManagedElement={xxNodeIDxx},ENodeBFunction=1,EUtranCellFDD={LTECELLNAME2}"
+gUtranCellRelationRef : "SubNetwork=ONRM_ROOT_MO,MeContext={xxNodeIDxx},ManagedElement={xxNodeIDxx},ENodeBFunction=1,EUtranCellFDD={LTECELLNAME2},GUtranFreqRelation={xxB2SSBxx}-15-20-0-2,GUtranCellRelation={NRCELLNAME2}"
+
+
+create
+FDN : SubNetwork=ONRM_ROOT_MO,MeContext={xxNodeIDxx},ManagedElement={xxNodeIDxx},ENodeBFunction=1,SpectrumSharingFunction=1,SharingGroup={LTECELLNAME3}:{NRCELLNAME3}
+sharingGroupId : {LTECELLNAME3}:{NRCELLNAME3}
+eUtranCellRef : "SubNetwork=ONRM_ROOT_MO,MeContext={xxNodeIDxx},ManagedElement={xxNodeIDxx},ENodeBFunction=1,EUtranCellFDD={LTECELLNAME3}"
+gUtranCellRelationRef : "SubNetwork=ONRM_ROOT_MO,MeContext={xxNodeIDxx},ManagedElement={xxNodeIDxx},ENodeBFunction=1,EUtranCellFDD={LTECELLNAME3},GUtranFreqRelation={xxB2SSBxx}-15-20-0-2,GUtranCellRelation={NRCELLNAME3}"
+
+create
+FDN : SubNetwork=ONRM_ROOT_MO,MeContext={xxNodeIDxx},ManagedElement={xxNodeIDxx},ENodeBFunction=1,SpectrumSharingFunction=1,SharingGroup={LTECELLNAME3}:{NRCELLNAME3}
+sharingGroupId : {LTECELLNAME3}:{NRCELLNAME3}
+eUtranCellRef : "SubNetwork=ONRM_ROOT_MO,MeContext={xxNodeIDxx},ManagedElement={xxNodeIDxx},ENodeBFunction=1,EUtranCellFDD={LTECELLNAME3}"
+gUtranCellRelationRef : "SubNetwork=ONRM_ROOT_MO,MeContext={xxNodeIDxx},ManagedElement={xxNodeIDxx},ENodeBFunction=1,EUtranCellFDD={LTECELLNAME3},GUtranFreqRelation={xxB2SSBxx}-15-20-0-2,GUtranCellRelation={NRCELLNAME3}"
+
+create
+FDN : SubNetwork=ONRM_ROOT_MO,MeContext={xxNodeIDxx},ManagedElement={xxNodeIDxx},ENodeBFunction=1,SpectrumSharingFunction=1,SharingGroup={LTECELLNAME3}:{NRCELLNAME3}
+sharingGroupId : {LTECELLNAME3}:{NRCELLNAME3}
+eUtranCellRef : "SubNetwork=ONRM_ROOT_MO,MeContext={xxNodeIDxx},ManagedElement={xxNodeIDxx},ENodeBFunction=1,EUtranCellFDD={LTECELLNAME3}"
+gUtranCellRelationRef : "SubNetwork=ONRM_ROOT_MO,MeContext={xxNodeIDxx},ManagedElement={xxNodeIDxx},ENodeBFunction=1,EUtranCellFDD={LTECELLNAME3},GUtranFreqRelation={xxB2SSBxx}-15-20-0-2,GUtranCellRelation={NRCELLNAME3}"
+
+create
+FDN : SubNetwork=ONRM_ROOT_MO,MeContext={xxNodeIDxx},ManagedElement={xxNodeIDxx},GNBCUCPFunction=1,EUtraNetwork=1,ExternalENodeBFunction=auto310_410_3_{xxENBIDxx},ExternalEUtranCell={LTECELLNAME1}
+externalEUtranCellId : {LTECELLNAME1}
+cellLocalId : {xxB2AlphaCellIDxx}
+physicalLayerCellId : {xxB2AlphaPCIxx}
+tac : {xxTACxx}
+
+create
+FDN : SubNetwork=ONRM_ROOT_MO,MeContext={xxNodeIDxx},ManagedElement={xxNodeIDxx},GNBCUCPFunction=1,NRCellCU={NRCELLNAME1},EUtranCellRelation={LTECELLNAME1}
+eUtranCellRelationId : {LTECELLNAME1}
+essEnabled : true
+neighborCellRef : "SubNetwork=ONRM_ROOT_MO,MeContext={xxNodeIDxx},ManagedElement={xxNodeIDxx},GNBCUCPFunction=1,EUtraNetwork=1,ExternalENodeBFunction=auto310_410_3_{xxENBIDxx},ExternalEUtranCell={LTECELLNAME1}"
+
+set
+FDN : SubNetwork=ONRM_ROOT_MO,MeContext={xxNodeIDxx},ManagedElement={xxNodeIDxx},GNBCUCPFunction=1,NRCellCU={NRCELLNAME1},EUtranCellRelation={LTECELLNAME1}
+essEnabled : true
+
+create
+FDN : SubNetwork=ONRM_ROOT_MO,MeContext={xxNodeIDxx},ManagedElement={xxNodeIDxx},GNBCUCPFunction=1,EUtraNetwork=1,ExternalENodeBFunction=auto310_410_3_{xxENBIDxx},ExternalEUtranCell={LTECELLNAME2}
+externalEUtranCellId : {LTECELLNAME2}
+cellLocalId : {xxB2BetaCellIDxx}
+physicalLayerCellId : {xxB2BetaPCIxx}
+tac : {xxTACxx}
+
+create
+FDN : SubNetwork=ONRM_ROOT_MO,MeContext={xxNodeIDxx},ManagedElement={xxNodeIDxx},GNBCUCPFunction=1,NRCellCU={NRCELLNAME2},EUtranCellRelation={LTECELLNAME2}
+eUtranCellRelationId : {LTECELLNAME2}
+essEnabled : true
+neighborCellRef : "SubNetwork=ONRM_ROOT_MO,MeContext={xxNodeIDxx},ManagedElement={xxNodeIDxx},GNBCUCPFunction=1,EUtraNetwork=1,ExternalENodeBFunction=auto310_410_3_{xxENBIDxx},ExternalEUtranCell={LTECELLNAME2}"
+
+set
+FDN : SubNetwork=ONRM_ROOT_MO,MeContext={xxNodeIDxx},ManagedElement={xxNodeIDxx},GNBCUCPFunction=1,NRCellCU={NRCELLNAME2},EUtranCellRelation={LTECELLNAME2}
+essEnabled : true
+
+create
+FDN : SubNetwork=ONRM_ROOT_MO,MeContext={xxNodeIDxx},ManagedElement={xxNodeIDxx},GNBCUCPFunction=1,EUtraNetwork=1,ExternalENodeBFunction=auto310_410_3_{xxENBIDxx},ExternalEUtranCell={LTECELLNAME3}
+externalEUtranCellId : {LTECELLNAME3}
+cellLocalId : {xxB2GammaCellIDxx}
+physicalLayerCellId : {xxB2GammaPCIxx}
+tac : {xxTACxx}
+
+create
+FDN : SubNetwork=ONRM_ROOT_MO,MeContext={xxNodeIDxx},ManagedElement={xxNodeIDxx},GNBCUCPFunction=1,NRCellCU={NRCELLNAME3},EUtranCellRelation={LTECELLNAME3}
+eUtranCellRelationId : {LTECELLNAME3}
+essEnabled : true
+neighborCellRef : "SubNetwork=ONRM_ROOT_MO,MeContext={xxNodeIDxx},ManagedElement={xxNodeIDxx},GNBCUCPFunction=1,EUtraNetwork=1,ExternalENodeBFunction=auto310_410_3_{xxENBIDxx},ExternalEUtranCell={LTECELLNAME3}"
+
+set
+FDN : SubNetwork=ONRM_ROOT_MO,MeContext={xxNodeIDxx},ManagedElement={xxNodeIDxx},GNBCUCPFunction=1,NRCellCU={NRCELLNAME3},EUtranCellRelation={LTECELLNAME3}
+essEnabled : true
+
