@@ -1,4 +1,6 @@
 import os
+from pathlib import Path
+
 
 # ---------------------------------
 # CORE FUNCTION
@@ -38,7 +40,13 @@ def generate_port4_4x4(
     # -----------------------------
     # Load template
     # -----------------------------
-    template_path = r"C:\TelcoFlare\Fetching_Templates\Radio_Script_Template\4_port_4x4_template.txt"
+
+    
+    BASE_DIR = Path(__file__).resolve().parents[2]
+    template_path = BASE_DIR / "Fetching_Templates" / "Radio_Script_Template" / "4_port_4x4_template.txt"
+    
+    output_dir = BASE_DIR / "Output"
+    output_dir.mkdir(exist_ok=True)
 
     with open(template_path, "r") as f:
         content = f.read()
@@ -67,13 +75,11 @@ def generate_port4_4x4(
     # -----------------------------
     # Write output file
     # -----------------------------
-    output_dir = r"C:\TelcoFlare\Output"
-    os.makedirs(output_dir, exist_ok=True)
 
-    output_file = os.path.join(
-        output_dir,
-        f"{xxNodeIDxx}_{sector_name}_4_port_4x4_RRU_Final.txt"
-    )
+
+    output_file = os.path.join
+    output_file = output_dir / f"{xxNodeIDxx}_{sector_name}_4_port_4x4_RRU_Final.txt"
+
 
     with open(output_file, "w") as f:
         f.write(content)

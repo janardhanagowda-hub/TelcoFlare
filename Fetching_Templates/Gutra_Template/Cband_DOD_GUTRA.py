@@ -1,54 +1,63 @@
 import os
+from pathlib import Path
 
-TEMPLATE_PATH = r"C:\TelcoFlare\Fetching_Templates\Gutra_Template\Cband_DOD_GUTRA_Template.txt"
-OUTPUT_DIR = r"C:\TelcoFlare\Output"
+def generate_gutra_cband_dod(form_data: dict) -> str:
+    print("✅ GUTRA CBAND DOD TOOL STARTED")
 
+    xxNodeIDxx = form_data["xxNodeIDxx"]
 
-def generate_gutra_cband_dod(
-    xxNodeIDxx: str,
-    replacements: dict,
-    cellnames: list
-) -> str:
-    # -----------------------------
-    # Load template
-    # -----------------------------
-    with open(TEMPLATE_PATH, "r") as f:
-        content = f.read()
+    # ---------------- PARSE CELLNAMES ----------------
+    cell_list = [
+        c.strip() for c in form_data["cellnames"].splitlines() if c.strip()
+    ]
 
-    # -----------------------------
-    # CELLNAME handling
-    # -----------------------------
-    for i, cell in enumerate(cellnames, start=1):
+    # ---------------- REPLACEMENTS ----------------
+    replacements = {
+        "xxNodeIDxx": xxNodeIDxx,
+        "xxgNodebIDxx": form_data["xxgNodebIDxx"],
+        "xxgNbIDxx": form_data["xxgNbIDxx"],
+        "xxNrIPxx": form_data["xxNrIPxx"],
+        "xxCbandSSBxx": form_data["xxCbandSSBxx"],
+        "xxDODSSBxx": form_data["xxDODSSBxx"],
+        "xxCbandAlphaCellIDxx": form_data["xxCbandAlphaCellIDxx"],
+        "xxCbandBetaCellIDxx": form_data["xxCbandBetaCellIDxx"],
+        "xxCbandGammaCellIDxx": form_data["xxCbandGammaCellIDxx"],
+        "xxDODAlphaCellIDxx": form_data["xxDODAlphaCellIDxx"],
+        "xxDODBetaCellIDxx": form_data["xxDODBetaCellIDxx"],
+        "xxDODGammaCellIDxx": form_data["xxDODGammaCellIDxx"],
+    }
+
+    # Add CELLNAME placeholders dynamically
+    for i, cell in enumerate(cell_list, start=1):
         replacements[f"CELLNAME{i}"] = cell
 
-    # -----------------------------
-    # Truncate unused CELLNAMEs
-    # -----------------------------
-    first_unused = len(cellnames) + 1
-    lines = content.splitlines()
+    # ---------------- FILE OPS ----------------
+    BASE_DIR = Path(__file__).resolve().parents[2]
+    template_path = BASE_DIR / "Fetching_Templates" / "Gutra_Template" / "Cband_DOD_GUTRA_Template.txt"
+    
+    output_dir = BASE_DIR / "Output"
+    output_dir.mkdir(exist_ok=True)
 
+    # ---------------- LOAD TEMPLATE ----------------
+    with open(template_path, "r") as f:
+        content = f.read()
+
+    # ---------------- TRUNCATE UNUSED CELLNAME ----------------
+    first_unused = len(cell_list) + 1
+    lines = content.splitlines()
     for idx, line in enumerate(lines):
         if f"{{CELLNAME{first_unused}}}" in line:
             content = "\n".join(lines[:max(idx - 1, 0)])
             break
 
-    # -----------------------------
-    # Replace placeholders
-    # -----------------------------
-    for key, value in replacements.items():
-        content = content.replace(f"{{{key}}}", value)
+    # ---------------- REPLACE ----------------
+    for k, v in replacements.items():
+        content = content.replace(f"{{{k}}}", v)
 
-    # -----------------------------
-    # Write output file
-    # -----------------------------
-    os.makedirs(OUTPUT_DIR, exist_ok=True)
-
-    output_file = os.path.join(
-        OUTPUT_DIR,
-        f"{xxNodeIDxx}_Cband_DOD_GUTRA_Final.txt"
-    )
-
+    # ---------------- WRITE OUTPUT ----------------
+    output_file = output_dir / f"{xxNodeIDxx}_GUTRA_CBAND_DOD_Final.txt"
     with open(output_file, "w") as f:
         f.write(content)
 
+    print("✅ GUTRA CBAND DOD FILE GENERATED:", output_file)
     return output_file

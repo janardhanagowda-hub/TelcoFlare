@@ -1,59 +1,48 @@
 import os
-
-TEMPLATE_PATH = r"C:\TelcoFlare\Fetching_Templates\Radio_Script_Template\8_port_8x4_template.txt"
-OUTPUT_DIR = r"C:\TelcoFlare\Output"
-
-SECTOR_MAPPING = {
-    1: "Alpha",
-    2: "Beta",
-    3: "Gamma",
-    4: "Delta",
-    5: "Epsilon",
-    6: "Foxtrot"
-}
+from pathlib import Path
 
 
-def generate_8_port_8x4(data: dict) -> str:
-    """
-    Core logic for 8-port 8x4 radio script generation
-    """
+# ===============================
+# CORE: 8 PORT 8x4 RADIO SCRIPT
+# ===============================
+def generate_8_port_8x4(
+    xxNodeIDxx: str,
+    replacements: dict
+):
 
-    replacements = {
-        "xxNodeIDxx": data["xxNodeIDxx"],
-        "xxAntennaUnitGroupxx": data["xxAntennaUnitGroupxx"],
-        "xxAntennaUnitxx": data["xxAntennaUnitxx"],
-        "xxAntennaSubunitxx": data["xxAntennaSubunitxx"],
-        "xxRRUxx": data["xxRRUxx"],
-        "xxrfb1xx": data["xxrfb1xx"],
-        "xxrfb2xx": data["xxrfb2xx"],
-        "xxrfb3xx": data["xxrfb3xx"],
-        "xxrfb4xx": data["xxrfb4xx"],
-        "xxrfb5xx": data["xxrfb5xx"],
-        "xxrfb6xx": data["xxrfb6xx"],
-        "xxrfb7xx": data["xxrfb7xx"],
-        "xxrfb8xx": data["xxrfb8xx"],
-        "xxAttenuationxx": data["xxAttenuationxx"],
-        "xxTrafficDelayxx": data["xxTrafficDelayxx"],
-        "xxSectorEquipmentFunctionxx": data["xxSectorEquipmentFunctionxx"],
+    BASE_DIR = Path(__file__).resolve().parents[2]
+    template_path = BASE_DIR / "Fetching_Templates" / "Radio_Script_Template" / "8_port_8x4_template.txt"
+    
+    output_dir = BASE_DIR / "Output"
+    output_dir.mkdir(exist_ok=True)
+
+    # Sector mapping
+    sector_mapping = {
+        1: "Alpha",
+        2: "Beta",
+        3: "Gamma",
+        4: "Delta",
+        5: "Epsilon",
+        6: "Foxtrot"
     }
 
-    # Load template
-    with open(TEMPLATE_PATH, "r") as f:
+    # Extract sector ID
+    sector_id = int(replacements["xxAntennaUnitGroupxx"])
+
+
+    # Read template
+    with open(template_path, "r") as f:
         content = f.read()
 
     # Replace placeholders
     for key, value in replacements.items():
         content = content.replace(f"{{{key}}}", value)
 
-    node_id = data["xxNodeIDxx"]
-    sector_id = int(data["xxAntennaUnitGroupxx"])
-    sector_name = SECTOR_MAPPING[sector_id]
-
-    output_filename = f"{node_id}_{sector_name}_8_port_8x4_RRU_Final.txt"
-    output_path = os.path.join(OUTPUT_DIR, output_filename)
-
-    # Save output
-    with open(output_path, "w") as f:
+    # Ensure output directory
+    output_file = os.path.join
+    output_file = output_dir / f"{xxNodeIDxx}_{sector_id}_8_Port_8x4_RRU_Final.txt"
+    # Write file
+    with open(output_file, "w") as f:
         f.write(content)
 
-    return output_path
+    return output_file

@@ -1,7 +1,6 @@
 import os
+from pathlib import Path
 
-TEMPLATE_PATH = r"C:\TelcoFlare\Fetching_Templates\Radio_Script_Template\C_D_add_template.txt"
-OUTPUT_DIR = r"C:\TelcoFlare\Output"
 
 SECTOR_MAPPING = {
     1: "Alpha",
@@ -19,7 +18,15 @@ def generate_cd_add_4x4(
     replacements: dict
 ):
     # Load template
-    with open(TEMPLATE_PATH, "r") as f:
+    
+    BASE_DIR = Path(__file__).resolve().parents[2]
+    template_path = BASE_DIR / "Fetching_Templates" / "Radio_Script_Template" / "C_D_add_template.txt"
+    
+    output_dir = BASE_DIR / "Output"
+    output_dir.mkdir(exist_ok=True)
+
+    
+    with open(template_path, "r") as f:
         content = f.read()
 
     # Replace placeholders
@@ -31,12 +38,9 @@ def generate_cd_add_4x4(
     sector_name = SECTOR_MAPPING.get(sector_id, "Unknown")
 
     # Output file
-    os.makedirs(OUTPUT_DIR, exist_ok=True)
-
-    output_file = os.path.join(
-        OUTPUT_DIR,
-        f"{xxNodeIDxx}_{sector_name}_C_D_Add_4x4_RRU_Final.txt"
-    )
+    output_file = os.path.join
+    output_file = output_dir / f"{xxNodeIDxx}_{sector_name}_CD_Port_RRU_Final.txt"
+    
 
     with open(output_file, "w") as f:
         f.write(content)

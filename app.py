@@ -173,6 +173,8 @@ async def gutra_850_submit(
 # ============================================================
 # ================ GUTRA CBAND_DOD (FASTAPI) =================
 # ============================================================
+
+
 @app.get("/tool/gutra_cband_dod", response_class=HTMLResponse)
 def gutra_cband_dod_page(request: Request):
     return templates.TemplateResponse(
@@ -180,13 +182,10 @@ def gutra_cband_dod_page(request: Request):
         {"request": request}
     )
 
-
 from Fetching_Templates.Gutra_Template.Cband_DOD_GUTRA import generate_gutra_cband_dod
 
-
 @app.post("/tool/gutra_cband_dod", response_class=HTMLResponse)
-async def gutra_cband_dod_generate(
-    request: Request,
+async def gutra_cband_dod_generate(request: Request,
     xxNodeIDxx: str = Form(...),
     xxgNodebIDxx: str = Form(...),
     xxgNbIDxx: str = Form(...),
@@ -201,10 +200,8 @@ async def gutra_cband_dod_generate(
     xxDODGammaCellIDxx: str = Form(...),
     cellnames: str = Form(...)
 ):
-    # Convert textarea → list
-    cell_list = [c.strip() for c in cellnames.splitlines() if c.strip()]
-
-    replacements = {
+    # Gather all form data into a dict
+    form_data = {
         "xxNodeIDxx": xxNodeIDxx,
         "xxgNodebIDxx": xxgNodebIDxx,
         "xxgNbIDxx": xxgNbIDxx,
@@ -217,19 +214,17 @@ async def gutra_cband_dod_generate(
         "xxDODAlphaCellIDxx": xxDODAlphaCellIDxx,
         "xxDODBetaCellIDxx": xxDODBetaCellIDxx,
         "xxDODGammaCellIDxx": xxDODGammaCellIDxx,
+        "cellnames": cellnames
     }
 
-    output_file = generate_gutra_cband_dod(
-        xxNodeIDxx,
-        replacements,
-        cell_list
-    )
+    # Call the tool, which now handles replacements + file ops
+    output_file = generate_gutra_cband_dod(form_data)
 
     return templates.TemplateResponse(
         "gutra_cband_dod.html",
         {
             "request": request,
-            "message": f"✅ File generated successfully",
+            "message": "✅ File generated successfully",
             "output_file": output_file
         }
     )
@@ -426,24 +421,24 @@ async def radio_8_port_4x4_submit(
 
 
 # ===============================================================
-# ================ 8 port_4x4 (FASTAPI) =========================
+# ================ 8 port_8x4 (FASTAPI) =========================
 # ===============================================================
 
 
 @app.get("/tool/radio_8_port_8x4", response_class=HTMLResponse)
-async def radio_8_port_8x4_form(request: Request):
+def radio_8_port_8x4(request: Request):
     return templates.TemplateResponse(
         "radio_8_port_8x4.html",
         {"request": request}
     )
 
+
 from Fetching_Templates.Radio_Script_Template.port8_8x4 import generate_8_port_8x4
 
 
 @app.post("/tool/radio_8_port_8x4", response_class=HTMLResponse)
-async def radio_8_port_8x4_generate(
+async def radio_8_port_8x4_submit(
     request: Request,
-
     xxNodeIDxx: str = Form(...),
     xxAntennaUnitGroupxx: str = Form(...),
     xxAntennaUnitxx: str = Form(...),
@@ -461,15 +456,35 @@ async def radio_8_port_8x4_generate(
     xxTrafficDelayxx: str = Form(...),
     xxSectorEquipmentFunctionxx: str = Form(...)
 ):
-    data = locals()
-    data.pop("request")
+    replacements = {
+        "xxNodeIDxx": xxNodeIDxx,
+        "xxAntennaUnitGroupxx": xxAntennaUnitGroupxx,
+        "xxAntennaUnitxx": xxAntennaUnitxx,
+        "xxAntennaSubunitxx": xxAntennaSubunitxx,
+        "xxRRUxx": xxRRUxx,
+        "xxrfb1xx": xxrfb1xx,
+        "xxrfb2xx": xxrfb2xx,
+        "xxrfb3xx": xxrfb3xx,
+        "xxrfb4xx": xxrfb4xx,
+        "xxrfb5xx": xxrfb5xx,
+        "xxrfb6xx": xxrfb6xx,
+        "xxrfb7xx": xxrfb7xx,
+        "xxrfb8xx": xxrfb8xx,
+        "xxAttenuationxx": xxAttenuationxx,
+        "xxTrafficDelayxx": xxTrafficDelayxx,
+        "xxSectorEquipmentFunctionxx": xxSectorEquipmentFunctionxx,
+    }
 
-    output_file = generate_8_port_8x4(data)
+    output_file = generate_8_port_8x4(
+        xxNodeIDxx=xxNodeIDxx,
+        replacements=replacements
+    )
 
     return templates.TemplateResponse(
         "radio_8_port_8x4.html",
         {
             "request": request,
+            "message": "✅ File generated successfully",
             "output_file": output_file
         }
     )

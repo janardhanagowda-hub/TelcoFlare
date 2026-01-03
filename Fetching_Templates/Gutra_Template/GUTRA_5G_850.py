@@ -1,5 +1,6 @@
 import os
 import re
+from pathlib import Path
 
 def generate_gutra_850(form_data: dict):
     print("✅ GUTRA 850 TOOL STARTED")
@@ -26,8 +27,12 @@ def generate_gutra_850(form_data: dict):
     for i, cell in enumerate(cell_list, start=1):
         replacements[f"CELLNAME{i}"] = cell
 
-    # ---------------- LOAD TEMPLATE ----------------
-    template_path = r"C:\TelcoFlare\Fetching_Templates\Gutra_Template\5G_850_GUTRA_Template.txt"
+    # ---------------- FILE OPS ----------------
+    BASE_DIR = Path(__file__).resolve().parents[2]
+    template_path = BASE_DIR / "Fetching_Templates" / "Gutra_Template" / "5G_850_GUTRA_Template.txt"
+    
+    output_dir = BASE_DIR / "Output"
+    output_dir.mkdir(exist_ok=True)
 
     with open(template_path, "r") as f:
         content = f.read()
@@ -45,14 +50,8 @@ def generate_gutra_850(form_data: dict):
     for k, v in replacements.items():
         content = content.replace(f"{{{k}}}", v)
 
-    # ---------------- OUTPUT ----------------
-    output_dir = r"C:\TelcoFlare\Output"
-    os.makedirs(output_dir, exist_ok=True)
+    output_file = output_dir / f"{xxNodeIDxx}_GUTRA_850_Final.txt"
 
-    output_file = os.path.join(
-        output_dir,
-        f"{xxNodeIDxx}_5G_850_GUTRA_Final.txt"
-    )
 
     with open(output_file, "w") as f:
         f.write(content)
