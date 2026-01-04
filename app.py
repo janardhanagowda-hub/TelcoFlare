@@ -1,5 +1,6 @@
 from fastapi import FastAPI, Request, Form
 from fastapi.responses import HTMLResponse, RedirectResponse
+from fastapi.responses import HTMLResponse, FileResponse
 from fastapi.templating import Jinja2Templates
 from fastapi.staticfiles import StaticFiles
 
@@ -74,13 +75,10 @@ async def aws_ess_submit(
 
     output_file = generate_aws_ess(form_data)
 
-    return templates.TemplateResponse(
-        "aws_ess.html",
-        {
-            "request": request,
-            "message": "✅ AWS ESS file generated successfully",
-            "output_file": output_file
-        }
+    return FileResponse(
+        path=output_file,
+        media_type="text/plain",
+        filename=output_file.name
     )
 
 
@@ -99,7 +97,7 @@ async def pcs_ess_page(request: Request):
 
 from Fetching_Templates.ESS_Template.ESS_PCS_Tool import generate_pcs_ess
 
-@app.post("/tool/pcs_ess", response_class=HTMLResponse)
+@app.post("/tool/pcs_ess")
 async def pcs_ess_submit(
     request: Request,
     xxNodeIDxx: str = Form(...),
@@ -116,20 +114,18 @@ async def pcs_ess_submit(
     ltescs: str = Form(...),
     nrcellnames: str = Form(...)
 ):
-    form_data = locals()   # 👈 zero logic, just pass data
+    form_data = locals()
     form_data.pop("request")
 
     output_file = generate_pcs_ess(form_data)
 
-    return templates.TemplateResponse(
-        "pcs_ess.html",
-        {
-            "request": request,
-            "message": "✅ PCS ESS file generated successfully",
-            "output_file": output_file
-        }
+    return FileResponse(
+        path=output_file,
+        media_type="text/plain",
+        filename=output_file.name
     )
-
+    
+    
 # ======================================================
 # ================ GUTRA 850 (FASTAPI) =================
 # ======================================================
@@ -160,15 +156,11 @@ async def gutra_850_submit(
 
     output_file = generate_gutra_850(form_data)
 
-    return templates.TemplateResponse(
-        "gutra_850.html",
-        {
-            "request": request,
-            "message": "✅ 5G 850 GUTRA file generated successfully",
-            "output_file": output_file
-        }
+    return FileResponse(
+        path=output_file,
+        media_type="text/plain",
+        filename=output_file.name
     )
-
 
 # ============================================================
 # ================ GUTRA CBAND_DOD (FASTAPI) =================
@@ -220,13 +212,10 @@ async def gutra_cband_dod_generate(request: Request,
     # Call the tool, which now handles replacements + file ops
     output_file = generate_gutra_cband_dod(form_data)
 
-    return templates.TemplateResponse(
-        "gutra_cband_dod.html",
-        {
-            "request": request,
-            "message": "✅ File generated successfully",
-            "output_file": output_file
-        }
+    return FileResponse(
+        path=output_file,
+        media_type="text/plain",
+        filename=output_file.name
     )
 
 
@@ -276,13 +265,10 @@ async def generate_port4_4x4_route(
         xxSectorEquipmentFunctionxx,
     )
 
-    return templates.TemplateResponse(
-        "4port_4x4.html",
-        {
-            "request": request,
-            "message": "✅ File generated successfully",
-            "output_file": output_file,
-        }
+    return FileResponse(
+        path=output_file,
+        media_type="text/plain",
+        filename=output_file.name
     )
 
 
@@ -342,14 +328,12 @@ async def cd_add_4x4_submit(
         replacements
     )
 
-    return templates.TemplateResponse(
-        "cd_add_4x4.html",
-        {
-            "request": request,
-            "message": "✅ File generated successfully",
-            "output_file": output_file
-        }
+    return FileResponse(
+        path=output_file,
+        media_type="text/plain",
+        filename=output_file.name
     )
+
 
 # ===============================================================
 # ================ 8 port_4x4 (FASTAPI) =========================
@@ -410,13 +394,10 @@ async def radio_8_port_4x4_submit(
         replacements=replacements
     )
 
-    return templates.TemplateResponse(
-        "radio_8_port_4x4.html",
-        {
-            "request": request,
-            "message": "✅ File generated successfully",
-            "output_file": output_file
-        }
+    return FileResponse(
+        path=output_file,
+        media_type="text/plain",
+        filename=output_file.name
     )
 
 
@@ -480,11 +461,8 @@ async def radio_8_port_8x4_submit(
         replacements=replacements
     )
 
-    return templates.TemplateResponse(
-        "radio_8_port_8x4.html",
-        {
-            "request": request,
-            "message": "✅ File generated successfully",
-            "output_file": output_file
-        }
+    return FileResponse(
+        path=output_file,
+        media_type="text/plain",
+        filename=output_file.name
     )

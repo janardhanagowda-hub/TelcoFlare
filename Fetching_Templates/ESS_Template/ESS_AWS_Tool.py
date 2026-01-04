@@ -1,5 +1,7 @@
 import os
 from pathlib import Path
+import tempfile
+
 
 def generate_aws_ess(form_data: dict):
     """
@@ -53,10 +55,10 @@ def generate_aws_ess(form_data: dict):
         content = content.replace(f"{{{k}}}", v)
 
     # ---------------- OUTPUT FILE ----------------
-    output_file = output_dir / f"{xxNodeIDxx}_ESS_AWS_Final.txt"
+    temp_dir = Path(tempfile.gettempdir())
+    safe_node = xxNodeIDxx.replace(" ", "_").replace("/", "_")
+    file_path = temp_dir / f"{safe_node}_AWS_ESS.txt"
+    file_path.write_text(content, encoding="utf-8")
 
-    with open(output_file, "w") as f:
-        f.write(content)
-
-    print("✅ AWS ESS FILE GENERATED:", output_file)
-    return output_file
+    print("✅ PCS ESS FILE GENERATED:", file_path)
+    return file_path

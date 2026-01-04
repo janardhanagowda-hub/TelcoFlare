@@ -1,5 +1,7 @@
 import os
 from pathlib import Path
+import tempfile
+
 
 def generate_gutra_cband_dod(form_data: dict) -> str:
     print("✅ GUTRA CBAND DOD TOOL STARTED")
@@ -55,9 +57,10 @@ def generate_gutra_cband_dod(form_data: dict) -> str:
         content = content.replace(f"{{{k}}}", v)
 
     # ---------------- WRITE OUTPUT ----------------
-    output_file = output_dir / f"{xxNodeIDxx}_GUTRA_CBAND_DOD_Final.txt"
-    with open(output_file, "w") as f:
-        f.write(content)
+    temp_dir = Path(tempfile.gettempdir())
+    safe_node = xxNodeIDxx.replace(" ", "_").replace("/", "_")
+    file_path = temp_dir / f"{safe_node}_GUTRA_CBAND_DOD_Final.txt"
+    file_path.write_text(content, encoding="utf-8")
 
-    print("✅ GUTRA CBAND DOD FILE GENERATED:", output_file)
-    return output_file
+    print("✅ GUTRA CBAND DOD FILE GENERATED:", file_path)
+    return file_path

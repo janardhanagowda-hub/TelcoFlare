@@ -1,13 +1,9 @@
-import os
 from pathlib import Path
+import tempfile
 
 def generate_pcs_ess(form_data: dict):
-    """
-    form_data: dict containing all raw form inputs
-    """
     print("✅ PCS ESS TOOL STARTED")
 
-    # ---------------- PARSE INPUTS ----------------
     xxNodeIDxx = form_data["xxNodeIDxx"]
 
     ltecellnames = [x.strip() for x in form_data["ltecellnames"].splitlines() if x.strip()]
@@ -27,36 +23,28 @@ def generate_pcs_ess(form_data: dict):
         "xxTACxx": form_data.get("xxTACxx", ""),
     }
 
-    # ---------------- FILE OPS ----------------
     BASE_DIR = Path(__file__).resolve().parents[2]
     template_path = BASE_DIR / "Fetching_Templates" / "ESS_Template" / "ESS_PCS_Template.txt"
-    
-    output_dir = BASE_DIR / "Output"
-    output_dir.mkdir(exist_ok=True)
 
-    with open(template_path, "r") as f:
+    with open(template_path, "r", encoding="utf-8") as f:
         content = f.read()
 
-    # LTE
     for i, val in enumerate(ltecellnames, start=1):
         content = content.replace(f"{{LTECELLNAME{i}}}", val)
 
     for i, val in enumerate(ltescs, start=1):
         content = content.replace(f"{{LTESC{i}}}", val)
 
-    # NR
     for i, val in enumerate(nrcellnames, start=1):
         content = content.replace(f"{{NRCELLNAME{i}}}", val)
 
-    # Common replacements
     for k, v in replacements.items():
         content = content.replace(f"{{{k}}}", v)
 
-    # ---------------- OUTPUT FILE ----------------
-    output_file = output_dir / f"{xxNodeIDxx}_ESS_PCS_Final.txt"
+    temp_dir = Path(tempfile.gettempdir())
+    safe_node = xxNodeIDxx.replace(" ", "_").replace("/", "_")
+    file_path = temp_dir / f"{safe_node}_PCS_ESS.txt"
+    file_path.write_text(content, encoding="utf-8")
 
-    with open(output_file, "w") as f:
-        f.write(content)
-
-    print("✅ PCS ESS FILE GENERATED:", output_file)
-    return output_file
+    print("✅ PCS ESS FILE GENERATED:", file_path)
+    return file_path

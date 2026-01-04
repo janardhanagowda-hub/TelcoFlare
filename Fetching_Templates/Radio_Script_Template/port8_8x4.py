@@ -1,5 +1,6 @@
 import os
 from pathlib import Path
+import tempfile
 
 
 # ===============================
@@ -39,10 +40,10 @@ def generate_8_port_8x4(
         content = content.replace(f"{{{key}}}", value)
 
     # Ensure output directory
-    output_file = os.path.join
-    output_file = output_dir / f"{xxNodeIDxx}_{sector_id}_8_Port_8x4_RRU_Final.txt"
-    # Write file
-    with open(output_file, "w") as f:
-        f.write(content)
+    temp_dir = Path(tempfile.gettempdir())
+    safe_node = xxNodeIDxx.replace(" ", "_").replace("/", "_")
+    file_path = temp_dir / f"{xxNodeIDxx}_{sector_id}_8_Port_8x4_RRU_Final.txt"
+    file_path.write_text(content, encoding="utf-8")
 
-    return output_file
+    print("✅ Radio Script 8 Ports 8x4 FILE GENERATED:", file_path)
+    return file_path

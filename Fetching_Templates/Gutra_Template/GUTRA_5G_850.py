@@ -1,6 +1,8 @@
 import os
 import re
 from pathlib import Path
+import tempfile
+
 
 def generate_gutra_850(form_data: dict):
     print("✅ GUTRA 850 TOOL STARTED")
@@ -50,11 +52,10 @@ def generate_gutra_850(form_data: dict):
     for k, v in replacements.items():
         content = content.replace(f"{{{k}}}", v)
 
-    output_file = output_dir / f"{xxNodeIDxx}_GUTRA_850_Final.txt"
+    temp_dir = Path(tempfile.gettempdir())
+    safe_node = xxNodeIDxx.replace(" ", "_").replace("/", "_")
+    file_path = temp_dir / f"{safe_node}_GUTRA_850_Final.txt"
+    file_path.write_text(content, encoding="utf-8")
 
-
-    with open(output_file, "w") as f:
-        f.write(content)
-
-    print("✅ GUTRA 850 FILE GENERATED:", output_file)
-    return output_file
+    print("✅ GUTRA 850 FILE GENERATED:", file_path)
+    return file_path

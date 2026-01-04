@@ -1,5 +1,6 @@
 import os
 from pathlib import Path
+import tempfile
 
 
 SECTOR_MAPPING = {
@@ -38,11 +39,10 @@ def generate_cd_add_4x4(
     sector_name = SECTOR_MAPPING.get(sector_id, "Unknown")
 
     # Output file
-    output_file = os.path.join
-    output_file = output_dir / f"{xxNodeIDxx}_{sector_name}_CD_Port_RRU_Final.txt"
-    
+    temp_dir = Path(tempfile.gettempdir())
+    safe_node = xxNodeIDxx.replace(" ", "_").replace("/", "_")
+    file_path = temp_dir / f"{safe_node}_{sector_name}_CD_Port_RRU_Final.txt"
+    file_path.write_text(content, encoding="utf-8")
 
-    with open(output_file, "w") as f:
-        f.write(content)
-
-    return output_file
+    print("✅ Radio Script CD Ports 4x4 FILE GENERATED:", file_path)
+    return file_path
