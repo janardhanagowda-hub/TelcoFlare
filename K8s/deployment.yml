@@ -1,0 +1,19 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: telcoflare-deployment
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: telcoflare
+  template:
+    metadata:
+      labels:
+        app: telcoflare
+    spec:
+      containers:
+        - name: telcoflare
+          image: janardhanagowda99/telcoflare:1.0
+          ports:
+            - containerPort: 8000

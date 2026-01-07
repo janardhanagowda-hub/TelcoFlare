@@ -1,0 +1,8 @@
+__pycache__/
+.git/
+.gitignore
+Output/
+.env
+venv/
+Dockerfile
+README.md

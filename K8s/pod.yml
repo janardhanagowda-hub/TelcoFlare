@@ -1,0 +1,10 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: telcoflare-pod
+spec:
+  containers:
+    - name: telcoflare
+      image: janardhanagowda99/telcoflare:1.0
+      ports:
+        - containerPort: 8000
